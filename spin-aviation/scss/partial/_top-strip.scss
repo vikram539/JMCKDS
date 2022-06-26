@@ -1,0 +1,132 @@
+.top_header
+{
+    padding:1rem 0;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 999;
+    background: $themeColor;
+    
+    @include min_max_width(0px, 991px)
+    {  
+        position: relative;
+    }
+    
+    .topStripBlock
+    {
+        display: flex;        
+        align-items: center;
+        justify-content: space-between;
+        min-height: $min_height;
+        @include min_max_width(0px, 991px)
+        {  
+        }
+        ul
+        {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            width:100%;
+            max-width: 123px;
+            @include min_max_width(0px, 991px)
+            {  
+                margin: 0 auto;
+            }
+            li
+            {
+                font-size: 1.2rem;
+                a
+                {
+                    color:$colorWhite;
+                    text-decoration: none;
+                }
+                @include min_max_width(0px, 991px)
+                {  
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        
+        @include min_max_width(768px, 991px)
+        {                
+            min-height: 60px;
+        }
+    }
+    .logo
+    {
+        a 
+        {
+            margin: 0 auto;
+            img
+            {
+                max-width: 100%; 
+                display: block;
+                margin: 0 auto;
+                
+                @include min_max_width(768px, 991px)
+                { 
+                    max-width: 150px;
+                }
+            }
+        }
+        h2
+        {
+            text-transform: uppercase;
+            color: $colorWhite;
+        }
+    }
+    .topButton
+    {
+        .commonbtn
+        {
+            // width: 100%;
+            // display: block;
+        }
+    }
+    @include min_max_width(0px, 767px)
+    {
+        .topStripBlock 
+        {
+            min-height: 50px;
+            ul
+            {
+                width: 100%;
+            }
+            .commonbtn
+            {
+                padding:0.5rem 0.7rem;
+            }
+        }
+        .row>.col-2:nth-of-type(1)
+        {
+            width: 22%;
+        }
+        .row>.col-2
+        {
+            width: 26%;
+        }
+        .row>.col-8
+        {
+            width: 50%;
+           .logo
+           {
+                img
+                {
+                    width: 80%;
+                }
+           }
+        }
+    }
+}
+
+@include min_max_width(0px, 767px)
+{
+   
+    .w-80
+    {
+        width:100%;
+    }
+}

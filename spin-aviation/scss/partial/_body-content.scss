@@ -1,0 +1,94 @@
+.textContent
+{
+
+    ul
+    {
+        display: flex;
+        list-style: none;
+        flex-flow: row wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        li
+        {
+            min-height:70px;
+            position: relative;
+            color: $colorWhite;
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            @include min_max_width(0px, 767px) 
+            { 
+                width:50%; 
+                font-size: 1.5rem;
+                &:nth-last-of-type(even)
+                {
+                    text-align: center;
+                    &::after
+                    {
+                        background:none;
+                    }
+                }
+                &:nth-last-of-type(odd)
+                {
+                    span
+                    {
+                        padding-left: 0;
+                    }
+                }
+                .p-0
+                {
+                    padding-left:0.5rem;
+                }
+            }
+            @include min_max_width(768px, 991px)
+            { 
+                font-size: 1.4rem;
+            }
+            
+            &::after
+            {
+                content: '';
+                height: 100%;
+                top:0;
+                right:0;
+                width: 2px;
+                background: url('../images/Line.png');
+                position: absolute;
+            }
+            >span
+            {
+                padding-left: 1.2rem;
+                width: 100%;
+                
+                @include min_max_width(0px, 767px)
+                { 
+                    padding-left: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+.bgNone::after
+{
+    background: none !important;
+}
+.textImg
+{
+    width: 100%;
+    margin: $m_tb;
+    img
+    {
+        display: block;
+        margin: 0 auto;
+    }
+}
+.w-80
+{
+    width:75%;
+    @include min_max_width(0px, 991px)
+    {  
+        width: 100%;
+    }
+}
