@@ -1,10 +1,16 @@
-$bodyColor:rgba(251, 0, 0, 1);
-$themeColor:rgba(251, 0, 0, 1);
+$bodyColor:#F3F5F9(251, 0, 0, 1);
+$themeColor:rgba(251, 0, 0, 1); 
 $blackColor:#000;
 $colorWhite:#fff;
-$fontFamily:'Inter', sans-serif;
+$fontFamilyHeading: 'Roboto', sans-serif; 
+$fontFamilyPara:garamondRegular; 
 
 
+// Container Width
+$container_width:1440px;
+
+// Buttons
+$btnBgColor:#EB1D2E;
 // Top Bar
 $min_height: 80px;
 

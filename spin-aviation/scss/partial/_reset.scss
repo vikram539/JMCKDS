@@ -1,50 +1,43 @@
 *{margin:0; padding:0; box-sizing: border-box;}
-// font-family: 'Inter', sans-serif;
+// font-family: 'Roboto', sans-serif;
+@font-face {
+    font-family: garamondRegular;
+    src: url(../fonts/Garamond-Regular.ttf);
+  }
 body
 {
     font-size: 100%;
     margin:0;
     padding:0;
     border: none;
-    background: linear-gradient(to left, #db0a0a, $bodyColor);
-    font-family: $fontFamily;
+    font-family: garamondRegular;
     color: $blackColor; 
-    scroll-behavior: smooth;
+    background: $bodyColor;
 }
-h2, h3, h4, p
+.container
 {
-    
+    // max-width:$container_width;
+}
+h2, h3, h4, label
+{
+    font-family: $fontFamilyHeading;
 }
 h2
-{
-    text-transform: uppercase;
-    color: $colorWhite;
-    font-size: 3.4rem;
-    font-weight: 600;
-    
-    @include min_max_width(0px, 767px)
-    {        
-        font-size: 2.84rem;
-    }
+{   
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 64px;
+    text-align: center;    
 }
-h3
-{
-    font-size: 4.5rem;
-    color:$colorWhite;
-    font-weight: 600;
-    letter-spacing: 1px;
-    label
-    {
-        display: block;
-    }
-    @include min_max_width(0px, 767px)
-    {        
-        font-size: 2.84rem; 
-    }
+h4
+{    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
 }
 p
 {
-    color: $colorWhite;
     font-size: 1.6rem;
     margin-bottom: 2rem;
     @include min_max_width(0px, 991px)
@@ -55,23 +48,4 @@ p
 .com_p_t
 {
     padding-top: 5rem;
-}
-.zigZag
-{
-    height: 300px;
-    width: 100%;
-    background: url("../images/Vector.png") top center no-repeat;
-    background-size: cover; 
-    background-position: 100% 100%;
-    
-    @include min_max_width(0px, 767px)
-    {        
-        background-size: contain;
-        height: 100px
-    }
-    @include min_max_width(767px, 991px)
-    {         
-        height: 150px ;
-    }
-
 }

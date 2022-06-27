@@ -1,0 +1,36 @@
+.booking_wrapper
+{
+    width:100%;
+    background: $blackColor;
+    .booking_form
+    {
+        display: flex; 
+        form
+        {
+            display: flex;
+            align-items: center; 
+            width: 100%;           
+        }       
+    }
+}
+.form_block
+{
+    color: $colorWhite;
+    label
+    {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: $colorWhite;
+        width: 100%;
+        padding-top: 19px;
+        padding-bottom: 12px;
+    }
+    input
+    {
+        width:281px;
+        height: 70px;
+        background: $colorWhite;
+        border-radius: 10px;
+    }
+}

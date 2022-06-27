@@ -16,4 +16,8 @@
 </footer>
 <div class='mobile_btn'>
     <a href="#dropline" class="commonbtn btn">consult</a>
-</div
+</div>
+
+
+<script src="https://kit.fontawesome.com/3fd486c100.js" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
