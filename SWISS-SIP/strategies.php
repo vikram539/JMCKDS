@@ -6,7 +6,7 @@
             <div class="topHeader_img_wrapper">
                 <div class="menu_section">     
                     <?php include("assets/top-bar.php");  ?>
-                    <?php include("assets/banner-text.php");  ?>
+                    <?php include("assets/strategies-banner.php");  ?>
                 </div>
             </div>
         </header> 

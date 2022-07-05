@@ -22,7 +22,7 @@
     </div>
     <div class="footer_btn">
         <div class="comm_btn">
-            <a href="" target="_blank" class="d-flex">about us</a>
+            <a  href="<?=$root?>about-us.php" target="_self" class="d-flex">about us</a>
         </div>
     </div>
 </div>
