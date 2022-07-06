@@ -1,14 +1,14 @@
 <section>
-    <div class="slider_wrap">        
-        <div class="banner_text_wrap about-us">
+    <div class="slider_wrap about-us">        
+        <div class="banner_text_wrap">
             <div class="container">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
                         <div class="about-img-wrap">
-                            <img src="<?= $images ?>about.jpg" alt="About Us" class="img-fluid" />
+                            <img src="<?= $images ?>about.jpg" alt="About Us" class="img-fluid w-100" />
                         </div>
                     </div>
-                    <div class="col-8 about-bg d-flex align-items-center flex-wrap">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8 about-bg d-flex align-items-center flex-wrap">
                         <div class="about-carousel">
                             <div class="owl-carousel owl-theme">
                                 <div class="item">

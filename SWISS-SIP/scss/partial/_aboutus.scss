@@ -1,6 +1,14 @@
 .about-us
 {
-    top:40px !important;
+    background-color: $blackColor;
+    @include min_max_width(0px, 991px)
+    {   
+        position: relative !important;
+    }
+    .banner_text_wrap
+    {
+        top:0 !important;
+    }
     .about-carousel
     {
         padding:  0 29px;

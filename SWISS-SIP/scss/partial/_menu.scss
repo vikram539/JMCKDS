@@ -33,3 +33,8 @@
         }
     }
 }
+
+.navbar-light .navbar-toggler-icon
+{
+    filter: invert(1);
+}

@@ -20,3 +20,15 @@
     
     <!-- javascript -->
     <script src="owlcarousel/js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function(){
+            var path = window.location.href;
+            // if ( path == '' ) {
+            //     path = 'index.php';       
+            // }
+        
+            var target = $(document).find('li a[href="'+path+'"]').closest("li");
+            // Add active class to target link
+            target.addClass('active');
+        })
+    </script>

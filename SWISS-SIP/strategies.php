@@ -6,10 +6,10 @@
             <div class="topHeader_img_wrapper">
                 <div class="menu_section">     
                     <?php include("assets/top-bar.php");  ?>
-                    <?php include("assets/strategies-banner.php");  ?>
                 </div>
             </div>
-        </header> 
+        </header>
+        <?php include("assets/strategies-banner.php");  ?> 
     </main> 
     
     <?php include("assets/footer.php");  ?>

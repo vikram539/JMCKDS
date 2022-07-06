@@ -8,8 +8,8 @@
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
             <ul class="navbar-nav mb-2 mb-lg-0  ms-auto">
-                <li class="nav-item active">
-                    <a href="<?=$root?>" class="nav-link active" aria-current="page" href="#">Home</a>
+                <li class="nav-item">
+                    <a href="<?=$root?>" class="nav-link" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?=$root?>strategies.php">Strategies</a>

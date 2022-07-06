@@ -1,3 +1,6 @@
+<?php
+    $page_id = 1;
+?>
 <?php include("assets/header.php"); ?>
 </head>
 <body>
@@ -6,10 +9,10 @@
             <div class="topHeader_img_wrapper">
                 <div class="menu_section">     
                     <?php include("assets/top-bar.php");  ?>
-                    <?php include("assets/banner-text.php");  ?>
                 </div>
             </div>
-        </header> 
+        </header>
+        <?php include("assets/banner-text.php");  ?>
     </main> 
     
     <?php include("assets/footer.php");  ?>

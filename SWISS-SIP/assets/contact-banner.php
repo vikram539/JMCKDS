@@ -5,7 +5,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <div class="contact_left">
                         <h2>Contact Information</h2>
-                        <p class='com_p_t'>If you'd like to talk about a project, our work or anything else then get in touch.</p>
+                        <p class='com_p_t pb-5'>If you'd like to talk about a project, our work or anything else then get in touch.</p>
                     </div>
                     <div class="contact_address_block">
                         <p>Mail :</p>

@@ -1,9 +1,9 @@
 <section>
-    <div class="slider_wrap">        
+    <div class="slider_wrap strategies">        
         <div class="banner_text_wrap">
             <div class="container">
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-xs-12 col-sm-12  col-md-12 col-lg-9 col-xl-9 col-xxl-9">
                         <h2 class='text-white'>Strategies</h2>
                         <p>Our approach includes controlling capital investment in order to achieve a long-term goal of growing Return on Assets. We assist you in properly managing your firm's assets by designing a strategic plan. There are several hazards associated if your firm does not have a robust and validated asset management system. We will guide you at every step and manage your assets effectively.</p>
                         <div class="btn-group">
