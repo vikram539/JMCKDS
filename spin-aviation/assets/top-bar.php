@@ -18,9 +18,18 @@
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">booking</a>
                 </li>
             </ul> -->
-            <div class="comm_btn">
-                <a href="" target="_blank" class="d-flex">request</a>
-            </div>
+            <ul class='d-flex m-0 p-0'>
+                <li>
+                    <div class="comm_btn">
+                        <a href="" target="_blank" class="d-flex">request</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-transparent login_btn">
+                        <a href="" target="_blank" class="d-flex">LOGIN</a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>

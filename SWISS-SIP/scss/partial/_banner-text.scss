@@ -2,7 +2,8 @@
 .home_page
 {
     background:url("../images/slider/01.jpg") no-repeat top center;
-}
+    background-size: cover;
+} 
 .home_page, .strategies, .about-us
 {
     background-attachment: fixed;
@@ -16,7 +17,7 @@
         position: relative;
         padding: 1rem 0;
     }
-    @include min_max_width(768px, 991px)
+    @include min_max_width(768px, 991px) 
     {  
         background-size: cover; 
 

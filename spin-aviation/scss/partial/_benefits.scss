@@ -27,3 +27,9 @@
     {
     }
 }
+.benefit-bg
+{
+    background: #{$colorRed} url(../images/benefit.jpg) no-repeat right;
+    background-size: contain;
+    background-position-x: calc(100% + 70px);
+}
