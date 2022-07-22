@@ -25,7 +25,7 @@
 
 						<?php
 
-							if($icon_exp[1]!='' && $google_plus!='') echo"<li><a href='$google_plus' target='_blank'>".$icon_exp[1]."&nbsp;</a></li>";
+							if($icon_exp[1]!='' && $instagram_link!='') echo"<li><a href='$instagram_link' target='_blank'>".$icon_exp[1]."&nbsp;</a></li>";
 
 						?>
 

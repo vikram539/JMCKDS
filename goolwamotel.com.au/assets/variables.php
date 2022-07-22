@@ -18,10 +18,6 @@
 		mkdir($file_path, 0777); 
 				
 	}
-		
-	
-
-	
 	else
 	{		
 			if(!file_exists($file_path.$PHP_ext))
@@ -39,13 +35,12 @@
 //#########################Website variable
 	$website_images=$website_domain."images/";
 	$check_rates=$hotel_info_array['hotel_book_btn'];
-	$facebook_link="https://www.facebook.com/AdvanceMotel";
-	$instagram_link="";
+	$facebook_link="https://www.facebook.com/MotelGoolwa/";
+	$instagram_link="https://www.instagram.com/motelgoolwa/";
 	$google_location=""; 
 	$trip_advisor="";
 	$expedia="";
 	$google_plus="";
-	$avis_url="https://www.avis.com.au/en/home";
 	
 //============ Hotel |Phone Explode ==============//
 	

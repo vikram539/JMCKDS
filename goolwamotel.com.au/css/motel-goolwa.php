@@ -502,6 +502,28 @@ footer
 {
 	    margin-top: 0 !important;
 }
+.things_wrapper
+{
+    position:absolute;
+    top: 50%;
+    width: 100%;
+    height:100%;
+    z-index:99;
+    color:#fff;
+    text-align:center;
+}
+
+.things_wrapper:after
+{
+    position:absolute;
+    content:'';
+    width:100%;
+    height: 100%;
+    background:rgba(0,0,0,0.4);
+    top:0;
+    left:0;
+    z-index: -99
+}
 .things-row
 {
 }

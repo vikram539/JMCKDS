@@ -33,8 +33,8 @@ include("assets/header.php");
 <?php include("assets/facility-icons.php"); ?>
 <?php include("assets/room-thumb.php"); ?>
 <?php include("assets/guest-facilities-features.php"); ?> 
-<?php include("assets/health-safety.php"); ?>
-<?php include("assets/prime-location.php"); ?>
+<?php include("assets/things-to-do.php"); ?>
+<?php //include("assets/prime-location.php"); ?>
 
 <?php include("assets/footer.php"); ?>
 </body>
