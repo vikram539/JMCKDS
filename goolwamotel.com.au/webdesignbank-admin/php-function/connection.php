@@ -2,9 +2,9 @@
 class connection
 {
 	var $host_name="localhost";
-	var $user_name="cityreac_user";
-	var $password="}_Gz][z6zPZj";
-	var $db_name="cityreac_mysqldb"; 
+	var $user_name="root";
+	var $password="";
+	var $db_name="goolwamotel"; 
 	var $links="";
 	
 	public function __construct()

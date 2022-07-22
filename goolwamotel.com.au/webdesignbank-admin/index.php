@@ -5,7 +5,7 @@ include('req-admin/variable-admin.php');
 include('10072019check-login.php');
 include('req-admin/head-include-admin.php');
 $page_ID=0;
-
+$pageID = '';
 ?>
 </head>
 <body> 

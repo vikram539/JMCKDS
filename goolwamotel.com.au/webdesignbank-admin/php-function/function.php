@@ -1,7 +1,7 @@
 <?php
 //echo getcwd();
-//error_reporting(E_ALL);
-//ini_set('display_error',1);
+error_reporting(E_ALL);
+ini_set('display_error',1);
 include('connection.php');
 
 class functions extends connection
@@ -265,7 +265,7 @@ class functions extends connection
 		{
 			$url="http";
 		}
-		$url.="://".$_SERVER['HTTP_HOST']."/";
+		$url.="://".$_SERVER['HTTP_HOST']."/JMCKDS/goolwamotel.com.au/";
 		return $url;  
 		 
 	}
@@ -554,7 +554,7 @@ class functions extends connection
 				}
 		
 	}
-		return $error;
+		return @$error;
 	}
 	public function hotel_facility_icon()
 	{
@@ -615,7 +615,7 @@ class functions extends connection
 				$i++;
 			}
 		}
-		return $error;
+		return @$error;
 	}
 	public function del_hotel_facility_icon()
 	{
@@ -675,7 +675,7 @@ class functions extends connection
 				$hotel_info_array=array(
 				"hotel_ID"=>$hotel_ID,"hotel_name"=>$hotel_name,"hotel_address"=>$hotel_address,"hotel_phone"=>$hotel_phone,"header_logo"=>$header_logo,"footer_logo"=>$footer_logo,"social_media_icon"=>$social_media_icon,"hotel_email"=>$hotel_email,"hotel_book_btn"=>$hotel_book_btn,"hotel_map"=>$hotel_map,"hotel_created_year"=>$hotel_createdYear);
 			}
-			return $hotel_info_array;
+			return @$hotel_info_array;
 			//print_r($hotel_info_array);
 		}
 		
@@ -764,7 +764,7 @@ class functions extends connection
 /*######################## Update text arrray. ###################################*/	
 		public function updateText()
 		{
-			$update_page_id=$_GET['pageID'];
+			$update_page_id=@$_GET['pageID'];
 			//exit();
 			if(isset($_POST['save']))
 			{
@@ -1360,7 +1360,7 @@ class functions extends connection
 			
 			echo"<img src='".$this->domain_url()."images/loading.gif' id='loadimg' style='display:none;' />";
 		}
-		return $error; 
+		return @$error; 
 	}
 //------######################### Assigne page name function ###########---------------//
 	public function assignPage()
@@ -1401,7 +1401,7 @@ class functions extends connection
 				
 			}
 		}
-		return $success;
+		return @$success;
 	}
 //------------################## Unassigned Room name ###########------------------//
 	public function unassignPage()
@@ -1537,8 +1537,10 @@ class functions extends connection
 
 $fun_obj=new functions();
 
+
+$fun_obj->DB_function();
 //User Login Functino 
-$error=$fun_obj->userLogin();
+@$error=$fun_obj->userLogin();
 
 //$user_type=userType($session_name);
 $fun_obj->subscribe();
@@ -1579,7 +1581,6 @@ $hotel_array=$fun_obj->GetHotel_info();
 // Our Apartnents function
 
 
-$fun_obj->DB_function();
 $db_links=$fun_obj->db_link_fun();
 $website_domain=$fun_obj->domain_url();
 $hotel_info_array=$fun_obj->GetHotel_info();

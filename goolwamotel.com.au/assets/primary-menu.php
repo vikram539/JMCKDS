@@ -66,6 +66,6 @@
 		</div>
 		</div>
 		</div>
-		<div class="bookdirect"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&emsp;<span>COVID-19: Booking With Flexibility While Travelling Safely</span></div>
+		<!-- <div class="bookdirect"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&emsp;<span>COVID-19: Booking With Flexibility While Travelling Safely</span></div> -->
 	</div>
 </div>

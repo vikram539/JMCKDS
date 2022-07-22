@@ -3,6 +3,8 @@ $(document).ready(function(){
 //================= Main Menu fixed on scroll 
 	$(window).on("scroll",function(){
 		let posTop=$(window).scrollTop();
+		console.log(posTop);
+
 		if(posTop > 60)
 		{
 			$(".top-primary-menu").addClass("menu-resize");
@@ -13,7 +15,7 @@ $(document).ready(function(){
 		}
 		
 		
-	if(posTop  > 350)
+	if(posTop  > 400)
 	{
 		$("#b247SearchBoxContainer").addClass('widgetPos');
 	}

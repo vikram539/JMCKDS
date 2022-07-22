@@ -55,7 +55,7 @@ if(!is_dir($getpath))
 						
 				$sel_order=$fun_obj->commonSelect_table("cms_gallery","page_id^img_order^pagename","WHERE page_id='$pageID'");
 					$num_row=mysqli_num_rows($sel_order);
-					$lastID=mysqli_insert_id($sel_order);
+					// $lastID=mysqli_insert_id($sel_order);
 					if($num_row>0)
 					{
 						while($fetch=mysqli_fetch_array($sel_order))
