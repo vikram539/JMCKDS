@@ -47,6 +47,7 @@ p {
 #navbarWrap {
   width: 100%;
   margin-top: 20px;
+  position: relative;
 }
 #navbarWrap .navLeft .logo a {
   text-decoration: none;
@@ -59,7 +60,7 @@ p {
 #navbarWrap .navRight {
   display: flex;
 }
-#navbarWrap .navRight .menuBlock {
+#navbarWrap .navRight .menuBarWrap {
   width: 47px;
   display: flex;
   flex-flow: wrap row;
@@ -67,22 +68,25 @@ p {
   transform-style: preserve-3d;
   perspective: 1000px;
 }
-#navbarWrap .navRight .menuBlock .menuBorderLine {
+#navbarWrap .navRight .menuBarWrap .menuBorderLine {
   border: 2px solid #fff;
   width: 100%;
   margin-bottom: 15px;
   transition: all linear 0.3s;
 }
-#navbarWrap .navRight .menuBlock .menuBorderLine:last-child {
+#navbarWrap .navRight .menuBarWrap .menuBorderLine:last-child {
   margin-bottom: 0px;
 }
-#navbarWrap .navRight .menuBlock:hover .menuBorderLine:nth-of-type(1) {
+#navbarWrap .navRight .menuBarWrap:hover .menuBorderLine:nth-of-type(1) {
   transform-origin: center;
   transform: rotate(45deg);
 }
-#navbarWrap .navRight .menuBlock:hover .menuBorderLine:nth-of-type(2) {
+#navbarWrap .navRight .menuBarWrap:hover .menuBorderLine:nth-of-type(2) {
   transform-origin: center;
   transform: rotate(-45deg) translate(35px, 10px);
+}
+#navbarWrap .navRight .menuOptions {
+  position: absolute;
 }
 
 .bannerTextWrap {

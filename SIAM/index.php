@@ -27,7 +27,7 @@
                         <div class="col-6">
                             <div class="bannerVideoWrap">
                                 <div class="imgBanner">
-                                    <img src="<?=$images ?>Veil.png" alt="Logo" class="img-fluid" />
+                                    <img src="<?=$images ?>Veil.gif" alt="Logo" class="img-fluid" />
                                 </div>
                             </div>
                         </div>

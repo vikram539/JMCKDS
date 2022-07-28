@@ -10,9 +10,12 @@
             </div>
             <div class="col-6 d-flex align-items-center justify-content-end">
                 <div class="navRight">
-                    <div class="menuBlock">
+                    <div class="menuBarWrap">
                         <div class="menuBorderLine"></div>
                         <div class="menuBorderLine"></div>
+                    </div>
+                    <div class="menuOptions">
+                        
                     </div>
                 </div>
             </div>

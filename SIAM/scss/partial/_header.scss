@@ -14,6 +14,7 @@
 #navbarWrap{
     width: 100%;
     margin-top: 20px;
+    position: relative;
     .navLeft{
         .logo{
             a{
@@ -31,7 +32,8 @@
     // NavRight
     .navRight{
         display: flex;
-        .menuBlock{
+
+        .menuBarWrap{
             width: 47px;
             display: flex;
             flex-flow: wrap row;
@@ -58,6 +60,10 @@
                     transform: rotate(-45deg) translate(35px, 10px);                   
                 }
             }
+        }
+        .menuOptions{
+            position: absolute;
+
         }
     }
 }
