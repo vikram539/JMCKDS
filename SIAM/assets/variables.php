@@ -10,6 +10,6 @@
     {
         $root="http";
     }
-    $root.="://".$_SERVER['HTTP_HOST']."/JMCKDS/SWISS-SIP/";
+    $root.="://".$_SERVER['HTTP_HOST']."/JMCKDS/SIAM/";
     $images = $root."images/"
 ?>
