@@ -1,0 +1,116 @@
+// About us page
+.listTabSerction{
+    margin-top: 20px;
+    .listTab{
+        ul{
+            list-style: none;
+            margin-bottom: 0;
+            li{                
+                font-style: normal;
+                font-weight: 400;
+                font-size: 36px;
+                color: #D9D9D9;
+                margin-bottom: 40px;
+                h3{
+                    display: flex;
+                    align-items: center;
+                    color: $colorWhite;
+                    margin-bottom:30px;
+                    cursor: pointer;
+                    span{
+                        transition: all linear 0.5s;
+                        img{
+                            margin-left: 1.5rem;
+                            transition: all linear 0.5s;
+                            transform: rotate(180deg);
+                        } 
+                        .rotateImg{                            
+                            transform: rotate(0deg);
+                        }                        
+                    }               
+                }
+                .tabContent
+                {                    
+                    color: #D9D9D9;
+                    display: none;
+                    p, h4{
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 32px;
+                        color: #C2C2C2;
+                    }                    
+                }
+            }
+        }
+    }
+}
+// partners List
+.partnersList{
+    .partners{
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-flow: wrap row;
+        li{            
+            width: 406px;
+            height: 110px;
+            border: 3px solid $colorWhite;
+            border-radius: 20px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            display: flex;
+            flex-flow: wrap row;
+            align-items: center;
+            justify-content: center;
+            margin: 50px;
+            a{   
+                text-decoration: none;
+                color: $colorWhite;
+            }
+        }
+    }
+}
+// contactForm
+.contactForm{
+    label{
+        font-weight: 400;
+        font-size: 17.509px;
+        line-height: 21px;
+        text-transform: capitalize;        
+        color: #C2C2C2;
+    }
+    input, textarea{
+        border: 1.46882px solid rgba(255, 255, 255, 0.65);
+        border-radius: 13.1317px;  
+        background-color: transparent;
+
+    }
+    input{
+        height: 73.54px;
+    }
+    textarea{
+        height: 232.87px;
+    }
+    .form-check-input[type=checkbox]{
+        width: 30.64px;
+        height: 30.64px;
+        border: 1px solid #C2C2C2;
+        border-radius: 6.12813px;        
+    }
+}
+
+// client Page
+#thumbnail-slider{
+    ul{
+        li{         
+            background: $colorBlack;
+            border-radius: 32px;
+            a{
+                img{
+                    height: 500px;
+                }
+            }
+        }
+    }
+}

@@ -34,13 +34,9 @@
                     </div>
                 </div>
             </div>
+            <?php include("assets/footer.php");  ?>
         </header>
     </main>     
-    <?php include("assets/footer.php");  ?>
+    
 </body>
 </html>
-<script>
-    $(document).ready(function(){
-
-    })
-</script>
