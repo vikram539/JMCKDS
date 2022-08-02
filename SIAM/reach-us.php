@@ -5,11 +5,11 @@
     <main>
         <header class="headerSection">
             <?php include("assets/navbar.php");  ?>
-            <div class="bannerTextWrap">
+            <div class="bannerTextWrap reachUs">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-6">
-                            <div class="bannerTextWrap">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                            <div class="bannerText">
                                 <div class="typography">
                                     <h2>Put your Money to work.</h2>
                                     <p>Drop us a line, we’ll be in touch!</p>
@@ -17,7 +17,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                             <div class="contactForm">
                                 <form class="row g-3">
                                     <div class="col-12">

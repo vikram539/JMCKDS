@@ -8,6 +8,9 @@
 // {
 //     height: 100%;
 // }
+*::first-letter{
+    text-transform: uppercase;
+}
 body
 {
     font-size: 100%;
@@ -32,7 +35,10 @@ h2
     font-weight: 400;
     font-size: 64px;
     color: $colorWhite;  
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
+    @include min_max_width(0px, 767px){ 
+        font-size: 40px;
+    } 
 }
 h3
 {
@@ -49,4 +55,7 @@ p
     font-weight: 400;
     font-size: 20px;    
     color: #C2C2C2; 
+    @include min_max_width(0px, 767px){ 
+        
+    } 
 }

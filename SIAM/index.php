@@ -8,7 +8,7 @@
             <div class="bannerTextWrap">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-6">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                             <div class="bannerTextWrap">
                                 <div class="typography">
                                     <h2>Sophisticated is the new Swiss</h2>
@@ -24,7 +24,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                             <div class="bannerVideoWrap">
                                 <div class="imgBanner">
                                     <img src="<?=$images ?>Veil.gif" alt="Logo" class="img-fluid" />

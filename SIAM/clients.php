@@ -8,7 +8,7 @@
             <div class="bannerTextWrap">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-4">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                             <div class="bannerTextWrap">
                                 <div class="typography">
                                     <h2>clients</h2>
@@ -16,9 +16,34 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-8">
-                            <div id="introduction" class="page hasShadow">
-                                   
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                            <div id="clientWrap" class="page hasShadow">
+                                <ul>
+                                    <li>
+                                        <div class="slidertext">
+                                            <h2>International Currencies.</h2>
+                                            <p>There are many international currencies, but there is only one universal one - Trust. </p>                                            
+                                            <div class="btn-group">
+                                                <div class="btn-transparent ms-4">
+                                                    <a href="" target="_blank" class="d-flex">See Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- Item end -->                                    
+                                    <li>
+                                        <div class="slidertext">
+                                            <h2>International Currencies.</h2>
+                                            <p>There are many international currencies, but there is only one universal one - Trust. </p>                                            
+                                            <div class="btn-group">
+                                                <div class="btn-transparent ms-4">
+                                                    <a href="" target="_blank" class="d-flex">See Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- Item end -->
+                                </ul>
                             </div>
                         </div>
                     </div>

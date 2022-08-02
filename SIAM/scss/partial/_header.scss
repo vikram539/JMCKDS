@@ -16,6 +16,17 @@
     margin-top: 20px;
     position: relative;
     min-height: 60px;
+    @include min_max_width(0px, 767px){
+        .row{
+            [class*='col-xs-8']{
+               width: 70%;
+            }
+            [class*='col-xs-4']{
+               width: 30%;
+               justify-content: center !important;
+            }
+        }
+    }
     .navLeft{
         .logo{
             a{
@@ -25,6 +36,16 @@
                 font-style: normal;
                 font-weight: 400;
                 font-size: 24px;
+                @include min_max_width(0px, 767px){
+                    display: flex;
+                    flex-flow: wrap row;
+                    img{
+                        display: block;                        
+                    }
+                    span{
+                        width: 100%;
+                    }
+                }
             }
         }
     }
@@ -68,6 +89,9 @@
         background: $colorBlack;
         padding: 50px 0;
         display: none;
+        @include min_max_width(0px, 767px){            
+            top: 125px;
+        }
         .menuItemList{
             width: 100%;
             ul{
@@ -76,6 +100,7 @@
                 list-style: none;
                 text-transform: capitalize;
                 margin-bottom: 0;
+                padding-left: 0;
                 li{
                     display: flex;
                     align-items: center;
@@ -91,6 +116,9 @@
                         font-size: 64px;
                         color: $colorWhite;
                         text-decoration: none;
+                        @include min_max_width(0px, 767px){ 
+                            font-size: 40px;
+                        }
                         span{
                             margin-left: 36px;
                         }
@@ -106,9 +134,20 @@
 .bannerTextWrap{
     margin-top: 20px;
     width: 100%;
-    .bannerTextWrap{
-
+    @include min_max_width(0px, 767px){ 
+        .row{
+            [class*='col-']{
+                position: relative;
+                &:nth-of-type(1){
+                    order:2;
+                }
+                &:nth-of-type(2){
+                    order:1;
+                }
+            }
+        }
     }
+    
     .bannerVideoWrap{
         .imgBanner{
             position: relative;
@@ -121,6 +160,11 @@
                 top: 0;
                 background: #ED1C24;
                 mix-blend-mode: color;
+            }            
+            @include min_max_width(0px, 767px){
+                img{
+                    width: 100%;
+                }
             }
         }
     }
