@@ -281,6 +281,8 @@ p {
   font-weight: 400;
   font-size: 20px;
   color: #C2C2C2;
+  line-height: 2rem;
+  word-spacing: 1px;
 }
 .headerSection {
   display: flex;
@@ -341,7 +343,8 @@ p {
   perspective: 1000px;
 }
 #navbarWrap .navRight .menuBarWrap .menuBorderLine {
-  border: 2px solid #fff;
+  height: 2px;
+  background-color: #fff;
   width: 100%;
   margin-bottom: 15px;
   transition: all linear 0.3s;
@@ -437,16 +440,14 @@ p {
   background: #ED1C24;
   mix-blend-mode: color;
 }
-@media screen and (min-width: 0px) and (max-width: 767px) {
-  .bannerTextWrap .bannerVideoWrap .imgBanner img {
-    width: 100%;
-  }
+.bannerTextWrap .bannerVideoWrap .imgBanner img {
+  width: 100%;
 }
 
 .btn-group {
   display: flex;
-  margin-top: 50px;
-  text-transform: uppercase;
+  margin-top: 70px;
+  text-transform: capitalize;
   font-size: 20px;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
@@ -459,16 +460,19 @@ p {
   background: #9C0006;
   font-weight: 500;
   display: flex;
+  justify-content: center;
+  align-items: center;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   border-radius: 7px;
+  width: 187px;
+  height: 57px;
 }
 .comm_btn a {
   font-style: normal;
   color: #fff;
   text-decoration: none;
   display: block;
-  padding: 1.2rem 2.6rem;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .comm_btn a {
@@ -486,13 +490,14 @@ p {
   justify-content: center;
   align-items: center;
   display: flex;
+  width: 187px;
+  height: 57px;
 }
 .btn-transparent a {
   font-style: normal;
   font-weight: 700;
   color: #fff;
   text-decoration: none;
-  padding: 1.2rem 2.6rem;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .btn-transparent a {
@@ -502,7 +507,7 @@ p {
 
 footer {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 footer .footerPolicy {
   width: 100%;

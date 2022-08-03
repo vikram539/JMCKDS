@@ -62,7 +62,8 @@
             transform-style: preserve-3d;
             perspective: 1000px;
             .menuBorderLine{
-                border: 2px solid $colorWhite;
+                height: 2px;
+                background-color: $colorWhite;
                 width:100%;
                 margin-bottom: 15px;  
                 transition: all linear 0.3s;               
@@ -160,11 +161,9 @@
                 top: 0;
                 background: #ED1C24;
                 mix-blend-mode: color;
-            }            
-            @include min_max_width(0px, 767px){
-                img{
-                    width: 100%;
-                }
+            }  
+            img{
+                width: 100%;   
             }
         }
     }
