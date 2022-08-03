@@ -27,11 +27,11 @@
                 <div class="col-12">
                     <div class="menuItemList">
                         <ul>
-                            <li class='col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6'><a href="<?=$root?>about.php">about us <span><i class="fas fa-long-arrow-alt-right"></i></span></a></li>
-                            <li class='col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6'><a href="<?=$root?>clients.php">clients <span><i class="fas fa-long-arrow-alt-right"></i></span></a></li>
-                            <li class='col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6'><a href="<?=$root?>regulators.php">regulators <span><i class="fas fa-long-arrow-alt-right"></i></span></a></li>
-                            <li class='col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6'><a href="<?=$root?>partners.php">partners <span><i class="fas fa-long-arrow-alt-right"></i></span></a></li>
-                            <li class='col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6'><a href="<?=$root?>reach-us.php">reach us <span><i class="fas fa-long-arrow-alt-right"></i></span></a></li>
+                            <li class='col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6'><a href="<?=$root?>about.php">about us <span><img src="<?=$images?>navArrow.png" class='img-fluid' /></span></a></li>
+                            <li class='col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6'><a href="<?=$root?>clients.php">clients <span><img src="<?=$images?>navArrow.png" class='img-fluid' /></span></a></li>
+                            <li class='col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6'><a href="<?=$root?>regulators.php">regulators <span><img src="<?=$images?>navArrow.png" class='img-fluid' /></span></a></li>
+                            <li class='col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6'><a href="<?=$root?>partners.php">partners <span><img src="<?=$images?>navArrow.png" class='img-fluid' /></span></a></li>
+                            <li class='col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6'><a href="<?=$root?>reach-us.php">reach us <span><img src="<?=$images?>navArrow.png" class='img-fluid' /></span></a></li>
                         </ul>
                     </div>
                 </div>

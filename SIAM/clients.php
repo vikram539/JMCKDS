@@ -21,8 +21,20 @@
                                 <ul>
                                     <li>
                                         <div class="slidertext">
-                                            <h2>International Currencies.</h2>
-                                            <p>There are many international currencies, but there is only one universal one - Trust. </p>                                            
+                                            <h2>Portfolio Auditing</h2>
+                                            <p>An audit helps you understand where you are. It helps us understand where you want to go. </p>                                            
+                                            <div class="btn-group">
+                                                <div class="btn-transparent ms-4">
+                                                    <a href="" target="_blank" class="d-flex">See Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- Item end -->                                    
+                                    <li>
+                                        <div class="slidertext">
+                                            <h2>Financial Instruments</h2>
+                                            <p>Every instrument that our clients have access to, has passed a rigorous quantitative test. For the Swiss, return of capital far exceeds return on capital in importance. </p>                                            
                                             <div class="btn-group">
                                                 <div class="btn-transparent ms-4">
                                                     <a href="" target="_blank" class="d-flex">See Details</a>

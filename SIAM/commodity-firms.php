@@ -1,4 +1,4 @@
-<?php $page_id = 4; ?>
+<?php $page_id = 10; ?>
 <?php include("assets/header.php"); ?>
 </head>
 <body>
@@ -11,10 +11,8 @@
                         <div class="col-12">
                             <div class="bannerTextWrap">
                                 <div class="typography">
-                                    <h2>Industry Neutral investment strategies through Sector Agnostic partnerships.</h2>
-                                    <p>We work with various companies active in the fields of finance, mining, banking, technology and law to gain an additional competitive advantage.</p>
-
-                                    <p>We also work with logistics companies, metal purifiers and commodity firms in mutually beneficial value exchanges. </p>
+                                    <h2>Commodity Firms</h2>
+                                    <p>We aid commodity firms value and monetize their assets such as gold, precious stones, etc. SIAM SA’s primary expertise dives deep into the nuances of the precious metals sector and we offer our handful of clients access to savoir-faire gained over 30 years in this vertical. </p>
                                 </div>
                             </div>
                         </div>

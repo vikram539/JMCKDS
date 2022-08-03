@@ -1,4 +1,4 @@
-<?php $page_id = 4; ?>
+<?php $page_id = 7; ?>
 <?php include("assets/header.php"); ?>
 </head>
 <body>
@@ -11,10 +11,10 @@
                         <div class="col-12">
                             <div class="bannerTextWrap">
                                 <div class="typography">
-                                    <h2>Industry Neutral investment strategies through Sector Agnostic partnerships.</h2>
-                                    <p>We work with various companies active in the fields of finance, mining, banking, technology and law to gain an additional competitive advantage.</p>
+                                    <h2>Financial Institutions</h2>
+                                    <p>We work with banks such as Credit Suisse, Swissquote and other Tier 1 financial institutions to ensure our clients extract maximum value from our services. We often aid our clients in account openings in private banking, through a network built over 30 years in the Banking industry. </p>
 
-                                    <p>We also work with logistics companies, metal purifiers and commodity firms in mutually beneficial value exchanges. </p>
+                                    <p>For some, the Swiss Banking Secrecy laws are still alive. </p>
                                 </div>
                             </div>
                         </div>
