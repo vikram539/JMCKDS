@@ -19,13 +19,13 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                             <div id="clientWrap" class="page hasShadow">
                                 <ul>
-                                    <li>
+                                    <li class='active'>
                                         <div class="slidertext">
                                             <h2>Portfolio Auditing</h2>
                                             <p>An audit helps you understand where you are. It helps us understand where you want to go. </p>                                            
                                             <div class="btn-group">
                                                 <div class="btn-transparent ms-4">
-                                                    <a href="" target="_blank" class="d-flex">See Details</a>
+                                                    <a href="" class="d-flex" data-bs-toggle="modal" data-bs-target="#Portfolio">See Details</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -37,7 +37,7 @@
                                             <p>Every instrument that our clients have access to, has passed a rigorous quantitative test. For the Swiss, return of capital far exceeds return on capital in importance. </p>                                            
                                             <div class="btn-group">
                                                 <div class="btn-transparent ms-4">
-                                                    <a href="" target="_blank" class="d-flex">See Details</a>
+                                                    <a href="" class="d-flex">See Details</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -49,12 +49,16 @@
                                             <p>There are many international currencies, but there is only one universal one - Trust. </p>                                            
                                             <div class="btn-group">
                                                 <div class="btn-transparent ms-4">
-                                                    <a href="" target="_blank" class="d-flex">See Details</a>
+                                                    <a href="" class="d-flex">See Details</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
                                     <!-- Item end -->
+                                    <div class="arrowWrap">
+                                        <span id='prevItem'><img src="<?=$images?>up-arrow.png" class='img-fluid' alt='up' /></span>
+                                        <span id='nextItem'><img src="<?=$images?>down-arrow.png" class='img-fluid' alt='up' /></span>
+                                    </div>
                                 </ul>
                             </div>
                         </div>
@@ -65,6 +69,6 @@
         </header>
     </main>     
     
-    </script>
+    <?php include("assets/modals.php");  ?>
 </body>
 </html>

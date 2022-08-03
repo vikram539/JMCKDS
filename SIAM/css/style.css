@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
 .listTabSerction {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .listTabSerction .listTab ul {
   list-style: none;
   margin-bottom: 0;
+  padding-left: 0;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .listTabSerction .listTab ul {
@@ -54,7 +55,7 @@
 .listTabSerction .listTab ul li .tabContent p, .listTabSerction .listTab ul li .tabContent h4 {
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 25px;
   color: #C2C2C2;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
@@ -145,9 +146,12 @@
   position: relative;
   min-height: 650px;
 }
+#clientWrap ul {
+  height: 650px;
+}
 #clientWrap ul li {
   width: 350px;
-  height: 500px;
+  height: 580px;
   background: #000000;
   border: 1px solid #FFFFFF;
   border-radius: 32px;
@@ -159,21 +163,29 @@
   left: 50%;
   transform: translateX(-50%);
 }
+#clientWrap ul li.active {
+  z-index: 99 !important;
+}
+#clientWrap ul li:nth-of-type(1) {
+  left: calc( 50% + 1 * 10px);
+  z-index: -1;
+  height: calc(580px - 1*20px);
+}
 #clientWrap ul li:nth-of-type(2) {
   left: calc( 50% + 2 * 10px);
   z-index: -2;
-  height: calc(500px - 2*20px);
+  height: calc(580px - 2*20px);
 }
 #clientWrap ul li:nth-of-type(3) {
   left: calc( 50% + 3 * 10px);
   z-index: -3;
-  height: calc(500px - 3*20px);
+  height: calc(580px - 3*20px);
 }
 #clientWrap ul li .slidertext {
   display: flex;
   flex-flow: wrap row;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 35px;
 }
 #clientWrap ul li .slidertext h2 {
   font-style: normal;
@@ -192,6 +204,36 @@
 #clientWrap ul li .slidertext .btn-transparent a {
   text-transform: capitalize;
   padding: 15px 25px;
+}
+#clientWrap ul .arrowWrap {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 50px;
+  display: flex;
+  flex-flow: wrap row;
+}
+#clientWrap ul .arrowWrap span {
+  width: 100%;
+  cursor: pointer;
+}
+#clientWrap ul .arrowWrap span:nth-of-type(1) {
+  margin-bottom: 30px;
+}
+
+.modalBoxShadow .modal-header {
+  border-bottom: none;
+}
+.modalBoxShadow .modal-header button {
+  color: #fff;
+  filter: invert(1);
+}
+.modalBoxShadow .modal-content {
+  border: 1.12524px solid #fff;
+  background-color: #000000;
+  filter: drop-shadow(0px 4px 140px #9C0006);
+  color: #fff;
+  border-radius: 20px;
 }
 
 * {
@@ -317,7 +359,7 @@ p {
 }
 #navbarWrap .menuOptions {
   position: absolute;
-  z-index: 99;
+  z-index: 999;
   width: 100%;
   left: 0;
   top: 50px;

@@ -12,6 +12,7 @@
                             <div class="bannerTextWrap">
                                 <div class="typography">
                                     <h2>Asset Management in Switzerland</h2>
+                                    <p>Wealth Protection. Since 2003.</p>
                                 </div>
                                 <div class="listTabSerction">
                                     <div class="listTab">
@@ -35,8 +36,8 @@
                                                 </h3>
                                                 <div class="tabContent">
                                                     <div class="tabBody">
-                                                        <h4>Lorem ipsum dolor</h4>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                                        <p>Our staff adds extensive industry knowledge to our investing methodology, portfolio creation, and allocation guidance. Our objective is to preserve wealth, while seeking exponential opportunities. </p>
+                                                        <p>We combine research with the most effective investment instruments available today.</p>
                                                     </div>
                                                 </div>
                                             </li>
@@ -47,8 +48,7 @@
                                                 </h3>
                                                 <div class="tabContent">
                                                     <div class="tabBody">
-                                                        <h4>Lorem ipsum dolor</h4>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                                        <p>We offer our investors in-depth research reports, market intelligence studies and feasibility papers; in keeping with Swiss traditions of Knowledge Capital.</p>
                                                     </div>
                                                 </div>
                                             </li>
@@ -59,8 +59,15 @@
                                                 </h3>
                                                 <div class="tabContent">
                                                     <div class="tabBody">
-                                                        <h4>Lorem ipsum dolor</h4>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                                        <p>Only when implementation is tailored to the unique demands of your organization will it be effective. To achieve this, we collaborate directly with you on all aspects of asset management, including -:</p>
+                                                        <ul class='list-unstyled'>
+                                                            <li>- business analysis</li>
+                                                            <li>- your requirements </li>
+                                                            <li>- the configuration you expect</li>
+                                                            <li>- data transfer</li>
+                                                            <li>- roll out </li>
+                                                        </ul>
+                                                        <p>Irrespective of the nature of your goals, we craft strategies that capitalize on shifting market dynamics; or are neutral to them. </p>
                                                     </div>
                                                 </div>
                                             </li>

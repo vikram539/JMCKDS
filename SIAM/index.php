@@ -16,10 +16,10 @@
                                 </div>
                                 <div class="btn-group">
                                     <div class="comm_btn">
-                                        <a href="" target="_blank" class="d-flex">contact</a>
+                                        <a href="<?=$root?>reach-us.php" class="d-flex">contact</a>
                                     </div>
                                     <div class="btn-transparent ms-4">
-                                        <a href="" target="_blank" class="d-flex">Book Demo</a>
+                                        <a href="<?=$root?>clients.php" class="d-flex">Book Demo</a>
                                     </div>
                                 </div>
                             </div>

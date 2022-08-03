@@ -1,10 +1,11 @@
 // About us page
 .listTabSerction{
-    margin-top: 20px;
+    margin-top: 40px;
     .listTab{
         ul{
             list-style: none;
             margin-bottom: 0;
+            padding-left: 0;
             @include min_max_width(0px, 767px){
                 padding-left: 0;
             }
@@ -46,7 +47,7 @@
                     p, h4{
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 32px;
+                        font-size: 25px;
                         color: #C2C2C2;
                         @include min_max_width(0px, 767px){
                             font-size: 20px;
@@ -147,9 +148,10 @@
     position: relative;
     min-height: 650px;
     ul{
+        height: 650px;
         li{         
             width: 350px;
-            height: 500px;
+            height: 580px;
             background: $colorBlack;
             border: 1px solid #FFFFFF;
             border-radius: 32px;
@@ -160,19 +162,21 @@
             bottom:0;
             left:50%;
             transform: translateX(-50%);
-
-            @for $var from 2 through 3 {
+            &.active{
+                z-index: 99 !important;
+            }
+            @for $var from 1 through 3 {
                &:nth-of-type(#{$var}){
                     left: calc( 50% + #{$var} * 10px);
                     z-index: -#{$var};
-                    height: calc(500px - #{$var}*20px);
+                    height: calc(580px - #{$var}*20px);
                } 
             }
             .slidertext{
                 display: flex;
                 flex-flow: wrap row;
                 align-items: center;
-                padding: 0 40px;
+                padding: 0 35px;
                 // padding-top: 150px;
                 // padding-bottom: 80px;
                 h2{
@@ -197,5 +201,38 @@
                 }
             }
         }
+        .arrowWrap{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            // transform: translateY(-50%);
+            width:50px;
+            display: flex;
+            flex-flow: wrap row;
+            span{
+                width: 100%;
+                cursor: pointer;
+                &:nth-of-type(1){
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+// Modal
+.modalBoxShadow{
+    .modal-header{
+        border-bottom: none;
+        button{
+            color: $colorWhite; 
+            filter: invert(1);
+        }
+    }
+    .modal-content{        
+        border: 1.12524px solid $colorWhite;
+        background-color: $colorBlack;
+        filter: drop-shadow(0px 4px 140px #9C0006);
+        color: $colorWhite;
+        border-radius: 20px;
     }
 }
