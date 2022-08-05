@@ -150,8 +150,12 @@
     }
     
     .bannerVideoWrap{
+        overflow: hidden;
+        min-height: 366px;
         .imgBanner{
             position: relative;
+            height: 100%;
+            min-height: 350px;
             &::after{
                 content: '';
                 position: absolute;
@@ -163,7 +167,9 @@
                 mix-blend-mode: color;
             }  
             img{
-                width: 100%;   
+                width: 100%; 
+                transform: scale(1.4);  
+                height: 100%;
             }
         }
     }

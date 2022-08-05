@@ -522,8 +522,14 @@ p {
     order: 1;
   }
 }
+.bannerTextWrap .bannerVideoWrap {
+  overflow: hidden;
+  min-height: 366px;
+}
 .bannerTextWrap .bannerVideoWrap .imgBanner {
   position: relative;
+  height: 100%;
+  min-height: 350px;
 }
 .bannerTextWrap .bannerVideoWrap .imgBanner::after {
   content: "";
@@ -537,6 +543,8 @@ p {
 }
 .bannerTextWrap .bannerVideoWrap .imgBanner img {
   width: 100%;
+  transform: scale(1.4);
+  height: 100%;
 }
 
 .btn-group {
