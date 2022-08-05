@@ -18,13 +18,11 @@
                                     <div class="listTab">
                                         <ul>
                                             <li class='tabActive'>
-                                                <h3>Asset Management in Switzerland
+                                                <h3>Clarity. Competence. Capability.
                                                     <span><img src='<?=$images?>arrow.png' alt='' class='img-fluid' /></span>
                                                 </h3>
                                                 <div class="tabContent">
-                                                    <div class="tabBody">
-                                                        <h4>Wealth Protection. Since 2003.</h4>
-                                                        <h4>Clarity. Competence. Capability. </h4>
+                                                    <div class="tabBody"> 
                                                         <p>Our Asset Managers apply over 30 years of experience in Banking, enabling both financial institutions and High Net-Worth Individuals to take advantage of classical investment products. </p>
                                                     </div>
                                                 </div>

@@ -19,12 +19,13 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                             <div id="clientWrap" class="page hasShadow">
                                 <ul>
-                                    <li class='active'>
+                                    <li>
                                         <div class="slidertext">
                                             <h2>Portfolio Auditing</h2>
-                                            <p>An audit helps you understand where you are. It helps us understand where you want to go. </p>                                            
+                                            <p>An audit helps you understand where you are. It helps us understand where you want to go. </p>  
+                                            <p>For clients, for individuals and institutions - SIAM AG acts as a informer, guider and ultimately; a facilitator.</p>                                         
                                             <div class="btn-group">
-                                                <div class="btn-transparent ms-4">
+                                                <div class="btn-transparent">
                                                     <a href="" class="d-flex" data-bs-toggle="modal" data-bs-target="#Portfolio">See Details</a>
                                                 </div>
                                             </div>
@@ -36,8 +37,8 @@
                                             <h2>Financial Instruments</h2>
                                             <p>Every instrument that our clients have access to, has passed a rigorous quantitative test. For the Swiss, return of capital far exceeds return on capital in importance. </p>                                            
                                             <div class="btn-group">
-                                                <div class="btn-transparent ms-4">
-                                                    <a href="" class="d-flex">See Details</a>
+                                                <div class="btn-transparent">
+                                                    <a href="" class="d-flex" data-bs-toggle="modal" data-bs-target="#Financial">See Details</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -48,8 +49,8 @@
                                             <h2>International Currencies.</h2>
                                             <p>There are many international currencies, but there is only one universal one - Trust. </p>                                            
                                             <div class="btn-group">
-                                                <div class="btn-transparent ms-4">
-                                                    <a href="" class="d-flex">See Details</a>
+                                                <div class="btn-transparent">
+                                                    <a href="" class="d-flex"data-bs-toggle="modal" data-bs-target="#International">See Details</a>
                                                 </div>
                                             </div>
                                         </div>

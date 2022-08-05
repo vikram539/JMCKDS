@@ -11,7 +11,7 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                             <div class="bannerText">
                                 <div class="typography">
-                                    <h2>Put your Money to work.</h2>
+                                    <h2 style='font-weight: 600'>Put your Money to work.</h2>
                                     <p>Drop us a line, we’ll be in touch!</p>
                                     <p>Write about how we’re spread about 8 timezone and we speak 5 languages.</p>
                                 </div>
@@ -36,13 +36,18 @@
                                         <label for="inpuMessage*" class="form-label">Your Message**</label>
                                         <textarea class="form-control" id="Message*"></textarea>
                                     </div>
-                                    <div class="col-12">
-                                        <div class="form-check d-flex align-items-center justify-content-between">
+                                    <div class="col-12">                                        
+                                        <div class="btn-group mt-4">
+                                            <div class="comm_btn">
+                                                <a href="" class="d-flex">submit</a>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="form-check d-flex align-items-center justify-content-between">
                                             <input class="form-check-input" type="checkbox" id="gridCheck">
                                             <label class="form-check-label" for="gridCheck">
                                                 I agree to receive communications from Passbase.
                                             </label>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </form>
                             </div>

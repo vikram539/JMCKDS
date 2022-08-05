@@ -12,14 +12,28 @@ $(document).ready(function(){
         $(this).find('span>img').toggleClass("rotateImg");
     })
 
+    // Partners
+    $(document).on("click", ".partnersList>.partners>li>a", function(e){
+        e.preventDefault();
+        let dataAttr = $(this).attr('data-id');
+
+        $(this).closest("li").addClass('partnersActive').siblings().removeClass('partnersActive');
+        $(document).find("#partnersOutlet").children("#"+dataAttr).slideDown().siblings().slideUp();
+        // .addClass("active").slideDown().siblings().removeClass('active').slideUp();
+    })
+
     // Client slider
+    $(document).find("#clientWrap>ul>li:last").addClass('active');
+    
     // Next....
     $(document).on("click", "#nextItem", function(){
         // console.log("click");
         // console.log($(this).parents("ul").children("li").length);
         
-        if($(this).parents("ul").children("li.active").next("li").length > 0){            
-            $(this).parents("ul").children("li.active").removeClass('active').next("li").addClass('active');            
+        if($(this).parents("ul").children("li.active").prev("li").length > 0){            
+            $(this).parents("ul").children("li.active").removeClass('active').prev("li").addClass('active'); 
+            $(this).parents("ul").children("li.active").next().addClass("flipBack").removeClass("flipResume");
+
         }        
     })
     
@@ -27,8 +41,9 @@ $(document).ready(function(){
     $(document).on("click", "#prevItem", function(){
         // console.log("click");
         // console.log($(this).parents("ul").children("li").length);
-        if($(this).parents("ul").children("li.active").prev("li").length > 0){            
-            $(this).parents("ul").children("li.active").removeClass('active').prev("li").addClass('active');
+        if($(this).parents("ul").children("li.active").next("li").length > 0){            
+            $(this).parents("ul").children("li.active").removeClass('active').next("li").addClass('active');
+            $(this).parents("ul").children("li.active").addClass("flipResume").removeClass("flipBack");
         }        
     })
 })
