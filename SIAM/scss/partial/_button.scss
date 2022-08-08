@@ -1,8 +1,8 @@
 .btn-group
 {
     display: flex;
-    margin-top: 50px;
-    text-transform: uppercase;
+    margin-top: 70px;
+    text-transform: capitalize;
     font-size: 20px;
     @include min_max_width(0px, 767px){ 
         flex-flow: row wrap;
@@ -13,17 +13,24 @@
     background: $btnBgColor;
     font-weight: 500;
     display: flex;
+    justify-content:center;
+    align-items: center;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     border-radius: 7px;
+    width: $btnWidth;
+    height: $btnHeight;
     
+    @include min_max_width(0px, 767px){ 
+        width: $mediaBtnWidth;
+    }
     a
     {
         font-style: normal;
         color: $colorWhite;
         text-decoration: none;
         display: block;
-        padding: 1.2rem 2.6rem;
+        // padding: $btnPadding;
         @include min_max_width(0px, 767px){ 
             padding: 1.2rem 1.2rem;
         } 
@@ -41,13 +48,18 @@
     justify-content:center;
     align-items: center;
     display: flex;
+    width: $btnWidth;
+    height: $btnHeight;
+    @include min_max_width(0px, 767px){ 
+        width: $mediaBtnWidth;
+    }
     a
     {
         font-style: normal;
         font-weight: 700;
         color: $colorWhite;
         text-decoration: none;        
-        padding: 1.2rem 2.6rem;
+        // padding: $btnPadding;
         @include min_max_width(0px, 767px){ 
             padding: 1.2rem 1.2rem;
         } 

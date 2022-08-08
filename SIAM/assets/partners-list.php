@@ -4,10 +4,11 @@
             <div class="col-12">
                 <div class="partnersList">
                     <ul class='partners'>
-                        <li><a href="<?=$root?>financial-institutions.php">Financial Institutions</a></li>
-                        <li><a href="<?=$root?>mining-companies.php">Mining Companies</a></li>
-                        <li><a href="<?=$root?>metal-purifiers.php">Metal Purifiers</a></li>
-                        <li><a href="<?=$root?>commodity-firms.php">Commodity Firms</a></li>
+                        <!-- financial-institutions.php, mining-companies.php, metal-purifiers.php, commodity-firms.php  -->
+                        <li><a  data-id="id_1" href="<?=$root?>">Financial Institutions</a></li>
+                        <li><a data-id="id_2" href="<?=$root?>">Mining Companies</a></li>
+                        <li><a data-id="id_3" href="<?=$root?>">Metal Purifiers</a></li>
+                        <li><a data-id="id_4" href="<?=$root?>">Commodity Firms</a></li>
                     </ul>
                 </div>
             </div>
