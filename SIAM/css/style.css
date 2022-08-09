@@ -131,6 +131,7 @@
   line-height: 21px;
   text-transform: capitalize;
   color: #C2C2C2;
+  margin: 17px 0;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .contactForm label {
@@ -175,6 +176,17 @@
   .reachUs .container > .row > [class*=col-]:nth-of-type(2) {
     order: 2 !important;
   }
+}
+.reachUs .reachUsTypography h4 {
+  line-height: 2rem;
+  color: #fff;
+  margin-top: 2rem;
+  font-weight: 400;
+  font-size: 18px;
+}
+.reachUs .reachUsTypography p {
+  font-weight: 400;
+  font-size: 16px;
 }
 
 #clientWrap {

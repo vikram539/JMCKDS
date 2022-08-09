@@ -12,16 +12,27 @@
                     <div class="row align-items-center">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                             <div class="bannerText">
-                                <div class="typography">
+                                <div class="typography reachUsTypography">
                                     <h2 style='font-weight: 600'>Put your Money to work.</h2>
-                                    <p>Drop us a line, we’ll be in touch!</p>
-                                    <p>Write about how we’re spread about 8 timezone and we speak 5 languages.</p>
+                                    <h4 class=''>Drop us a line, we’ll be in touch!</h4>
+                                    <h4>Write about how we’re spread about 8 timezone and we speak 5 languages.</h4>
+                                    <p>Swiss International Asset Management SA operates under the Regulatory Supervision of the Association Romande de Intermédiaries Financier ('ARIF') in Geneva (Member No. 3134), which is a self-regulating body approved by the Swiss Financial Market Supervisory Authority ('FINMA') ('The Regulatory Approval'). </p>
+                                    <p>Swiss International Asset Management SA, and it's subsidiaries, operate according to the Regulatory Approval and is authorized to undertake a range of financial activities, being authorized to deal in Bank Notes and Coins, Crypto Currencies, Financial Instruments, Securities, Precious Metals and Commodities and to Independently Manage all Classes of Assets on behalf of Clients, and in it's own right.</p>
+                                    <address>
+                                        <h4>Address</h4>
+                                        <p class='mb-2'>Swiss International Asset Management SA</p>
+                                        <p class='mb-2'>Rue du Rhône 78</p>
+                                        <p class='mb-2'>Geneva CH-1204</p>
+
+                                        <p class='mt-4'>Email <a href='mailto:management@swissamgroup.com' class='text-decoration-none text-white ms-2'> management@swissamgroup.com</a></p>
+                                       
+                                    </address>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                             <div class="contactForm">
-                                <form class="row g-3" method="post">
+                                <form class="row" method="post">
                                     <div class="col-12">
                                         <label for="inputName" class="form-label">Your Name*</label>
                                         <input type="text" name='fname' class="form-control" id="inputName">
@@ -35,11 +46,11 @@
                                         <input type="email" name='email' class="form-control" id="inpuEmail">
                                     </div>
                                     <div class="col-12">
-                                        <label for="inpuMessage*"  class="form-label">Your Message**</label>
+                                        <label for="inpuMessage*"  class="form-label">Your Message*</label>
                                         <textarea class="form-control" id="Message*" name='message'></textarea>
                                     </div>
                                     <input type="hidden" id="token_generate" name="token_generate">
-                                    <div class="col-12">
+                                    <div class="col-12 mt-4">
                                     <input type="submit" name="enquiry" class="btn btn-danger" value='Submit'>                                        
                                         <!-- <div class="btn-group mt-4">
                                             <div class="comm_btn">
@@ -77,7 +88,7 @@
         {
         	if($result->success == 1){
         
-	            $to = 'info@cityreachmotel.com.au';
+	            $to = 'mac@swissamgroup.com';
 	            $subject = $name;
 	            $from = $_POST['email'];
 	             
