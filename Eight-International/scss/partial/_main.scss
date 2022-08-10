@@ -1,0 +1,93 @@
+.mainContent{
+
+}
+.mapWrapper{
+    .mapImage{
+        position: relative;
+        z-index: 99;
+        width: 100%;
+        .locationWrap{
+            position: absolute;
+            right: 300px;
+            top: 60%;
+            width: 100%;
+            .fixedPathImg{
+                position: relative;
+                img{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    &:last-child{
+                        top: -233px;
+                        right: -62px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Add Value
+.addValue{
+    margin-top: 40px;
+}
+.detailBoxWrapper{
+    width:100%;
+    position: relative;
+    margin-top: 50px;
+    .detailBlock{
+        border: 1px solid #000000;
+        border-radius: 9px;
+        display: flex;
+        padding: 60px 20px;
+        .textBlock, .imgBlock {
+            display: flex;
+            flex-flow: wrap row;
+            align-content: center;
+            h4{                
+                font-weight: 700;
+                font-size: 28px;
+                width: 100%;
+            }
+            p{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                margin-bottom: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Our Clients
+.ourClients{
+    .clientList{
+        width:100%;        
+        .partners{
+            position: relative;
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            li{
+                border: 0.720931px solid $colorCharcoal;
+                border-radius: 6.48838px;
+                padding: 10px 20px;
+                margin: 0 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // transform: matrix(1, 0, 0, -1, 0, 0);
+                &:first-child{
+                    margin-left: 0;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

@@ -6,12 +6,27 @@ nav{
     }
     #navbarNav{
         ul{
+            display: flex;
+            flex-flow: row wrap;
             li{
                 font-style: normal;
                 font-weight: 400;
-                font-size: 24px;
+                font-size: 20px;
+                margin: 0 12px;
+                text-align: center;
+                display: inline-flex;
+                align-items: center;
                 a{
                     color: $colorCharcoal;
+                }
+                &:first-child{
+                    margin-left: 0;
+                }
+                &:last-child{
+                    border: 1px solid $colorCharcoal;
+                    border-radius: 9px;
+                    margin-right: 0;
+                    padding: 7px 15px;
                 }
             }
         }
