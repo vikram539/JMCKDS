@@ -42,4 +42,69 @@
         </div>
     </div>
 </div> 
+<<<<<<< HEAD
 <!-- Modal Two -->
+=======
+<!-- Modal Three -->
+
+<div class="modal fade modalBoxShadow" id="Gold" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">           
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4>Gold Trading</h4>
+                <p  class='mb-4'>Our firm is amongst a minority of investments companies in Switzerland offerings it’s clients the ability to buy, sell and trade physical gold. Every gram of gold associated with SIAM AG passes multiple purity checks, with additional compliance investigations being carried out on the provenance of the metal.</p>
+                <p  class='mt-4'>We do all of this to ensure that our clients have peace of mind, when investing in the world’s most precious asset.</p>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- Modal Four -->
+
+<div class="modal fade modalBoxShadow" id="Instrument" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">           
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4>Instrument Monetizations</h4>
+                <p  class='mb-4'>We strategize and synergize with clients and partners to offer equity positions in companies with activities in mining, aviation, logistics, finance, etc. Additionally, SIAM SA provides detailed research reports and technology audits on investments made into companies focusing on precious metals and rare earth gems.</p>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- Modal Five -->
+
+<div class="modal fade modalBoxShadow" id="Institutional" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">           
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4>Institutional Equity</h4>
+                <p  class='mb-4'>We strategize and synergize with clients and partners to offer equity positions in companies with activities in mining, aviation, logistics, finance, etc. Additionally, SIAM SA provides detailed research reports and technology audits on investments made into companies focusing on precious metals and rare earth gems.</p>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- Modal Six -->
+
+<div class="modal fade modalBoxShadow" id="High" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">           
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4>High Return Trade Platforms</h4>
+                <p  class='mb-4'>In order to augment your financial objectives, SIAM SA can devise and propose customized trading packages and pathways. Having a broad network with instantaneous settlement, Trading is another asset class that Investors & Client benefit from.</p>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- Modal Seven -->
+>>>>>>> 410cc2f0053ddb036573aeaf40880ba61b9ea8a2

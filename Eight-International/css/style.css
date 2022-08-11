@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::first-letter {
+  text-transform: uppercase;
+}
+
+body {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  background-color: #f8fafb;
+}
+
+h2, h3, h4, label {
+  font-style: normal;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+h4 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+}
+.maxWidth {
+  max-width: 990px;
+}
+
+.marginTop_150 {
+  margin-top: 150px;
+}
+
+nav #navbarNav ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+nav #navbarNav ul li {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0 12px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+}
+nav #navbarNav ul li a {
+  color: #223451;
+}
+nav #navbarNav ul li:first-child {
+  margin-left: 0;
+}
+nav #navbarNav ul li:last-child {
+  border: 1px solid #223451;
+  border-radius: 9px;
+  margin-right: 0;
+  padding: 7px 15px;
+}
+
+.mapWrapper .mapImage {
+  position: relative;
+  z-index: 99;
+  width: 100%;
+}
+.mapWrapper .mapImage .locationWrap {
+  position: absolute;
+  right: 300px;
+  top: 60%;
+  width: 100%;
+}
+.mapWrapper .mapImage .locationWrap .fixedPathImg {
+  position: relative;
+}
+.mapWrapper .mapImage .locationWrap .fixedPathImg img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.mapWrapper .mapImage .locationWrap .fixedPathImg img:last-child {
+  top: -233px;
+  right: -62px;
+}
+
+.addValue {
+  margin-top: 40px;
+}
+
+.detailBoxWrapper {
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+}
+.detailBoxWrapper .detailBlock {
+  border: 1px solid #000000;
+  border-radius: 9px;
+  display: flex;
+  padding: 60px 20px;
+}
+.detailBoxWrapper .detailBlock .textBlock, .detailBoxWrapper .detailBlock .imgBlock {
+  display: flex;
+  flex-flow: wrap row;
+  align-content: center;
+}
+.detailBoxWrapper .detailBlock .textBlock h4, .detailBoxWrapper .detailBlock .imgBlock h4 {
+  font-weight: 700;
+  font-size: 28px;
+  width: 100%;
+}
+.detailBoxWrapper .detailBlock .textBlock p, .detailBoxWrapper .detailBlock .imgBlock p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.ourClients .clientList {
+  width: 100%;
+}
+.ourClients .clientList .partners {
+  position: relative;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.ourClients .clientList .partners li {
+  border: 0.720931px solid #223451;
+  border-radius: 6.48838px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ourClients .clientList .partners li:first-child {
+  margin-left: 0;
+}
+.ourClients .clientList .partners li:last-child {
+  margin-right: 0;
+}
+
+footer {
+  position: relative;
+  background: #223451;
+  border-top-left-radius: 47px;
+  border-top-right-radius: 47px;
+  width: 100%;
+  padding: 120px 0;
+  overflow: hidden;
+  z-index: 99;
+}
+
+/*# sourceMappingURL=style.css.map */

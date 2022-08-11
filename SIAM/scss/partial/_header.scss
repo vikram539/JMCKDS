@@ -136,8 +136,8 @@
     margin-top: 20px;
     width: 100%;
     @include min_max_width(0px, 767px){ 
-        .row{
-            [class*='col-']{
+        .container>.row{
+            >[class*='col-']{
                 position: relative;
                 &:nth-of-type(1){
                     order:2;
@@ -156,6 +156,10 @@
             position: relative;
             height: 100%;
             min-height: 350px;
+<<<<<<< HEAD
+=======
+            
+>>>>>>> 410cc2f0053ddb036573aeaf40880ba61b9ea8a2
             &::after{
                 content: '';
                 position: absolute;
@@ -166,11 +170,25 @@
                 background: #ED1C24;
                 mix-blend-mode: color;
             }  
+<<<<<<< HEAD
             img{
                 width: 100%; 
                 transform: scale(1.4);  
                 height: 100%;
+=======
+            video{
+                width: 100%; 
+                transform: scale(1.8);  
+                height: 500px;
+                position: relative;
+                background-color: $colorBlack;
+                padding: 15px 0;
+>>>>>>> 410cc2f0053ddb036573aeaf40880ba61b9ea8a2
             }
         }
     }
+}
+
+.custom-button{
+    display: none;
 }

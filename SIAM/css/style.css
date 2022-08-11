@@ -79,6 +79,7 @@
   padding-left: 0;
   display: flex;
   flex-flow: wrap row;
+  max-width: 860px;
 }
 .partnersList .partners li {
   width: 380px;
@@ -130,6 +131,7 @@
   line-height: 21px;
   text-transform: capitalize;
   color: #C2C2C2;
+  margin: 17px 0;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .contactForm label {
@@ -153,17 +155,38 @@
   border: 1px solid #C2C2C2;
   border-radius: 6.12813px;
 }
+.contactForm input[type=submit] {
+  box-sizing: border-box;
+  border: 2px solid #9C0006;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 187px;
+  height: 57px;
+}
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  .reachUs .row [class*=col-] {
+  .reachUs .container > .row > [class*=col-] {
     position: relative;
   }
-  .reachUs .row [class*=col-]:nth-of-type(1) {
+  .reachUs .container > .row > [class*=col-]:nth-of-type(1) {
     order: 1 !important;
   }
-  .reachUs .row [class*=col-]:nth-of-type(2) {
+  .reachUs .container > .row > [class*=col-]:nth-of-type(2) {
     order: 2 !important;
   }
+}
+.reachUs .reachUsTypography h4 {
+  line-height: 2rem;
+  color: #fff;
+  margin-top: 2rem;
+  font-weight: 400;
+  font-size: 18px;
+}
+.reachUs .reachUsTypography p {
+  font-weight: 400;
+  font-size: 16px;
 }
 
 #clientWrap {
@@ -184,7 +207,7 @@
 }
 #clientWrap ul li {
   width: 350px;
-  height: 580px;
+  height: 480px;
   background: #000000;
   border: 1px solid #FFFFFF;
   border-radius: 32px;
@@ -199,7 +222,11 @@
 #clientWrap ul li:nth-of-type(1) {
   left: calc( 50% - 1 * 20px);
   order: 1;
+<<<<<<< HEAD
   height: calc(580px + 1*20px);
+=======
+  height: calc(500px + 1*20px);
+>>>>>>> 410cc2f0053ddb036573aeaf40880ba61b9ea8a2
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   #clientWrap ul li:nth-of-type(1) {
@@ -209,7 +236,11 @@
 #clientWrap ul li:nth-of-type(2) {
   left: calc( 50% - 2 * 20px);
   order: 2;
+<<<<<<< HEAD
   height: calc(580px + 2*20px);
+=======
+  height: calc(500px + 2*20px);
+>>>>>>> 410cc2f0053ddb036573aeaf40880ba61b9ea8a2
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   #clientWrap ul li:nth-of-type(2) {
@@ -219,12 +250,79 @@
 #clientWrap ul li:nth-of-type(3) {
   left: calc( 50% - 3 * 20px);
   order: 3;
+<<<<<<< HEAD
   height: calc(580px + 3*20px);
+=======
+  height: calc(500px + 3*20px);
+>>>>>>> 410cc2f0053ddb036573aeaf40880ba61b9ea8a2
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   #clientWrap ul li:nth-of-type(3) {
     left: 38%;
   }
+<<<<<<< HEAD
+=======
+}
+#clientWrap ul li:nth-of-type(4) {
+  left: calc( 50% - 4 * 20px);
+  order: 4;
+  height: calc(500px + 4*20px);
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  #clientWrap ul li:nth-of-type(4) {
+    left: 38%;
+  }
+}
+#clientWrap ul li:nth-of-type(5) {
+  left: calc( 50% - 5 * 20px);
+  order: 5;
+  height: calc(500px + 5*20px);
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  #clientWrap ul li:nth-of-type(5) {
+    left: 38%;
+  }
+}
+#clientWrap ul li:nth-of-type(6) {
+  left: calc( 50% - 6 * 20px);
+  order: 6;
+  height: calc(500px + 6*20px);
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  #clientWrap ul li:nth-of-type(6) {
+    left: 38%;
+  }
+}
+#clientWrap ul li:nth-of-type(7) {
+  left: calc( 50% - 7 * 20px);
+  order: 7;
+  height: calc(500px + 7*20px);
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  #clientWrap ul li:nth-of-type(7) {
+    left: 38%;
+  }
+}
+#clientWrap ul li:nth-of-type(8) {
+  left: calc( 50% - 8 * 20px);
+  order: 8;
+  height: calc(500px + 8*20px);
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  #clientWrap ul li:nth-of-type(8) {
+    left: 38%;
+  }
+}
+#clientWrap ul li:nth-of-type(9) {
+  left: calc( 50% - 9 * 20px);
+  order: 9;
+  height: calc(500px + 9*20px);
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  #clientWrap ul li:nth-of-type(9) {
+    left: 38%;
+  }
+>>>>>>> 410cc2f0053ddb036573aeaf40880ba61b9ea8a2
 }
 #clientWrap ul li .slidertext {
   display: flex;
@@ -512,13 +610,13 @@ p {
   width: 100%;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  .bannerTextWrap .row [class*=col-] {
+  .bannerTextWrap .container > .row > [class*=col-] {
     position: relative;
   }
-  .bannerTextWrap .row [class*=col-]:nth-of-type(1) {
+  .bannerTextWrap .container > .row > [class*=col-]:nth-of-type(1) {
     order: 2;
   }
-  .bannerTextWrap .row [class*=col-]:nth-of-type(2) {
+  .bannerTextWrap .container > .row > [class*=col-]:nth-of-type(2) {
     order: 1;
   }
 }
@@ -541,10 +639,24 @@ p {
   background: #ED1C24;
   mix-blend-mode: color;
 }
+<<<<<<< HEAD
 .bannerTextWrap .bannerVideoWrap .imgBanner img {
   width: 100%;
   transform: scale(1.4);
   height: 100%;
+=======
+.bannerTextWrap .bannerVideoWrap .imgBanner video {
+  width: 100%;
+  transform: scale(1.8);
+  height: 500px;
+  position: relative;
+  background-color: #000000;
+  padding: 15px 0;
+}
+
+.custom-button {
+  display: none;
+>>>>>>> 410cc2f0053ddb036573aeaf40880ba61b9ea8a2
 }
 
 .btn-group {
@@ -570,6 +682,14 @@ p {
   border-radius: 7px;
   width: 187px;
   height: 57px;
+<<<<<<< HEAD
+=======
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .comm_btn {
+    width: 170px;
+  }
+>>>>>>> 410cc2f0053ddb036573aeaf40880ba61b9ea8a2
 }
 .comm_btn a {
   font-style: normal;
@@ -595,6 +715,14 @@ p {
   display: flex;
   width: 187px;
   height: 57px;
+<<<<<<< HEAD
+=======
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .btn-transparent {
+    width: 170px;
+  }
+>>>>>>> 410cc2f0053ddb036573aeaf40880ba61b9ea8a2
 }
 .btn-transparent a {
   font-style: normal;

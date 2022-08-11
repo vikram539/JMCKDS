@@ -10,7 +10,7 @@
     }
     h4
     {
-        color: $colorWhite;
+        color: $colorWhite; 
     }
     p
     {
@@ -20,12 +20,13 @@
     {
         &.col-2
         {
-            width:10%;
+            width:10%;  
         }
     }
     .right_block
-    {
-    }
+    { 
+        display: block;
+    } 
 }
 .benefit-bg
 {

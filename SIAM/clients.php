@@ -51,11 +51,66 @@
                                             <div class="btn-group">
                                                 <div class="btn-transparent">
                                                     <a href="" class="d-flex"data-bs-toggle="modal" data-bs-target="#International">See Details</a>
+<<<<<<< HEAD
+=======
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- Item end -->                                   
+                                    <li>
+                                        <div class="slidertext">
+                                            <h2>Gold Trading</h2>
+                                            <p>All that glitters is not Gold. Except when its Swiss Gold.</p>                                            
+                                            <div class="btn-group">
+                                                <div class="btn-transparent">
+                                                    <a href="" class="d-flex"data-bs-toggle="modal" data-bs-target="#Gold">See Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- Item end -->             
+                                    <li>
+                                        <div class="slidertext">
+                                            <h2> Instrument Monetizations</h2>
+                                            <p>Over a 100 years of combined financial experience; enabling exceptional performance</p>                                            
+                                            <div class="btn-group">
+                                                <div class="btn-transparent">
+                                                    <a href="" class="d-flex"data-bs-toggle="modal" data-bs-target="#Instrument">See Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- Item end -->                                                
+                                    <li>
+                                        <div class="slidertext">
+                                            <h2>Institutional Equity</h2>
+                                            <p>Our global financial networks often allows us to play the role of facilitator, between investors and financiers. This allows our clients access to investment opportunities that are private, confid</p>                                            
+                                            <div class="btn-group">
+                                                <div class="btn-transparent">
+                                                    <a href="" class="d-flex"data-bs-toggle="modal" data-bs-target="#Institutional">See Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- Item end -->                          
+                                    <li>
+                                        <div class="slidertext">
+                                            <h2>High Return Trade Platforms</h2>
+                                            <p>For clients with an appetite for risk, SIAM allows admission to High-Frequency Trading and other associated products.</p>                                            
+                                            <div class="btn-group">
+                                                <div class="btn-transparent">
+                                                    <a href="" class="d-flex"data-bs-toggle="modal" data-bs-target="#High">See Details</a>
+>>>>>>> 410cc2f0053ddb036573aeaf40880ba61b9ea8a2
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
                                     <!-- Item end -->
+
+
+
+
                                     <div class="arrowWrap">
                                         <span id='prevItem'><img src="<?=$images?>up-arrow.png" class='img-fluid' alt='up' /></span>
                                         <span id='nextItem'><img src="<?=$images?>down-arrow.png" class='img-fluid' alt='up' /></span>

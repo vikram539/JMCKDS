@@ -77,6 +77,7 @@
         padding-left: 0;
         display: flex;
         flex-flow: wrap row;
+        max-width: 860px;
         li{            
             width: 380px;
             height: 100px;
@@ -131,7 +132,8 @@
         font-size: 17.509px;
         line-height: 21px;
         text-transform: capitalize;        
-        color: #C2C2C2;   
+        color: #C2C2C2;  
+        margin: 17px 0; 
         @include min_max_width(0px, 767px){ 
             margin-left: 10px;
         }
@@ -154,11 +156,21 @@
         border: 1px solid #C2C2C2;
         border-radius: 6.12813px;        
     }
+    input[type=submit]{
+        box-sizing: border-box;    
+        border: 2px solid $btnBgColor;
+        border-radius: 7px; 
+        justify-content:center;
+        align-items: center;
+        display: flex;
+        width: $btnWidth;
+        height: $btnHeight;
+    }
 }
 .reachUs{    
     @include min_max_width(0px, 767px){ 
-        .row{
-            [class*='col-']{
+        .container>.row{
+            >[class*='col-']{
                 position: relative;
                 &:nth-of-type(1){
                     order:1 !important;
@@ -167,6 +179,19 @@
                     order:2 !important;
                 }
             }
+        }
+    }
+    .reachUsTypography{
+        h4{
+            line-height: 2rem;
+            color: $colorWhite;
+            margin-top: 2rem;
+            font-weight: 400;
+            font-size: 18px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
         }
     }
 }
@@ -185,7 +210,7 @@
         width:100%;
         li{         
             width: 350px;
-            height: 580px;
+            height: 480px;
             background: $colorBlack;
             border: 1px solid #FFFFFF;
             border-radius: 32px;
@@ -199,12 +224,16 @@
             &.active{
                 // z-index: 99 !important;
             }
-            @for $var from 1 through 3 {
+            @for $var from 1 through 9 {
                &:nth-of-type(#{$var}){
                     left: calc( 50% - #{$var} * 20px);
                     // z-index: -#{$var};
                     order: #{$var};
+<<<<<<< HEAD
                     height: calc(580px + #{$var}*20px);
+=======
+                    height: calc(500px + #{$var}*20px);
+>>>>>>> 410cc2f0053ddb036573aeaf40880ba61b9ea8a2
                     @include min_max_width(0px, 767px){
                         left:38%;
                     }

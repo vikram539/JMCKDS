@@ -21,6 +21,9 @@
     width: $btnWidth;
     height: $btnHeight;
     
+    @include min_max_width(0px, 767px){ 
+        width: $mediaBtnWidth;
+    }
     a
     {
         font-style: normal;
@@ -47,6 +50,12 @@
     display: flex;
     width: $btnWidth;
     height: $btnHeight;
+<<<<<<< HEAD
+=======
+    @include min_max_width(0px, 767px){ 
+        width: $mediaBtnWidth;
+    }
+>>>>>>> 410cc2f0053ddb036573aeaf40880ba61b9ea8a2
     a
     {
         font-style: normal;
