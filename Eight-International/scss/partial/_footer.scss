@@ -16,4 +16,26 @@ footer{
     //     background-color: $colorBlack;
     //     z-index: -99;
     // }
+    .footerInline{
+        display: flex;
+        flex-flow: wrap row;
+        align-items: center;
+        color: $colorWhite;
+        justify-items: flex-end;
+        h4{            
+            font-weight: 700;
+            font-size: 36px;
+            img, p{
+                margin-right: 20px;
+            }
+        } 
+        p{
+            margin-left: 40px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            color: $colorWhite;
+            width: 100%;
+        }       
+    }
 }

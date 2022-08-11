@@ -175,5 +175,27 @@ footer {
   overflow: hidden;
   z-index: 99;
 }
+footer .footerInline {
+  display: flex;
+  flex-flow: wrap row;
+  align-items: center;
+  color: #fff;
+  justify-items: flex-end;
+}
+footer .footerInline h4 {
+  font-weight: 700;
+  font-size: 36px;
+}
+footer .footerInline h4 img, footer .footerInline h4 p {
+  margin-right: 20px;
+}
+footer .footerInline p {
+  margin-left: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #fff;
+  width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */
