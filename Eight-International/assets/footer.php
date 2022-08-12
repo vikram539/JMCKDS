@@ -1,12 +1,12 @@
 <footer class='marginTop_150'>
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                 <div class="footerLogo">
                     <img src="<?= $images ?>footerLogo.png" alt="" class="img-fluid" />
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                 <div class="footerAddress">
                     <div class="footerInline">
                         <h4><img src="<?= $images ?>mapMark.png" alt="" class="img-fluid" /><span>Eight International</span></h4>
@@ -14,6 +14,18 @@
                         <p>8th Floor - Ebene Tower</p>
                         <p>52, Cybercity Ebene</p>
                         <p>Rep. of Mauritius</p>
+                    </div>
+                    <div class="footerInline mt-5">
+                        <h3>
+                            <img src="<?= $images ?>phone.png" alt="" class="img-fluid" />
+                            <span>Tel:  +230 467-3003</span>
+                        </h3>
+                    </div>
+                    <div class="footerInline mt-3">
+                        <h3>
+                            <img src="<?= $images ?>fax.png" alt="" class="img-fluid" />
+                            <span>Fax: +230 454-7304</span>
+                        </h3>
                     </div>
                 </div>
             </div>

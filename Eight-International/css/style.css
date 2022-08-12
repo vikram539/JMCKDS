@@ -171,7 +171,7 @@ footer {
   border-top-left-radius: 47px;
   border-top-right-radius: 47px;
   width: 100%;
-  padding: 120px 0;
+  padding: 120px 0 60px;
   overflow: hidden;
   z-index: 99;
 }
@@ -187,15 +187,23 @@ footer .footerInline h4 {
   font-size: 36px;
 }
 footer .footerInline h4 img, footer .footerInline h4 p {
-  margin-right: 20px;
+  margin-right: 28px;
 }
 footer .footerInline p {
-  margin-left: 40px;
+  margin-left: 55px;
+  margin-bottom: 5px;
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 25px;
   color: #fff;
   width: 100%;
+}
+footer .footerInline h3 {
+  font-weight: 400;
+  font-size: 25px;
+}
+footer .footerInline h3 img, footer .footerInline h3 p {
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
