@@ -1,7 +1,9 @@
 nav{
     .navbar-brand{
         img{
-
+            @include min_max_width(0px, 767px){
+                max-width: 250px;
+            }
         }
     }
     #navbarNav{
@@ -16,11 +18,17 @@ nav{
                 text-align: center;
                 display: inline-flex;
                 align-items: center;
+                @include min_max_width(0px, 767px){
+                    width: 100%;
+                }
                 a{
                     color: $colorCharcoal;
                 }
                 &:first-child{
                     margin-left: 0;
+                    @include min_max_width(0px, 767px){
+                        margin-left: 12px;
+                    }
                 }
                 &:last-child{
                     border: 1px solid $colorCharcoal;

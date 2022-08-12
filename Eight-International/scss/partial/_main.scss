@@ -17,9 +17,21 @@
                     position: absolute;
                     right: 0;
                     top: 0;
+                    @include min_max_width(0px, 767px){                            
+                        top: 50%;
+                        right: -50%;
+                        transform: translate(100%, 0%);
+                        max-width: 60px;
+                    }
                     &:last-child{
                         top: -233px;
                         right: -62px;
+                        @include min_max_width(0px, 767px){                           
+                            top: 50%;
+                            right: -50%;
+                            transform: translate(86%, -86%);
+                            max-width: 100px;
+                        }
                     }
                 }
             }
@@ -40,10 +52,14 @@
         border-radius: 9px;
         display: flex;
         padding: 60px 20px;
+        flex-flow: wrap row;
         .textBlock, .imgBlock {
             display: flex;
             flex-flow: wrap row;
             align-content: center;
+            @include min_max_width(0px, 767px){
+                width: 100%;
+            }
             h4{                
                 font-weight: 700;
                 font-size: 28px;
@@ -55,6 +71,19 @@
                 font-size: 16px;
                 margin-bottom: 0;
                 width: 100%;
+            }
+        }
+        @include min_max_width(0px, 767px){
+            .textBlock{
+                order: 2;
+                text-align: center;
+            }
+            .imgBlock {
+                order: 1;
+                img{
+                    display: block;
+                    margin: 0 auto;
+                }
             }
         }
     }
@@ -71,21 +100,34 @@
             margin-bottom: 0;
             display: flex;
             justify-content: center;
-            margin-top: 50px;
+            flex-flow: row wrap; 
+            margin-top: 50px; 
             li{
-                border: 0.720931px solid $colorCharcoal;
-                border-radius: 6.48838px;
-                padding: 10px 20px;
-                margin: 0 10px;
                 display: flex;
-                align-items: center;
-                justify-content: center;
-                // transform: matrix(1, 0, 0, -1, 0, 0);
-                &:first-child{
-                    margin-left: 0;
-                }
-                &:last-child{
-                    margin-right: 0;
+                .partners_logo{
+                    width: 100%;
+                    border: 0.720931px solid $colorCharcoal;
+                    border-radius: 6.48838px;
+                    padding: 10px 20px;
+                    margin: 10px 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    // transform: matrix(1, 0, 0, -1, 0, 0);
+                    &:first-child{
+                        margin-left: 0;
+
+                        @include min_max_width(0px, 767px){
+                            margin-left: 10px;
+                        }                    
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }                    
+                    @include min_max_width(0px, 1023px){
+                        width:100%;
+                        min-height: 80px;
+                    }
                 }
             }
         }
@@ -103,6 +145,9 @@
         font-size: 32px;
         line-height: 39px;
         margin-bottom: 30px;
+        @include min_max_width(0px, 767px){
+            font-size: 22px;
+        }
         img{
             cursor: pointer;
             margin-left: 12px;
@@ -118,14 +163,21 @@
     width:100%;
     overflow: hidden;
     position: relative;
-    min-height: 185px;
+    min-height: 215px;
+    @include min_max_width(0px, 767px){
+        min-height: 60px;
+    }
     object{
         width: 100%;
         position: absolute;
         left: 0;
     }
 }
-
+.responsive_object{
+    @include min_max_width(0px, 767px){
+        width: 100%;
+    }
+}
 // Portfolio
 .portfolio{
     width:100%;
@@ -140,6 +192,9 @@
             text-align: center;
             &:nth-last-of-type(1),  &:nth-last-of-type(2){
                 margin-bottom: 0;
+                @include min_max_width(0px, 767px){                    
+                    margin-bottom: 50px;
+                }
             }
             .border-box{
                 position: relative;
@@ -168,6 +223,9 @@
                     margin-bottom: 0;
                     font-weight: 400;
                     font-size: 35px;
+                    @include min_max_width(0px, 767px){
+                        font-size: 25px;
+                    }
                 }
             }
         }

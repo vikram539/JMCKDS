@@ -32,6 +32,9 @@ footer{
         h4{            
             font-weight: 700;
             font-size: 36px;
+            @include min_max_width(0px, 767px){
+                font-size: 30px;
+            }
             img, p{
                 margin-right: 28px;
             }

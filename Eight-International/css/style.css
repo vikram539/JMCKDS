@@ -40,11 +40,21 @@ h4 {
   font-weight: 700;
   font-size: 40px;
 }
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  h4 {
+    font-size: 30px;
+  }
+}
 
 p {
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  p {
+    font-size: 22px;
+  }
 }
 .maxWidth {
   max-width: 990px;
@@ -54,6 +64,11 @@ p {
   margin-top: 100px;
 }
 
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  nav .navbar-brand img {
+    max-width: 250px;
+  }
+}
 nav #navbarNav ul {
   display: flex;
   flex-flow: row wrap;
@@ -67,11 +82,21 @@ nav #navbarNav ul li {
   display: inline-flex;
   align-items: center;
 }
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  nav #navbarNav ul li {
+    width: 100%;
+  }
+}
 nav #navbarNav ul li a {
   color: #223451;
 }
 nav #navbarNav ul li:first-child {
   margin-left: 0;
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  nav #navbarNav ul li:first-child {
+    margin-left: 12px;
+  }
 }
 nav #navbarNav ul li:last-child {
   border: 1px solid #223451;
@@ -99,9 +124,25 @@ nav #navbarNav ul li:last-child {
   right: 0;
   top: 0;
 }
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .mapWrapper .mapImage .locationWrap .fixedPathImg img {
+    top: 50%;
+    right: -50%;
+    transform: translate(100%, 0%);
+    max-width: 60px;
+  }
+}
 .mapWrapper .mapImage .locationWrap .fixedPathImg img:last-child {
   top: -233px;
   right: -62px;
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .mapWrapper .mapImage .locationWrap .fixedPathImg img:last-child {
+    top: 50%;
+    right: -50%;
+    transform: translate(86%, -86%);
+    max-width: 100px;
+  }
 }
 
 .addValue {
@@ -118,11 +159,17 @@ nav #navbarNav ul li:last-child {
   border-radius: 9px;
   display: flex;
   padding: 60px 20px;
+  flex-flow: wrap row;
 }
 .detailBoxWrapper .detailBlock .textBlock, .detailBoxWrapper .detailBlock .imgBlock {
   display: flex;
   flex-flow: wrap row;
   align-content: center;
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .detailBoxWrapper .detailBlock .textBlock, .detailBoxWrapper .detailBlock .imgBlock {
+    width: 100%;
+  }
 }
 .detailBoxWrapper .detailBlock .textBlock h4, .detailBoxWrapper .detailBlock .imgBlock h4 {
   font-weight: 700;
@@ -136,6 +183,19 @@ nav #navbarNav ul li:last-child {
   margin-bottom: 0;
   width: 100%;
 }
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .detailBoxWrapper .detailBlock .textBlock {
+    order: 2;
+    text-align: center;
+  }
+  .detailBoxWrapper .detailBlock .imgBlock {
+    order: 1;
+  }
+  .detailBoxWrapper .detailBlock .imgBlock img {
+    display: block;
+    margin: 0 auto;
+  }
+}
 
 .ourClients .clientList {
   width: 100%;
@@ -147,22 +207,38 @@ nav #navbarNav ul li:last-child {
   margin-bottom: 0;
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
   margin-top: 50px;
 }
 .ourClients .clientList .partners li {
+  display: flex;
+}
+.ourClients .clientList .partners li .partners_logo {
+  width: 100%;
   border: 0.720931px solid #223451;
   border-radius: 6.48838px;
   padding: 10px 20px;
-  margin: 0 10px;
+  margin: 10px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.ourClients .clientList .partners li:first-child {
+.ourClients .clientList .partners li .partners_logo:first-child {
   margin-left: 0;
 }
-.ourClients .clientList .partners li:last-child {
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .ourClients .clientList .partners li .partners_logo:first-child {
+    margin-left: 10px;
+  }
+}
+.ourClients .clientList .partners li .partners_logo:last-child {
   margin-right: 0;
+}
+@media screen and (min-width: 0px) and (max-width: 1023px) {
+  .ourClients .clientList .partners li .partners_logo {
+    width: 100%;
+    min-height: 80px;
+  }
 }
 
 .ul-listing {
@@ -176,6 +252,11 @@ nav #navbarNav ul li:last-child {
   font-size: 32px;
   line-height: 39px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .ul-listing li {
+    font-size: 22px;
+  }
 }
 .ul-listing li img {
   cursor: pointer;
@@ -191,12 +272,23 @@ nav #navbarNav ul li:last-child {
   width: 100%;
   overflow: hidden;
   position: relative;
-  min-height: 185px;
+  min-height: 215px;
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .waveLine {
+    min-height: 60px;
+  }
 }
 .waveLine object {
   width: 100%;
   position: absolute;
   left: 0;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .responsive_object {
+    width: 100%;
+  }
 }
 
 .portfolio {
@@ -215,6 +307,11 @@ nav #navbarNav ul li:last-child {
 }
 .portfolio ul li:nth-last-of-type(1), .portfolio ul li:nth-last-of-type(2) {
   margin-bottom: 0;
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .portfolio ul li:nth-last-of-type(1), .portfolio ul li:nth-last-of-type(2) {
+    margin-bottom: 50px;
+  }
 }
 .portfolio ul li .border-box {
   position: relative;
@@ -243,6 +340,11 @@ nav #navbarNav ul li:last-child {
   margin-bottom: 0;
   font-weight: 400;
   font-size: 35px;
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .portfolio ul li .border-box h4 {
+    font-size: 25px;
+  }
 }
 
 .reach-us h2 span {
@@ -332,6 +434,11 @@ footer .footerInline {
 footer .footerInline h4 {
   font-weight: 700;
   font-size: 36px;
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  footer .footerInline h4 {
+    font-size: 30px;
+  }
 }
 footer .footerInline h4 img, footer .footerInline h4 p {
   margin-right: 28px;

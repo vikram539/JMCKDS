@@ -11,7 +11,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="mainContent marginTop_150 text-center">
-                            <object data="<?=$images?>portfolia.svg" > </object>
+                            <object data="<?=$images?>portfolia.svg" class="responsive_object"> </object>
                             <h2>Bringing Prosperity to your Portfolio!</h2>                            
                         </div>
                     </div>
