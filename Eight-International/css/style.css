@@ -51,7 +51,7 @@ p {
 }
 
 .marginTop_150 {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 nav #navbarNav ul {
@@ -163,6 +163,153 @@ nav #navbarNav ul li:last-child {
 }
 .ourClients .clientList .partners li:last-child {
   margin-right: 0;
+}
+
+.ul-listing {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  margin-top: 50px;
+}
+.ul-listing li {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 30px;
+}
+.ul-listing li img {
+  cursor: pointer;
+  margin-left: 12px;
+  transition: all linear 0.5s;
+}
+.ul-listing li .dropDownContent {
+  display: none;
+  margin: 30px 0;
+}
+
+.waveLine {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  min-height: 185px;
+}
+.waveLine object {
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.portfolio {
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+}
+.portfolio ul {
+  list-style: none;
+  padding-left: 0;
+}
+.portfolio ul li {
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.portfolio ul li:nth-last-of-type(1), .portfolio ul li:nth-last-of-type(2) {
+  margin-bottom: 0;
+}
+.portfolio ul li .border-box {
+  position: relative;
+  min-height: 110px;
+  z-index: 99;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+}
+.portfolio ul li .border-box:after, .portfolio ul li .border-box::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000000;
+  border-radius: 17px;
+  z-index: -99;
+}
+.portfolio ul li .border-box:after {
+  left: 15px;
+  top: 15px;
+}
+.portfolio ul li .border-box h4 {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.reach-us h2 span {
+  font-weight: 400;
+}
+.reach-us p {
+  font-weight: 400;
+  font-size: 20px;
+}
+.reach-us h4 {
+  font-size: 32px;
+  color: #999999;
+}
+.reach-us ul li {
+  font-weight: 400;
+  font-size: 17.6333px;
+  height: 54.66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.reach-us ul li a {
+  width: 100%;
+  text-decoration: none;
+  border: 0.440833px solid #000000;
+  border-radius: 7.49416px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+
+.contact-us-form {
+  width: 100%;
+  position: relative;
+}
+.contact-us-form .contactForm {
+  max-width: 570px;
+  margin: 0 auto;
+}
+.contact-us-form .contactForm form label {
+  font-weight: 400;
+  font-size: 32px;
+  margin: 25px 0;
+}
+.contact-us-form .contactForm form input {
+  border: 0.440833px solid #000000;
+  border-radius: 7.49416px;
+  height: 55px;
+  background-color: transparent;
+}
+.contact-us-form .contactForm form textarea {
+  height: 300px;
+  background-color: transparent;
+  border: 0.440833px solid #000000;
+  border-radius: 7.49416px;
+}
+.contact-us-form .contactForm form input[type=submit] {
+  border: 1px solid #000000;
+  border-radius: 7.49416px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17.6333px;
+  width: 150px;
+  margin-top: 50px;
 }
 
 footer {

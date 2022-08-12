@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
+<nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
         <a class="navbar-brand" href="<?= $root ?>">
             <img src="<?= $images ?>logo.png" alt="<?= $name ?>" class="img-fluid" />
@@ -12,13 +12,13 @@
                     <a class="nav-link" href="<?= $root ?>">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= $root ?>">About</a>
+                    <a class="nav-link" href="<?= $root ?>about-us.php">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= $root ?>">Our Specialities</a>
+                    <a class="nav-link" href="<?= $root ?>our-specialities.php">Our Specialities</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= $root ?>">Contact</a>
+                    <a class="nav-link" href="<?= $root ?>reach-us.php">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?= $root ?>">Call Me Back!</a>
