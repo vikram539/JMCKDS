@@ -57,20 +57,19 @@
         let _offset = $(document).find(".mapImage").offset().top;
         let _innerHeight = $(document).find(".mapImage").outerHeight();
         let _totalHeight = _innerHeight + _offset;
+        const _animateElement = $(document).find("#animateElement").offset().top;
+        const _animateElement2 = $(document).find("#animateElement2").offset().top;
 
-        // console.log(_offset);
-        // console.log(_onScroll);
-        // console.log(_innerHeight);
-        // console.log(_totalHeight);
-        if(_onScroll > _offset && _onScroll <= _totalHeight){
-            $(document).find(".animateImg>img").addClass("planeMove");
-            setTimeout(function(){
-                // $(".planeMove").fadeOut();
-                $(".fixedPathImg img:last-child").addClass("locationIcon_opacity");
-                if($(window).width() > 767){
+        if(_onScroll > 400 && _onScroll <= _totalHeight){
+            if($(window).width() > 767){
+                $(document).find(".animateImg>img").addClass("planeMove");
+                setTimeout(function(){
+                    // $(".planeMove").fadeOut();
+                    $(".fixedPathImg img:last-child").addClass("locationIcon_opacity");                    
                     $(".planeMove").css({"opacity": "0", "transform": "translate(80%, -90%) rotate(-90deg)"});
-                }
-            }, 2000);
+                    
+                }, 2000);
+            }
         }
         // else{            
         //     $(document).find(".animateImg>img").removeClass("planeMove");  
@@ -80,6 +79,15 @@
         //         $(".fixedPathImg img:last-child").removeClass("locationIcon_opacity");
         //     }, 1000);          
         // }
+
+        // Animate block section
+        if(_onScroll > _animateElement - 200){
+            $(".detailBoxWrapper").animate({top: 0}, 500);
+        }
+
+        if(_onScroll > _animateElement2 - 400){
+            $(".clientList").animate({top: 0}, 500);
+        }
 
         // Add Value Animate
         let animateElement = document.getElementById("animateElement");

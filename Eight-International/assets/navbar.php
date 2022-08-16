@@ -16,12 +16,12 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?= $root ?>our-specialities.php">Our Specialities</a>
-                </li>
+                <!-- </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= $root ?>reach-us.php">Contact</a>
-                </li>
+                    <a class="nav-link" href="">Contact</a>
+                </li> -->
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= $root ?>">Call Me Back!</a>
+                    <a class="nav-link" href="<?= $root ?>reach-us.php">Call Me Back!</a>
                 </li>
             </ul>
         </div>

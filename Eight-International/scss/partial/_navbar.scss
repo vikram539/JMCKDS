@@ -18,6 +18,7 @@ nav{
                 text-align: center;
                 display: inline-flex;
                 align-items: center;
+                position: relative;
                 @include min_max_width(0px, 767px){
                     width: 100%;
                 }
@@ -35,6 +36,41 @@ nav{
                     border-radius: 9px;
                     margin-right: 0;
                     padding: 7px 15px;
+                    
+                    &::after,  &::before{
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        border-radius: 9px;
+                    }
+
+                    &:hover{
+                        &:after{
+                            background: #223451;
+                        }
+                        &:before{
+                            background: #000000;
+                            left: -8px;
+                            top: 8px;
+                        }
+                        a{
+                            color: #fff;
+                            z-index: 99;
+                        }
+                    }
+
+                }
+                &.active{
+                    // color: #fff;
+                    // z-index: 999;
+                    // background: #223451;
+                    a{
+                        // color: #ffffff;
+                        // z-index: 99;
+                    }
                 }
             }
         }

@@ -81,6 +81,7 @@ nav #navbarNav ul li {
   text-align: center;
   display: inline-flex;
   align-items: center;
+  position: relative;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   nav #navbarNav ul li {
@@ -104,7 +105,27 @@ nav #navbarNav ul li:last-child {
   margin-right: 0;
   padding: 7px 15px;
 }
-
+nav #navbarNav ul li:last-child::after, nav #navbarNav ul li:last-child::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 9px;
+}
+nav #navbarNav ul li:last-child:hover:after {
+  background: #223451;
+}
+nav #navbarNav ul li:last-child:hover:before {
+  background: #000000;
+  left: -8px;
+  top: 8px;
+}
+nav #navbarNav ul li:last-child:hover a {
+  color: #fff;
+  z-index: 99;
+}
 .mapWrapper .mapImage {
   position: relative;
   z-index: 99;
@@ -151,7 +172,7 @@ nav #navbarNav ul li:last-child {
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .mapWrapper .mapImage .locationWrap .fixedPathImg img {
-    max-width: 60px;
+    max-width: 64px;
   }
 }
 .mapWrapper .mapImage .locationWrap .fixedPathImg img:last-child {
@@ -163,7 +184,10 @@ nav #navbarNav ul li:last-child {
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .mapWrapper .mapImage .locationWrap .fixedPathImg img:last-child {
-    max-width: 70px;
+    transform: rotate(0deg);
+    opacity: 1;
+    max-width: 100px;
+    left: 50%;
   }
 }
 .mapWrapper .mapImage .locationWrap .fixedPathImg .locationIcon_opacity {
@@ -180,6 +204,7 @@ nav #navbarNav ul li:last-child {
   width: 100%;
   position: relative;
   margin-top: 50px;
+  top: 50%;
 }
 .detailBoxWrapper .detailBlock {
   border: 1px solid #000000;
@@ -224,8 +249,14 @@ nav #navbarNav ul li:last-child {
   }
 }
 
+.ourClients {
+  width: 100%;
+  overflow: hidden;
+}
 .ourClients .clientList {
   width: 100%;
+  position: relative;
+  top: 50%;
 }
 .ourClients .clientList .partners {
   position: relative;
@@ -374,26 +405,38 @@ nav #navbarNav ul li:last-child {
     font-size: 25px;
   }
 }
-.portfolio ul li.active {
+.portfolio ul li.active, .portfolio ul li:hover {
   color: #fff;
 }
-.portfolio ul li.active .border-box:after {
+.portfolio ul li.active .border-box:after, .portfolio ul li:hover .border-box:after {
   background-color: #223451;
   top: 0;
   left: 0;
 }
-.portfolio ul li.active .border-box::before {
+.portfolio ul li.active .border-box::before, .portfolio ul li:hover .border-box::before {
   background-color: #000000;
   top: 15px;
   left: 15px;
 }
 
-.servicesModal .modal-dialog {
+.servicesModal .modal-content {
   background: #F6F6F6;
   border-radius: 30.943px;
+  padding: 30px;
+}
+.servicesModal .modal-content .modal-header {
+  border: none;
 }
 .servicesModal .modal-body > img {
   max-width: 100%;
+  margin-bottom: 25px;
+}
+.servicesModal .modal-body > h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #223451;
 }
 .servicesModal .modal-body > p {
   font-weight: 400;
@@ -439,7 +482,7 @@ nav #navbarNav ul li:last-child {
   font-weight: 400;
   text-align: center;
 }
-.reach-us ul .active .border-box {
+.reach-us ul li.active .border-box, .reach-us ul li:hover .border-box {
   background: #223451;
   color: #fff;
 }

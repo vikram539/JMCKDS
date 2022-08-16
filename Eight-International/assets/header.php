@@ -29,8 +29,8 @@
             //     path = 'index.php';       
             // }
         
-            var target = $(document).find('.partnersList .partners li a[href="'+path+'"]').closest("li");
+            var target = $(document).find('nav #navbarNav ul li a[href="'+path+'"]').closest("li");
             // Add active class to target link
-            target.addClass('partnersActive');
+            target.addClass('active');
         })
     </script>

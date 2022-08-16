@@ -33,11 +33,13 @@ $(document).ready(function(){
         let inpuEmail = $("#inpuEmail").val();
         let Message = $("#Message").val();
         let _validation = $(".contact-us-form .contactForm #formId>[class*='col-']").children().last();
-        console.log(_validation);
+        let _htmlBody = $("html, body");
 
         // validation
         if(inputName == ""){
             $("#inputName").addClass("boxShadow");
+            $(_htmlBody).animate({scrollTop: $("#inputName").offset().top - 80+"px"}, 1000);          
+
             return false;
         }
         else{
@@ -46,6 +48,7 @@ $(document).ready(function(){
         
         if(inpuEmail == ""){
             $("#inpuEmail").addClass("boxShadow");
+            $(_htmlBody).animate({scrollTop: $("#inpuEmail").offset().top - 80+"px"}, 1000);
             return false;
         }
         else{
@@ -54,6 +57,7 @@ $(document).ready(function(){
         
         if(Message == ""){
             $("#Message").addClass("boxShadow");
+            $(_htmlBody).animate({scrollTop: $("#Message").offset().top - 80+"px"}, 1000);
             return false;
         }
         else{

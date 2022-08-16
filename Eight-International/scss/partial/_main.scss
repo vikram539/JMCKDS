@@ -48,7 +48,7 @@
                         // top: 50%;
                         // right: -50%;
                         // transform: translate(100%, 0%);
-                        max-width: 60px;
+                        max-width: 64px;
                     }
                     &:last-child{
                         top: 0%;
@@ -56,11 +56,11 @@
                         transform: rotate(45deg);
                         transition: all linear 0.5s;
                         opacity: 0;
-                        @include min_max_width(0px, 767px){ 
-                            // top: -75px;
-                            // right: -70%;
-                            // transform: translate(86%, -86%);
-                            max-width: 70px;
+                        @include min_max_width(0px, 767px){                             
+                            transform: rotate(0deg);
+                            opacity: 1;
+                            max-width: 100px;
+                            left: 50%;
                         }
                     }
                 }
@@ -83,6 +83,7 @@
     width:100%;
     position: relative;
     margin-top: 50px;
+    top: 50%;
     .detailBlock{
         border: 1px solid #000000;
         border-radius: 9px;
@@ -127,8 +128,12 @@
 
 // Our Clients
 .ourClients{
+    width: 100%;
+    overflow: hidden;
     .clientList{
-        width:100%;        
+        width:100%; 
+        position: relative;       
+        top: 50%;
         .partners{
             position: relative;
             list-style: none;
@@ -265,7 +270,7 @@
                     }
                 }
             }
-            &.active{
+            &.active, &:hover{
                 color: $colorWhite;
                 .border-box{ 
                     &:after{
@@ -284,19 +289,31 @@
     }
 }
 .servicesModal{
-    .modal-dialog{        
+    .modal-content{        
         background: #F6F6F6;
         border-radius: 30.943px;
+        padding: 30px;
+        .modal-header{
+            border: none;
+        }
     }
     .modal-body{
         >img{
             max-width: 100%;
+            margin-bottom: 25px;
+        }
+        >h4{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            text-align: center;            
+            color: #223451;
         }
         >p{
             font-weight: 400;
             font-size: 14.3504px;
             text-align: center; 
-        }
+        }        
     }
 }
 
@@ -343,12 +360,12 @@
                     text-align: center;
                 }
             }
-        }
-        .active
-        {
-            .border-box{
-                background: #223451;
-                color: #fff;
+            &.active, &:hover
+            {
+                .border-box{
+                    background: #223451;
+                    color: #fff;
+                }
             }
         }
     }
@@ -414,4 +431,5 @@
             }
         }
     }
-}
+} 
+

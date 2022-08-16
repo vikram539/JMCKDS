@@ -1,4 +1,4 @@
-<section class='marginTop_150 ourClients'>
+<section class='marginTop_150 ourClients' id='animateElement2'>
     <div class="container">
         <div class="row">
             <div class="col-12">
