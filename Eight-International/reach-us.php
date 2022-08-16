@@ -20,24 +20,7 @@
                             <!-- Services -->
                             <h4>Services<h4>
                             <ul class='list-unstyled p-0 row'>
-                                <li class='col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4'>
-                                    <a href="">Financial Planning</a>
-                                </li>
-                                <li class='col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4'>
-                                    <a href="">Financial Planning</a>
-                                </li>
-                                <li class='col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4'>
-                                    <a href="">Financial Planning</a>
-                                </li>
-                                <li class='col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4'>
-                                    <a href="">Financial Planning</a>
-                                </li>
-                                <li class='col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4'>
-                                    <a href="">Financial Planning</a>
-                                </li>
-                                <li class='col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4'>
-                                    <a href="">Financial Planning</a>
-                                </li>
+                                <?php include("assets/services.php"); ?>
                             </ul>
                         </div>
                     </div>

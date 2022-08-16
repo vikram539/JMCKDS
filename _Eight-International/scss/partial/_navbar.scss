@@ -1,0 +1,42 @@
+nav{
+    .navbar-brand{
+        img{
+            @include min_max_width(0px, 767px){
+                max-width: 250px;
+            }
+        }
+    }
+    #navbarNav{
+        ul{
+            display: flex;
+            flex-flow: row wrap;
+            li{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                margin: 0 12px;
+                text-align: center;
+                display: inline-flex;
+                align-items: center;
+                @include min_max_width(0px, 767px){
+                    width: 100%;
+                }
+                a{
+                    color: $colorCharcoal;
+                }
+                &:first-child{
+                    margin-left: 0;
+                    @include min_max_width(0px, 767px){
+                        margin-left: 12px;
+                    }
+                }
+                &:last-child{
+                    border: 1px solid $colorCharcoal;
+                    border-radius: 9px;
+                    margin-right: 0;
+                    padding: 7px 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,38 +1,73 @@
 .mainContent{
 
 }
+
 .mapWrapper{
     .mapImage{
         position: relative;
         z-index: 99;
         width: 100%;
+        overflow: hidden;
         .locationWrap{
             position: absolute;
-            right: 300px;
-            top: 60%;
+            @include imgPosition(0, 0);
+
+            height: 100%;
             width: 100%;
-            .fixedPathImg{
+            .animateImg{
                 position: relative;
+                width: 100%;
+                height: 100%;
+                img{
+                    position: absolute;                    
+                    @include imgPosition(50%, -50%);
+                    transition: all ease-in-out 1.5s;
+                    transform: translateY(-100%) rotate(-25deg);
+                
+                }
+                .planeMove{                    
+                    @include imgPosition(50%, 50%);
+                    transition: all ease-out 1.5s;
+                    transform: translate(80%, -100%) rotate(0deg);
+                    @include min_max_width(0px, 767px){
+                        // left: 50%; 
+                    }
+                }
+            }
+            .fixedPathImg{
+                position: absolute;
+                @include imgPosition(0, 0);
+                width: 100%;
+                height: 100%;
                 img{
                     position: absolute;
-                    right: 0;
-                    top: 0;
+                    right: 27%;
+                    top: 50%;
+                    transform: translateY(30%);
                     @include min_max_width(0px, 767px){                            
-                        top: 50%;
-                        right: -50%;
-                        transform: translate(100%, 0%);
+                        // top: 50%;
+                        // right: -50%;
+                        // transform: translate(100%, 0%);
                         max-width: 60px;
                     }
                     &:last-child{
-                        top: -233px;
-                        right: -62px;
-                        @include min_max_width(0px, 767px){                           
-                            top: 50%;
-                            right: -50%;
-                            transform: translate(86%, -86%);
-                            max-width: 100px;
+                        top: 0%;
+                        right: 27%;
+                        transform: rotate(45deg);
+                        transition: all linear 0.5s;
+                        opacity: 0;
+                        @include min_max_width(0px, 767px){ 
+                            // top: -75px;
+                            // right: -70%;
+                            // transform: translate(86%, -86%);
+                            max-width: 70px;
                         }
                     }
+                }
+                
+                .locationIcon_opacity{                        
+                    transform: translate(30%, 45%) rotate(0deg) !important;
+                    opacity: 1 !important;
                 }
             }
         }
@@ -42,6 +77,7 @@
 // Add Value
 .addValue{
     margin-top: 40px;
+    overflow: hidden;
 }
 .detailBoxWrapper{
     width:100%;
@@ -190,6 +226,7 @@
             position: relative;
             margin-bottom: 50px;
             text-align: center;
+            cursor: pointer;
             &:nth-last-of-type(1),  &:nth-last-of-type(2){
                 margin-bottom: 0;
                 @include min_max_width(0px, 767px){                    
@@ -228,6 +265,37 @@
                     }
                 }
             }
+            &.active{
+                color: $colorWhite;
+                .border-box{ 
+                    &:after{
+                        background-color: #223451;
+                        top: 0;
+                        left: 0;
+                    }
+                    &::before{
+                        background-color: $colorBlack;
+                        top: 15px;
+                        left: 15px;
+                    }
+                } 
+            }
+        }
+    }
+}
+.servicesModal{
+    .modal-dialog{        
+        background: #F6F6F6;
+        border-radius: 30.943px;
+    }
+    .modal-body{
+        >img{
+            max-width: 100%;
+        }
+        >p{
+            font-weight: 400;
+            font-size: 14.3504px;
+            text-align: center; 
         }
     }
 }
@@ -243,20 +311,21 @@
         font-weight: 400;
         font-size: 20px;
     }
-    h4{
+    >h4{
         font-size: 32px;
         color: #999999; 
     }
     ul{
         li{
             font-weight: 400;
-            font-size: 17.6333px;
             height: 54.66px;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-bottom: 20px;
-            a{
+            
+            a, .border-box{ 
+                cursor: pointer;
                 width: 100%;
                 text-decoration: none;
                 border: 0.440833px solid $colorBlack;
@@ -266,15 +335,53 @@
                 justify-content: center;
                 align-items: center;
                 color: $colorBlack;
+                font-size: 17.6333px;
+                >h4{                                   
+                    font-size: 17.6333px;
+                    margin-bottom: 0;
+                    font-weight: 400;
+                    text-align: center;
+                }
+            }
+        }
+        .active
+        {
+            .border-box{
+                background: #223451;
+                color: #fff;
             }
         }
     }
 }
-
+.boxShadow{
+    box-shadow: 2px 2px 5px #223451, -2px -2px 5px;
+}
 // contact-us-form
 .contact-us-form{
     width: 100%;
     position: relative;
+    >.container-fluid{
+        @include min_max_width(0px, 1023px){
+            >.row{
+                >[class*='col-']{
+                    &:nth-of-type(1){
+                        order:1;
+                        width: 50%;
+                    }
+                    &:nth-of-type(2){
+                        order:3;
+                        width: 100%;
+                    }
+                    &:nth-of-type(3){
+                        order:2;
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    
     .contactForm{
         max-width: 570px;
         margin: 0 auto;

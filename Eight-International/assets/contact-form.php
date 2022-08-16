@@ -8,8 +8,9 @@
             </div>
             <div class="col-6">
                 <div class="contactForm">
-                    <form class="row" method="post">
+                    <form class="row" method="post" id="formId" action="<?= $_SERVER['PHP_SELF'] ?>">
                         <div class="col-12">
+                            <input type="hidden" name='servicesName' value='' id='servicesName' />
                             <label for="inputName" class="form-label">Your Name</label>
                             <input type="text" name='fname' class="form-control" id="inputName">
                         </div>
@@ -18,8 +19,8 @@
                             <input type="email" name='email' class="form-control" id="inpuEmail">
                         </div>
                         <div class="col-12">
-                            <label for="inpuMessage*"  class="form-label">Project Description</label>
-                            <textarea class="form-control" id="Message*" name='message'></textarea>
+                            <label for="inpuMessage"  class="form-label">Project Description</label>
+                            <textarea class="form-control" id="Message" name='message'></textarea>
                         </div>
 
                         <div class="col-12">                                        

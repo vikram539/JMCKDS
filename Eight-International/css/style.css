@@ -109,44 +109,71 @@ nav #navbarNav ul li:last-child {
   position: relative;
   z-index: 99;
   width: 100%;
+  overflow: hidden;
 }
 .mapWrapper .mapImage .locationWrap {
   position: absolute;
-  right: 300px;
-  top: 60%;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
 }
-.mapWrapper .mapImage .locationWrap .fixedPathImg {
+.mapWrapper .mapImage .locationWrap .animateImg {
   position: relative;
+  width: 100%;
+  height: 100%;
+}
+.mapWrapper .mapImage .locationWrap .animateImg img {
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  transition: all ease-in-out 1.5s;
+  transform: translateY(-100%) rotate(-25deg);
+}
+.mapWrapper .mapImage .locationWrap .animateImg .planeMove {
+  top: 50%;
+  left: 50%;
+  transition: all ease-out 1.5s;
+  transform: translate(80%, -100%) rotate(0deg);
+}
+.mapWrapper .mapImage .locationWrap .fixedPathImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .mapWrapper .mapImage .locationWrap .fixedPathImg img {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 27%;
+  top: 50%;
+  transform: translateY(30%);
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .mapWrapper .mapImage .locationWrap .fixedPathImg img {
-    top: 50%;
-    right: -50%;
-    transform: translate(100%, 0%);
     max-width: 60px;
   }
 }
 .mapWrapper .mapImage .locationWrap .fixedPathImg img:last-child {
-  top: -233px;
-  right: -62px;
+  top: 0%;
+  right: 27%;
+  transform: rotate(45deg);
+  transition: all linear 0.5s;
+  opacity: 0;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .mapWrapper .mapImage .locationWrap .fixedPathImg img:last-child {
-    top: 50%;
-    right: -50%;
-    transform: translate(86%, -86%);
-    max-width: 100px;
+    max-width: 70px;
   }
+}
+.mapWrapper .mapImage .locationWrap .fixedPathImg .locationIcon_opacity {
+  transform: translate(30%, 45%) rotate(0deg) !important;
+  opacity: 1 !important;
 }
 
 .addValue {
   margin-top: 40px;
+  overflow: hidden;
 }
 
 .detailBoxWrapper {
@@ -304,6 +331,7 @@ nav #navbarNav ul li:last-child {
   position: relative;
   margin-bottom: 50px;
   text-align: center;
+  cursor: pointer;
 }
 .portfolio ul li:nth-last-of-type(1), .portfolio ul li:nth-last-of-type(2) {
   margin-bottom: 0;
@@ -346,6 +374,32 @@ nav #navbarNav ul li:last-child {
     font-size: 25px;
   }
 }
+.portfolio ul li.active {
+  color: #fff;
+}
+.portfolio ul li.active .border-box:after {
+  background-color: #223451;
+  top: 0;
+  left: 0;
+}
+.portfolio ul li.active .border-box::before {
+  background-color: #000000;
+  top: 15px;
+  left: 15px;
+}
+
+.servicesModal .modal-dialog {
+  background: #F6F6F6;
+  border-radius: 30.943px;
+}
+.servicesModal .modal-body > img {
+  max-width: 100%;
+}
+.servicesModal .modal-body > p {
+  font-weight: 400;
+  font-size: 14.3504px;
+  text-align: center;
+}
 
 .reach-us h2 span {
   font-weight: 400;
@@ -354,20 +408,20 @@ nav #navbarNav ul li:last-child {
   font-weight: 400;
   font-size: 20px;
 }
-.reach-us h4 {
+.reach-us > h4 {
   font-size: 32px;
   color: #999999;
 }
 .reach-us ul li {
   font-weight: 400;
-  font-size: 17.6333px;
   height: 54.66px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
 }
-.reach-us ul li a {
+.reach-us ul li a, .reach-us ul li .border-box {
+  cursor: pointer;
   width: 100%;
   text-decoration: none;
   border: 0.440833px solid #000000;
@@ -377,11 +431,40 @@ nav #navbarNav ul li:last-child {
   justify-content: center;
   align-items: center;
   color: #000000;
+  font-size: 17.6333px;
+}
+.reach-us ul li a > h4, .reach-us ul li .border-box > h4 {
+  font-size: 17.6333px;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+}
+.reach-us ul .active .border-box {
+  background: #223451;
+  color: #fff;
+}
+
+.boxShadow {
+  box-shadow: 2px 2px 5px #223451, -2px -2px 5px;
 }
 
 .contact-us-form {
   width: 100%;
   position: relative;
+}
+@media screen and (min-width: 0px) and (max-width: 1023px) {
+  .contact-us-form > .container-fluid > .row > [class*=col-]:nth-of-type(1) {
+    order: 1;
+    width: 50%;
+  }
+  .contact-us-form > .container-fluid > .row > [class*=col-]:nth-of-type(2) {
+    order: 3;
+    width: 100%;
+  }
+  .contact-us-form > .container-fluid > .row > [class*=col-]:nth-of-type(3) {
+    order: 2;
+    width: 50%;
+  }
 }
 .contact-us-form .contactForm {
   max-width: 570px;

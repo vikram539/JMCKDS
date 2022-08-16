@@ -1,4 +1,4 @@
-<section class='addValue'>
+<section class='addValue' id='animateElement'>
     <div class="container">
         <div class="row">
             <div class="col-12">

@@ -20,6 +20,8 @@
         </section>
         <?php include("assets/our-portfolio.php");  ?>
         
+        <?php include("assets/modals.php");  ?>
+
         <?php include("assets/footer.php");  ?>
     </main> 
 </body>

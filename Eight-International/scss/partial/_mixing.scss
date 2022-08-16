@@ -4,3 +4,8 @@
     }
     
 }
+@mixin imgPosition($top, $left) {
+    top: $top;
+    left: $left;
+    @content;
+}

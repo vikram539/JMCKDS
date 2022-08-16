@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+*{margin:0; padding:0; box-sizing: border-box;}
+// font-family: 'Inter', sans-serif;
+// @font-face {
+//     src: url(../fonts/PlusJakartaSans-ExtraBold.ttf);
+//     font-family: ExtraBold;
+// }
+// @font-face {
+//     src: url(../fonts/PlusJakartaSans-Bold.ttf);
+//     font-family: BoldFont;
+// }
+// @font-face {
+//     src: url(../fonts/PlusJakartaSans-Medium.ttf);
+//     font-family: MediumFont;
+// }
+*::first-letter{
+    text-transform: uppercase;
+}
+body
+{
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    border: none;
+    font-family: $interFontFamily;
+    color: $colorBlack;
+    background-color: #f8fafb;
+}
+.container
+{
+    // max-width:$container_width;
+}
+h2, h3, h4, label
+{
+    font-style: normal;
+}
+h2
+{ 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 20px;
+    @include min_max_width(0px, 767px){ 
+        font-size: 40px;
+    } 
+}
+h4
+{ 
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 40px;
+    @include min_max_width(0px, 767px){
+        font-size: 30px;
+    }
+} 
+p
+{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px; 
+    @include min_max_width(0px, 767px){
+        font-size: 22px;
+    }
+    
+    @include min_max_width(0px, 767px){ 
+        
+    } 
+}
