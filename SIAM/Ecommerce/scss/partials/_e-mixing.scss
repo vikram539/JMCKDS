@@ -1,0 +1,12 @@
+@mixin d-flex ($dflex, $jContent, $aItems){
+    display: $dflex;
+    justify-content: $jContent;
+    align-items: $aItems;  
+    @content;  
+}
+@mixin  min_max_width($minWidth, $maxWidth) {
+    @media only screen and (min-width: $minWidth) and (max-width:  $maxWidth){
+        @content;
+    }
+       
+}

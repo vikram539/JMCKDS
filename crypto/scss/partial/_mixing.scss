@@ -1,0 +1,11 @@
+@mixin min_max_width($min_width, $max_width) {
+    @media screen and (min-width:$min_width) and (max-width:$max_width) {
+        @content;        
+    }
+    
+}
+@mixin imgPosition($top, $left) {
+    top: $top;
+    left: $left;
+    @content;
+}

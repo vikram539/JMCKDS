@@ -22,11 +22,12 @@
                             <label for="inpuMessage"  class="form-label">Project Description</label>
                             <textarea class="form-control" id="Message" name='message'></textarea>
                         </div>
-
+                        <input type="hidden" id="token_generate" name="token_generate">
                         <div class="col-12">                                        
                             <input type="submit" name='Submit' class="form-control" id="submitBtn">
                         </div>
                     </form>
+                    <div class="formSuccess"></div>
                 </div>
             </div>
             <div class="col-3">

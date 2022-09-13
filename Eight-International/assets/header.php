@@ -1,3 +1,4 @@
+<?php include("functions/functions.php"); ?>
 <?php include("variables.php"); ?>
 <!DOCTYPE html>
 <html lang="en">

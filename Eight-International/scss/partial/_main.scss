@@ -200,6 +200,12 @@
         }
     }
 }
+.imgRotateToggle{
+    transform: rotate(45deg);
+}
+.imgRotateZero{
+    transform: rotate(0deg);
+}
 .waveLine{
     width:100%;
     overflow: hidden;

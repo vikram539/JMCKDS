@@ -1,0 +1,132 @@
+.topRateWrap{
+    width: 100%;
+    display: block;
+    background-color: #0b1b2e;
+    .rateType{
+        position: relative;
+        @include d-flex(flex, space-between, center);
+        ul{
+            margin: 0;
+            padding: 0;
+            @include d-flex(flex, flex-start, center);
+            flex-flow: row wrap;
+            list-style: none;
+            min-height: 26px;
+            li{
+                text-transform: uppercase;
+                color: #9099a9;
+                font-size: 12px;
+                font-weight: 600;
+                position: relative;
+                &:last-child{
+                    color: $colorRed;
+                    margin-left: 10px;                    
+                    padding-left: 12px;
+                    @include min_max_width(0px, 767px){
+                        margin-left: 0;
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        border-bottom: 7px solid $colorRed;
+                        border-left: 7px solid transparent;
+                        transform: translateY(-80%) rotate(45deg);
+                        top: 50%;
+                        left: 0;
+                    }
+                }
+            }            
+        }
+    }
+}
+// Logo 
+.toplogoWrap{
+    width:100%;
+    margin: 50px 0;
+}
+.countryCode{
+    ul{
+        list-style: none;
+        li{
+            text-transform: uppercase;
+            cursor: pointer;
+            span{
+                padding: 5px;
+            }
+        }
+    }
+}
+
+// nav navbar
+nav{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    #navbarNav{
+        >ul{
+            >li{
+                margin-left: 70px;
+                &:first-child{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+// bannerWrapper
+.bannerWrapper{
+    margin: 80px 0;
+    .w-75{
+        max-width: 60% !important;
+    }
+    .bannerText{
+        h2{
+            
+        }
+    }
+}
+// secureSavingText
+.secureSavingWrape{
+    background: url("../images/gold.png") no-repeat right;
+    background-size: contain;
+    min-height: 450px;
+    background-position-y: -50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.secureSavingWrape2{
+    background: url("../images/image.png") no-repeat left;
+    background-size: 50%;
+    min-height: 900px;
+    background-position-y: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// subscribeForm
+.subscribeForm{
+    margin: 105px 0;
+
+    input[type='email']{
+        border-radius: 0px;
+        height: 70px;        
+        background: #1B1B1B;
+        border: none;
+        color: #fff;
+        &:focus{
+            background-color: #1B1B1B;
+            box-shadow: none;
+        }
+    }
+    
+    input[type='submit']{
+        background: #6B0C10;
+        border: none;
+        border-radius: 0px; 
+        font-size: 24px;
+    }
+}

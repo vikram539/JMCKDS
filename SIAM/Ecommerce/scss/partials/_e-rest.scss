@@ -1,0 +1,34 @@
+*{margin: 0; padding: 0; border: none; box-sizing: border-box;}
+
+@font-face {
+    src: url(../fonts/PlusJakartaSans-Regular.ttf);
+    font-family: Regular;
+  }
+body{
+    font-size: 100%;
+    color: $colorWhite;
+    font-family: Regular;
+    background-color: $colorBlack;    
+    letter-spacing: 1px;
+}
+h2{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;  
+  color: #F5F5F5;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 110.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #F5F5F5;
+}
+.mtb{
+  margin-bottom: 100px;
+  margin-top: 100px;
+}

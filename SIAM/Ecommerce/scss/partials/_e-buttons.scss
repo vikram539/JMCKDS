@@ -1,0 +1,13 @@
+.buttonWrap{
+    position: relative;
+    margin: 80px 0;
+    .buttons{
+        padding: 23px 85px;
+        background: #6B0C10;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        color: $colorWhite;
+        text-decoration: none;
+    }
+}

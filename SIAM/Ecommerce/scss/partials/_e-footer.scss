@@ -1,0 +1,29 @@
+footer{
+    margin: 100px 0 20px;
+    .footerAddress{
+        p{
+            margin-bottom: 5px;
+        }
+    }
+}
+.termsConditions{
+    width: 100%;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        li{
+            position: relative;
+            a{
+                text-decoration: none;
+                color: #767676;;
+            }
+        }
+    }
+    p{
+        font-size: 16px;
+        margin-top: 16px;
+    }
+}

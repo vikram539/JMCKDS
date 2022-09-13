@@ -1,5 +1,7 @@
 <?php $page_id = 1; ?>
 <?php include("assets/header.php"); ?>
+<script src="https://www.google.com/recaptcha/api.js?render=6LdK9YYhAAAAAK08VmD8XotCtvTIY8jmkRk7tjEd"></script>
+
 </head>
 <body>
     <main>
@@ -35,3 +37,12 @@
     </main> 
 </body>
 </html>
+<script> 
+    grecaptcha.ready(function() {
+      grecaptcha.execute('6LdK9YYhAAAAAK08VmD8XotCtvTIY8jmkRk7tjEd', {action: 'submit'}).then(function(token) {
+          let response = document.getElementById('token_generate');
+          response.value = token;
+      });
+    });
+  
+</script>
