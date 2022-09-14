@@ -6,10 +6,10 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="<?=$root?>">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">store</a>
+                    <a class="nav-link" href="<?=$root?>store.php">store</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Provenance</a>

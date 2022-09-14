@@ -1,0 +1,96 @@
+// filterItems
+.productListWrap{
+    margin: 150px 0;
+    .filterBock{
+        a{
+            text-decoration: none;
+            font-size: 32px;
+            color: $colorgray;
+            span{
+                margin-right: 5px;
+            }
+        }
+    }
+}
+.filterBlock{
+    width: 100%;
+}
+.filterDropdown{
+    position: relative;
+    form{        
+        font-size: 32px;
+        color: $colorgray;
+        margin-top: 70px;
+        input[type='checkbox']{
+            width: 37px;
+            height: 35px;
+            border-radius: 0px;
+            box-shadow: none;
+            border: 1px solid #D9D9D9;
+            background-color: transparent;
+        }
+    }
+    .closeFilter{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+        font-size: 24px;
+    }
+}
+
+// productCategoryWrap
+.productCategoryWrap{
+    width: 100%;
+    margin: 70px 0;
+    .productBlock{
+        position: relative;
+        border: 1px solid $colorBlack;
+        margin-bottom: 80px;
+        .productImg{            
+            padding: 30px;
+            background-color: $colorBlack;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .productDetail{
+            padding: 30px;
+            width: 82%;
+            h4{                
+                font-weight: 400;
+                font-size: 24px;
+                color: $colorLightGray;
+            }
+        }
+    }
+}
+.productPrice{
+    margin: 20px 0;
+    h3{        
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        color: $colorgray;
+        span{
+            font-size: 24px;
+        }
+    }
+}
+.addCartwrap{    
+    background: #6B0C10;
+    border: 1px solid #000000;
+    a{
+        color: $colorWhite;
+        text-decoration: none;
+        font-size: 24px;
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+        img{
+            margin-left: 5px;
+            margin-bottom: 3px;
+        }
+    }
+}
