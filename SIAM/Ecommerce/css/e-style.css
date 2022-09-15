@@ -28,12 +28,22 @@ h2 {
   background-clip: text;
   text-fill-color: transparent;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  h2 {
+    font-size: 50px;
+  }
+}
 
 p {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   color: #F5F5F5;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  p {
+    font-size: 20px;
+  }
 }
 
 .mtb {
@@ -121,12 +131,43 @@ nav #navbarNav > ul > li {
 nav #navbarNav > ul > li:first-child {
   margin-left: 0;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  nav #navbarNav > ul > li:first-child {
+    margin-left: 70px;
+  }
+}
+
+.socialIcons {
+  flex: 1 0 0;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .socialIcons {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .socialIcons li {
+    padding: 0 20px;
+  }
+  .socialIcons li a img {
+    width: 24px;
+  }
+}
 
 .bannerWrapper {
   margin: 80px 0;
 }
 .bannerWrapper .w-75 {
   max-width: 60% !important;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .bannerWrapper .w-75 {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
 }
 .secureSavingWrape {
   background: url("../images/gold.png") no-repeat right;
@@ -137,6 +178,11 @@ nav #navbarNav > ul > li:first-child {
   align-items: center;
   justify-content: space-between;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .secureSavingWrape {
+    background: none;
+  }
+}
 
 .secureSavingWrape2 {
   background: url("../images/image.png") no-repeat left;
@@ -146,6 +192,11 @@ nav #navbarNav > ul > li:first-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .secureSavingWrape2 {
+    background: none;
+  }
 }
 
 .subscribeForm {
@@ -167,6 +218,13 @@ nav #navbarNav > ul > li:first-child {
   border: none;
   border-radius: 0px;
   font-size: 24px;
+  height: 70px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .subscribeForm input {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
 }
 
 .productListWrap {
@@ -299,6 +357,11 @@ footer .footerAddress p {
 }
 .termsConditions ul li {
   position: relative;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .termsConditions ul li {
+    font-size: 14px;
+  }
 }
 .termsConditions ul li a {
   text-decoration: none;

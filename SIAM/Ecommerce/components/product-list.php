@@ -43,7 +43,7 @@
                                     </div>
                                 </div>
                                 <div class="addCartwrap">
-                                    <a href="">
+                                    <a href="<?=$root?>detail.php">
                                         <span>Add to Cart</span>
                                         <img src="<?=$images?>+.png" alt='Add to Cart' class='img-fluid' />
                                     </a>

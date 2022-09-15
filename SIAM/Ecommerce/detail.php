@@ -7,7 +7,7 @@
             <?php include("components/top-logo.php") ?>
             <?php include("components/top-navbar.php") ?>
         </header>
-        <div class="secureSavingWrape mtb">
+        <div class="productDetailWrap mtb">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-7">

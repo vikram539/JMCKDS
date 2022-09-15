@@ -8,7 +8,7 @@
             <?php include("components/top-navbar.php") ?>
         </header>
         <?php include("components/top-banner.php") ?>
-        <section class='mtb' style='min-height: 300px'></section>
+        <section class='mtb d-none d-lg-block' style='min-height: 300px'></section>
         <?php include("components/secure-savings.php") ?>
         <?php include("components/secure-savings-two.php") ?>
         <?php include("components/subscribe.php") ?>

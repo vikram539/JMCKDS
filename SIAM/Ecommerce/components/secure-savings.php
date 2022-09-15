@@ -10,8 +10,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-5">
-                <!-- <img src="<?=$images?>gold.png" class='img-fluid' /> -->
+            <div class="col-12 col-lg-5 d-lg-none">
+                <img src="<?=$images?>gold.png" class='img-fluid' />
             </div>
         </div>
     </div>

@@ -18,23 +18,23 @@
                     <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
-            <ul class="d-flex list-unstyled p-0 m-0">
-                <li>
-                    <a href="#">
-                        <img src="<?= $images?>user.svg" alt="<?=$name?>" class="img-fluid" />
-                    </a>
-                </li>
-                <li>
-                    <a  href="#">                        
-                        <img src="<?= $images?>search.svg" alt="<?=$name?>" class="img-fluid" />
-                    </a>
-                </li>
-                <li>
-                    <a  href="#">                       
-                        <img src="<?= $images?>beg.svg" alt="<?=$name?>" class="img-fluid" />
-                    </a>
-                </li>
-            </ul>
         </div>
+        <ul class="d-flex list-unstyled p-0 m-0 socialIcons">
+            <li>
+                <a href="#">
+                    <img src="<?= $images?>user.svg" alt="<?=$name?>" class="img-fluid" />
+                </a>
+            </li>
+            <li>
+                <a  href="#">                        
+                    <img src="<?= $images?>search.svg" alt="<?=$name?>" class="img-fluid" />
+                </a>
+            </li>
+            <li>
+                <a  href="#">                       
+                    <img src="<?= $images?>beg.svg" alt="<?=$name?>" class="img-fluid" />
+                </a>
+            </li>
+        </ul>
     </div>
 </nav>

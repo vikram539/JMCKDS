@@ -1,7 +1,7 @@
 <div class="secureSavingWrape2 mtb">
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-5">
+        <div class="row">           
+            <div class="col-12 col-lg-5 d-lg-block d-none">
                 
             </div>
             <div class="col-12 col-lg-7">
@@ -12,6 +12,9 @@
                         <a href="" class='buttons'>Explore</a>
                     </div>
                 </div>
+            </div>           
+            <div class="col-12 col-lg-5 d-lg-none">
+                <img src="<?=$images?>image.png" class='img-fluid' />
             </div>
         </div>
     </div>
