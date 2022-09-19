@@ -245,6 +245,7 @@ nav #navbarNav > ul > li:first-child {
 
 .filterDropdown {
   position: relative;
+  display: none;
 }
 .filterDropdown form {
   font-size: 32px;
@@ -276,19 +277,21 @@ nav #navbarNav > ul > li:first-child {
   border: 1px solid #000;
   margin-bottom: 80px;
 }
-.productCategoryWrap .productBlock .productImg {
+
+.productImg {
   padding: 30px;
   background-color: #000;
 }
-.productCategoryWrap .productBlock .productImg img {
+.productImg img {
   display: block;
   margin: 0 auto;
 }
-.productCategoryWrap .productBlock .productDetail {
+
+.productDetail {
   padding: 30px;
   width: 82%;
 }
-.productCategoryWrap .productBlock .productDetail h4 {
+.productDetail h4 {
   font-weight: 400;
   font-size: 24px;
   color: #D9D9D9;
@@ -307,10 +310,6 @@ nav #navbarNav > ul > li:first-child {
   font-size: 24px;
 }
 
-.addCartwrap {
-  background: #6B0C10;
-  border: 1px solid #000000;
-}
 .addCartwrap a {
   color: #fff;
   text-decoration: none;
@@ -318,10 +317,59 @@ nav #navbarNav > ul > li:first-child {
   display: block;
   text-align: center;
   padding: 15px 0;
+  background: #6B0C10;
+  border: 1px solid #000000;
 }
 .addCartwrap a img {
   margin-left: 5px;
   margin-bottom: 3px;
+}
+.addCartwrap a:hover {
+  background: #8f080f;
+}
+.addCartwrap input[type=number] {
+  border: 1.34783px solid #D9D9D9;
+  background-color: transparent;
+  width: 80px;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  margin-left: 24px;
+}
+.addCartwrap ::-webkit-inner-spin-button {
+  width: 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.productDescription {
+  max-width: 70%;
+}
+
+.productDetailWrap .productDetail {
+  width: 100%;
+  padding: 0;
+  margin: 40px 0;
+}
+.productDetailWrap .productDetail .productPrice h3 {
+  font-size: 64px;
+  color: #fff;
+}
+.productDetailWrap .addCartwrap {
+  display: flex;
+}
+.productDetailWrap .addCartwrap a {
+  padding: 15px 30px;
+}
+
+.productDescription h4 {
+  cursor: pointer;
+}
+.dropdownBlock {
+  margin-top: 40px;
+  display: none;
 }
 
 .buttonWrap {

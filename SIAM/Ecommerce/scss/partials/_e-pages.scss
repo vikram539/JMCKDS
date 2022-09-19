@@ -13,10 +13,11 @@
     }
 }
 .filterBlock{
-    width: 100%;
+    width: 100%; 
 }
 .filterDropdown{
     position: relative;
+    display: none;
     form{        
         font-size: 32px;
         color: $colorgray;
@@ -47,23 +48,25 @@
         position: relative;
         border: 1px solid $colorBlack;
         margin-bottom: 80px;
-        .productImg{            
-            padding: 30px;
-            background-color: $colorBlack;
-            img{
-                display: block;
-                margin: 0 auto;
-            }
-        }
-        .productDetail{
-            padding: 30px;
-            width: 82%;
-            h4{                
-                font-weight: 400;
-                font-size: 24px;
-                color: $colorLightGray;
-            }
-        }
+    }
+}
+
+.productImg{            
+    padding: 30px;
+    background-color: $colorBlack;
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.productDetail{
+    padding: 30px;
+    width: 82%;
+    h4{                
+        font-weight: 400;
+        font-size: 24px;
+        color: $colorLightGray;
     }
 }
 .productPrice{
@@ -78,19 +81,73 @@
         }
     }
 }
-.addCartwrap{    
-    background: #6B0C10;
-    border: 1px solid #000000;
+.addCartwrap{ 
     a{
         color: $colorWhite;
         text-decoration: none;
         font-size: 24px;
         display: block;
         text-align: center;
-        padding: 15px 0;
+        padding: 15px 0;   
+        background: #6B0C10;
+        border: 1px solid #000000;
         img{
             margin-left: 5px;
             margin-bottom: 3px;
         }
+        &:hover{             
+            background: #8f080f;
+        }
     }
+    input[type=number]{
+        border: 1.34783px solid #D9D9D9;
+        background-color: transparent;
+        width: 80px;
+        text-align: center;
+        color: #fff;
+        font-size: 24px;
+        margin-left: 24px;
+    }
+    ::-webkit-inner-spin-button{
+        width: 80px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+    }
+}
+
+.productDescription{
+    max-width: 70%;
+}
+.productDetailWrap{
+    .productDetail{
+       width: 100%;
+       padding: 0;
+       margin: 40px 0;
+        .productPrice{       
+            h3{
+                font-size: 64px;
+                color: $colorWhite;
+            }
+        }
+    }
+    .addCartwrap{
+        display: flex;
+        a{
+            padding: 15px 30px;
+        }
+    }
+}
+.productDescription{
+    h4{
+        cursor: pointer;
+        span{
+            
+        }
+    }
+}
+.dropdownBlock{
+    margin-top: 40px;
+    display: none;
 }
