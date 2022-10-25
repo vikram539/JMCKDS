@@ -1,0 +1,21 @@
+#navbarItems{
+    .navbar-nav{
+        .nav-item{            
+            font-style: normal;
+            font-weight: 100;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            margin-left: 50px;
+            .nav-link{
+                color: #fff;
+            }
+            &:first-child{
+                margin-left: 0px;
+            }
+        }
+    }
+}
+.navbar{
+    z-index: 99;
+}
