@@ -275,7 +275,6 @@ $(document).ready(function(){
         $("#inputDOB, #inputSEP, #inputMEP, #inputMedicalClass1, #inputMedicalClass2, #inputMedicalLAPL").datepicker({
             changeYear: true,
             changeMonth: true,
-            yearRange: '1950:2010',
         });
       } );
 })

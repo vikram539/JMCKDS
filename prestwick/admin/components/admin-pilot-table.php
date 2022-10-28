@@ -3,22 +3,28 @@
     <thead>
         <tr>
             <th>
-                <input type="checkbox" id="filterCheckBox" />
+                <input type="checkbox" id="filterCheckBox" class='PilotFilterCheckBox'/>
                 <!-- <div class="checkboxBg"></div> -->
             </th>
             <th>Name</th>
             <th>Address</th>
             <th>DOB</th>
-            <th>type of licence</th>
-            <th>MDP expiry</th>
+            <th>CAA Ref No</th>
             <th>SEP Expiry</th>
             <th>MEP Expiry</th>
-            <th>IR Expiry</th>
+            <th>medical class1 expiry</th>
+            <th>medical class2 expiry</th>
+            <th>medical LAPL expiry</th>
+            <th>Expire in</th>
             <th>action</th>
         </tr>
     </thead>
     <tbody>
         <?php 
+
+            
+            
+
             $selectPilot = commonSelect_table($conn, "pilot_registration", "*", "");
 
             $numRows = mysqli_num_rows($selectPilot);
@@ -30,12 +36,23 @@
                     $address = $fetch_all['address'];
                     $DOB = $fetch_all['DOB'];
                     $CAA_ref_no = $fetch_all['CAA_ref_no'];
+                    $licence_number = $fetch_all['licence_number'];
                     $SEP_expiry = $fetch_all['SEP_expiry'];
+
                     $pilot_MEP_expiry = $fetch_all['MEP_expiry'];
                     $medical_class1_expiry = $fetch_all['medical_class1_expiry'];
                     $medical_class2_expiry = $fetch_all['medical_class2_expiry'];
                     $medical_LAPL_expiry = $fetch_all['medical_LAPL_expiry'];
-                    $licence_number = $fetch_all['licence_number'];
+
+                    $ey = date('Y', strtotime($SEP_expiry));
+                    $em = date('m', strtotime($SEP_expiry));
+                    $ed = date('d', strtotime($SEP_expiry));
+                    $edays = ($ey-1)*365 + ($em-1)*30 + $ed;
+                    $sy = date('Y');
+                    $sm = date('m');
+                    $sd = date('d');
+                    $sdays = ($sy-1)*365 + ($sm-1)*30 + $sd;
+                    $diff = $edays - $sdays;
 
                     $tr = "<tr>";
                     $tr .= "<td><input type='checkbox' id='singleDataCheckBox' /></td>";
@@ -47,6 +64,9 @@
                     $tr .= "<td>$pilot_MEP_expiry</td>";
                     $tr .= "<td>$medical_class1_expiry</td>";
                     $tr .= "<td>$medical_class2_expiry</td>";
+                    $tr .= "<td>$medical_LAPL_expiry</td>";
+                    $tr .= "<td>$diff</td>";
+                    
                     $tr .= "<td class='position-relative'><div class='actionBtn'><img src='images/dots.png' class='img-fluid' /><img src='images/dots.png' class='img-fluid' /><img src='images/dots.png' class='img-fluid' /></div><div class='actionDiv'><span class='stopAction'>X</span>";
                     $tr .= "<a href='#' id='editPilotRow' data-pilotEditId='$pilotId' data-bs-toggle='modal' data-bs-target='#pilotModal'><img src='images/edit_square.png' class='img-fluid' /><span>Edit</span></a>";
                     $tr .= "<a href='#' id='delPilotRow' data-pilotId='$pilotId'><img src='images/delete_forever.png' class='img-fluid' /><span>delete</sapn></a>";
@@ -54,6 +74,7 @@
                     // $tr .= "<td>$medical_class2_expiry</td>";
                     $tr .= "</tr>";
                     echo $tr;
+                    
                 }
             }
             else{

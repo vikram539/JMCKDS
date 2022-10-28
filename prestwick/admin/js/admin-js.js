@@ -26,6 +26,20 @@ $(document).ready(function(){
         $(this).closest(".actionDiv").slideUp();
     })
 
+    // Select all on check box
+    $(document).on("click", ".PilotFilterCheckBox", function(){
+        if(this.checked){
+            $('#Pilots>tbody>tr>td>input[type=checkbox]').each(function(){
+                this.checked = true;
+            });
+        }else{
+             $('#Pilots>tbody>tr>td>input[type=checkbox]').each(function(){
+                this.checked = false;
+            });
+        }
+    })
+
+
     // edit Pilot Record
     $(document).on("click","#editPilotRow", function(e){
         e.preventDefault();
