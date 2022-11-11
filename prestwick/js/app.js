@@ -1,5 +1,18 @@
 $(document).ready(function(){
 
+    // Navbar Bg color on scroll
+    $(window).on("scroll", function(){
+        let scrollTopPos = $(window).scrollTop();
+        if(scrollTopPos > 0){
+            // $(".navbar").animate({top: 0}, 100);   
+            $(".navbar").addClass("bg-dark");       
+        }
+        else{
+            // $(".navbar").animate({top: 80}, 100);
+            $(".navbar").removeClass("bg-dark");
+        }
+    })
+
     // Name Field validation
     $(document).on("keyup", "#inputName", function(){
         let _this = $(this);

@@ -1,0 +1,10 @@
+@import url('https://fonts.cdnfonts.com/css/clash-display');
+
+body{
+    border: none;
+    background: $colorBlack;
+    font-family: 'Clash Display', sans-serif;
+}
+*::first-letter{
+    text-transform: uppercase;
+}

@@ -7,9 +7,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="typography">
+                <div class="typography pt-4rem">
                     <?php if($caption_h1[0] != "") echo"<h1>$caption_h1[0]</h1>"; ?>
-                    <?php if($caption_p[0] != "") echo"<p class='text-center'>$caption_p[0]</p>"; ?>
+                    <?php if($caption_p[0] != "") echo"<p>$caption_p[0]</p>"; ?>
                 </div>
             </div>
         </div>

@@ -25,14 +25,23 @@ p {
   line-height: 40px;
   color: #D9D9D9;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  p {
+    font-size: 25px;
+  }
+}
 
 h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 96px;
   line-height: 104.52%;
-  text-align: center;
   color: #FFFFFF;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  h1 {
+    font-size: 60px;
+  }
 }
 
 h2 {
@@ -63,27 +72,81 @@ article {
   z-index: 1;
 }
 
+.pt-4rem {
+  padding-top: 4.5rem;
+}
+
+.primaryBtnWrap {
+  margin: 30px 0;
+}
+.primaryBtnWrap .primaryBtnGroup {
+  display: flex;
+}
+.primaryBtnWrap .primaryBtnGroup .primaryBtn, .primaryBtnWrap .primaryBtnGroup .secondaryBtn {
+  text-decoration: none;
+  width: 200px;
+  height: 60px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  background: #1D6192;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-dark {
+  transition: 0.5s;
+  top: 0 !important;
+}
+
 #navbarItems .navbar-nav .nav-item {
   font-style: normal;
   font-weight: 100;
   font-size: 20px;
   line-height: 24px;
-  text-align: center;
-  margin-left: 50px;
 }
 #navbarItems .navbar-nav .nav-item .nav-link {
   color: #fff;
 }
-#navbarItems .navbar-nav .nav-item:first-child {
-  margin-left: 0px;
+.navbar {
+  z-index: 999;
+  top: 80px;
+  position: fixed;
+  width: 100%;
+  transition: 0.5s;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .navbar {
+    top: 20px;
+  }
 }
 
-.navbar {
-  z-index: 99;
+.navbar-collapse .navbar-nav {
+  position: absolute;
+  right: 0;
+  padding-right: 25px;
+}
+.navbar-collapse .navbar-nav li {
+  text-align: left;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../images/menu-bar.png) !important;
 }
 
 .prestwickFlight {
   position: relative;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .prestwickFlight {
+    overflow: hidden;
+    overflow-y: auto;
+  }
 }
 .prestwickFlight::after {
   content: "";
@@ -136,8 +199,7 @@ article {
 .membershipHeader::before, .homeHeader::before {
   content: "";
   position: absolute;
-  background: linear-gradient(355.96deg, #000000 6.14%, rgba(0, 0, 0, 0) 101.08%);
-  transform: rotate(180deg);
+  background: linear-gradient(355.96deg, #000000 6.14%, rgba(0, 0, 0, 0) 75%);
   top: 0;
   left: 0;
   width: 100%;
@@ -272,6 +334,71 @@ article {
   line-height: 24px;
   text-align: center;
   color: #BFBFBF;
+}
+
+.flightWrap {
+  padding: 0.5rem;
+  z-index: 9;
+  position: relative;
+}
+.flightWrap .flightImg {
+  position: relative;
+  z-index: 99;
+}
+.flightWrap .flightImg .flightText {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  padding: 0 15px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .flightWrap .flightImg .flightText {
+    width: 100% !important;
+  }
+}
+.flightWrap .flightImg .flightText h4 {
+  font-weight: 400;
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.flightWrap .flightImg .flightText p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 114.17%;
+}
+
+.slick-dots li button {
+  border: 3px solid #fff !important;
+  border-radius: 50%;
+}
+
+.testimonialWrap {
+  background-color: #2D4454;
+  padding: 85px 0;
+  margin: 80px 0 20px;
+}
+.testimonialWrap p {
+  position: relative;
+  padding: 1rem;
+}
+.testimonialWrap p span {
+  position: absolute;
+}
+.testimonialWrap p span:nth-of-type(1) {
+  left: -5px;
+  top: 0;
+}
+.testimonialWrap p span:nth-of-type(2) {
+  right: 0px;
+  bottom: 0;
+}
+
+.slick-dots .slick-active {
+  background-color: #fff;
+  border-radius: 50%;
 }
 
 .ui-widget-content {

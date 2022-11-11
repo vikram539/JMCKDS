@@ -9,7 +9,7 @@
             $num_row = mysqli_num_rows($pageBgImg);
             if($num_row > 0){
                 $fetchGalery = mysqli_fetch_assoc($pageBgImg);
-                $pagename = str_replace(" ", "-", $fetchGalery['pagename']);
+                $pagename = strtolowercase(str_replace(" ", "-", $fetchGalery['pagename']));
                 $imgName = $fetchGalery['small_img'];
             }
         ?>
@@ -19,7 +19,7 @@
         </section>         
         <?php require("assets/services.php"); ?>
         <section class="prestwickFlight">
-            <img src="<?=$imgPath?>1920x820.jpg" alt="<?=$name?>" class='img-fluid w-100' />
+            <img src="<?=$imgPath?>homepage2.jpg" alt="<?=$name?>" class='img-fluid w-100' />
             <div class="homeContent">
                 <div class="container">
                     <div class="row">
@@ -31,7 +31,49 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>        
+        <?php require("assets/flight-center.php"); ?>
+        <?php require("assets/testimonial-blog.php"); ?>
         <?php require("assets/footer.php"); ?>
     </body>
 </html>
+<script>
+    $(document).ready(function(){
+        $('.center').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        autoplay: true,
+        responsive: [
+            {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+            }
+        ]
+        });
+
+        // One time slider
+        $('.one-time').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            arrows: false
+        });
+    })
+    </script>

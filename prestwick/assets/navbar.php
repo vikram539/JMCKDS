@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-light">
     <div class="container">
         <a class="navbar-brand" href="<?=$website_domain?>">
             <img src="<?=$imgPath.$hotel_info_array['header_logo']?>" alt="<?= $name ?>">

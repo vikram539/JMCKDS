@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="typography mb-5 pb-4">
-                    <h2>Aircraft Registration</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, mi aliquam tortor purus odio amet a habitasse. Nisl egestas amet malesuada sem faucibus malesuada tortor, dui. Et porttitor sem sollicitudin feugiat velit dolor aliquet ac potenti. Tempus diam lobortis vitae vestibulum tellus integer ornare egestas purus.</p>
+                    <h2>PPR Form</h2>
+                    <p class='w-50'>Prior notification of your arrival is required at Prestwick Flight Centre,</p>
                 </div>
             </div>
             <div class="col-12">

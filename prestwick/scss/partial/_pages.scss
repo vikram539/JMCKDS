@@ -1,5 +1,9 @@
 .prestwickFlight{
     position: relative;
+    @include min_max_width(0px, 767px){
+        overflow: hidden;
+        overflow-y: auto;  
+    }   
     &::after{
         content: '';
         position: absolute;
@@ -60,8 +64,8 @@
     &::before{
         content: '';
         position: absolute;
-        background: linear-gradient(355.96deg, #000000 6.14%, rgba(0, 0, 0, 0) 101.08%);
-        transform: rotate(180deg);
+        background: linear-gradient(355.96deg, #000000 6.14%, rgba(0, 0, 0, 0) 75%);
+        // transform: rotate(180deg);
         top: 0;
         left: 0;
         width: 100%;
@@ -194,5 +198,72 @@
             color: #BFBFBF;
             }
         }
+    }
+}
+
+// flightWrap
+.flightWrap{
+    padding: 0.5rem;
+    z-index: 9;
+    position: relative;
+    .flightImg{
+        position: relative;
+        z-index: 99;
+        .flightText{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 99;
+            padding: 0 15px;
+            @include min_max_width(0px, 767px){
+                width: 100% !important;
+            }
+            h4{
+                font-weight: 400;
+                font-size: 35px;
+                color: #fff;
+                margin-bottom: 16px;
+            }
+            p{
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 114.17%;
+            }
+        }
+    }
+}
+.slick-dots li button{
+    border:3px solid #fff !important;
+    border-radius: 50%;
+}
+//  testimonialWrap
+.testimonialWrap{
+    background-color: $secondaryColor;
+    padding: 85px 0;
+    margin: 80px 0 20px;
+    p{
+        position: relative;
+        padding: 1rem;
+        span{
+            position: absolute;
+            img{
+
+            }
+            &:nth-of-type(1){                
+                left: -5px;
+                top:0;
+            }
+            &:nth-of-type(2){                
+                right: 0px;
+                bottom: 0;
+            }
+        }
+    }
+}
+.slick-dots{
+    .slick-active{
+        background-color: #fff;
+        border-radius: 50%;
     }
 }

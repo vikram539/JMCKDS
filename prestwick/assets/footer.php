@@ -55,3 +55,4 @@
 <script src="<?=$website_domain?>js/app.member.js"></script>
 <script src="<?=$website_domain?>js/app.js"></script>
 <script src="<?=$website_domain?>js/app.plane.js"></script>
+<script type="text/javascript" src="<?=$website_domain?>slick/js/slick.min.js"></script>
