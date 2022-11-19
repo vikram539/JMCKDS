@@ -1,0 +1,76 @@
+
+// menuItems
+#menuPosition{
+    left: 0;
+    width:100%;
+    z-index: 1000;
+    background-color: $colorBlack;
+}
+.menuNav{
+    position: relative;
+    z-index: 1000;
+    margin-top: 100px;
+
+    img{
+        transition: all linear 0.5s;
+    }
+    #iconBar{
+        transition: all linear 0.5s;
+        >li{
+            position: relative;
+            padding-bottom: 20px;
+            .menuItems{    
+                background: $colorBlack url('../images/menuBg.png') no-repeat top;
+                background-size: 435px 680px;
+                background-position: 590px -36px;
+                display: none;
+                padding: 20px 0;
+                position: absolute;
+                top: 40px;
+                left: 0;
+                width: 100%;
+                .itemLinks{
+                    position: relative;
+                    text-transform: uppercase;
+                    a{                    
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 70px;
+                        line-height: 80px;                        
+                        text-shadow: 1px 1px 0 $colorGreen, 0px 0px 0 $colorGreen, 0px -1px 0 $colorGreen, 0px 0px 0 $colorGreen, 0px 0px 0 $colorGreen;
+                        text-decoration: none;
+                        transition: all linear 0.7s;
+                        color: $colorBlack;
+                    }
+                    &:hover{
+                        a{                       
+                            color: $colorGreen;
+                            text-shadow: none;
+                        }
+                    }
+                    &.active{ 
+                        a{                      
+                            color: $colorGreen;
+                        }
+                    } 
+                }
+            }        
+            &:hover img{
+                transform: rotate(-45deg);                
+            }
+            &:hover .menuItems{
+                display: block;
+            }   
+            
+            &:hover
+            {
+                 .HomeWrap{
+                    display: none;
+                 }
+            }     
+        }
+    }
+}
+.iconRotate{
+    transform: rotate(-45deg);
+}

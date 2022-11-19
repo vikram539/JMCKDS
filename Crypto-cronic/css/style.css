@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+@font-face {
+  font-family: lightFont;
+  src: url(../fonts/ClashDisplay-Light.otf);
+}
+@font-face {
+  font-family: regularFont;
+  src: url(../fonts/ClashDisplay-Regular.otf);
+}
+@font-face {
+  font-family: mediumFont;
+  src: url(../fonts/ClashDisplay-Medium.otf);
+}
+body {
+  border: none;
+  background: #000;
+  font-family: mediumFont;
+  letter-spacing: 1px;
+}
+
+*::first-letter {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 79px;
+  color: #D9D9D9;
+  margin-bottom: 20px;
+}
+h2 span {
+  color: #03A804;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  color: #D9D9D9;
+  margin: 20px 0;
+}
+
+#menuPosition {
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #000;
+}
+
+.menuNav {
+  position: relative;
+  z-index: 1000;
+  margin-top: 100px;
+}
+.menuNav img {
+  transition: all linear 0.5s;
+}
+.menuNav #iconBar {
+  transition: all linear 0.5s;
+}
+.menuNav #iconBar > li {
+  position: relative;
+  padding-bottom: 20px;
+}
+.menuNav #iconBar > li .menuItems {
+  background: #000 url("../images/menuBg.png") no-repeat top;
+  background-size: 435px 680px;
+  background-position: 590px -36px;
+  display: none;
+  padding: 20px 0;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+}
+.menuNav #iconBar > li .menuItems .itemLinks {
+  position: relative;
+  text-transform: uppercase;
+}
+.menuNav #iconBar > li .menuItems .itemLinks a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 80px;
+  text-shadow: 1px 1px 0 #03A804, 0px 0px 0 #03A804, 0px -1px 0 #03A804, 0px 0px 0 #03A804, 0px 0px 0 #03A804;
+  text-decoration: none;
+  transition: all linear 0.7s;
+  color: #000;
+}
+.menuNav #iconBar > li .menuItems .itemLinks:hover a {
+  color: #03A804;
+  text-shadow: none;
+}
+.menuNav #iconBar > li .menuItems .itemLinks.active a {
+  color: #03A804;
+}
+.menuNav #iconBar > li:hover img {
+  transform: rotate(-45deg);
+}
+.menuNav #iconBar > li:hover .menuItems {
+  display: block;
+}
+.menuNav #iconBar > li:hover .HomeWrap {
+  display: none;
+}
+
+.iconRotate {
+  transform: rotate(-45deg);
+}
+
+.HomeWrap {
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+
+.signatureImg {
+  z-index: 100;
+}
+.signatureImg img {
+  max-width: 500px;
+}
+
+.signatureText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+  transform: translateY(-50%);
+  opacity: 0;
+  color: #fff;
+}
+.signatureText h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 87.6992px;
+  line-height: 108px;
+  text-shadow: 1px 1px 0 #fff, 0px 0px 0 #fff, 0px -1px 0 #fff, 0px 0px 0 #fff, 0px 0px 0 #fff;
+  color: #000;
+}
+.signatureText h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 79px;
+  color: #D9D9D9;
+}
+.signatureText h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+}
+
+.absolutePos {
+  position: absolute;
+}
+
+#homeBtn {
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  display: none;
+}
+#homeBtn a:last-child {
+  margin-left: 0px;
+}
+
+.buttonWrap {
+  display: flex;
+  width: fit-content;
+  border-radius: 60px;
+  font-family: "Poppins", sans-serif;
+}
+.buttonWrap a {
+  padding: 12px 52px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+  color: #03A804;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 1px;
+  border-radius: 60px;
+}
+.buttonWrap a::first-letter {
+  text-transform: uppercase;
+}
+.buttonWrap a:last-child {
+  margin-left: 20px;
+}
+
+.transparentBg {
+  background-color: transparent;
+}
+
+.btnBg {
+  background-color: #03A804;
+  color: #000 !important;
+}
+.btnBg a {
+  color: #000;
+}
+
+.linkButton {
+  display: flex;
+}
+
+.buttonBorder {
+  opacity: 0.9;
+  border: 1px solid #03A804;
+}
+
+.signatureBtnBlock {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+}
+
+.heading_text {
+  width: 70%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.heading_img {
+  margin: 100px 0;
+}
+.heading_img img {
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+}
+
+.cardWrap {
+  position: relative;
+  margin: 50px 0;
+  font-family: "Poppins", sans-serif;
+}
+.cardWrap > .row [class*=col-] {
+  display: flex;
+}
+.cardWrap .cardInnerOutlet {
+  box-sizing: border-box;
+  width: 100%;
+  border: 0.746629px solid #FFFFFF;
+  border-radius: 20.9056px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.cardWrap .cardInnerOutlet .cardFlex {
+  display: flex;
+  align-items: center;
+  padding: 65px;
+  flex-flow: column;
+}
+.cardWrap .cardInnerOutlet .cardFlex h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  color: #D9D9D9;
+  width: 100%;
+}
+.cardWrap .cardInnerOutlet .cardFlex h4 span {
+  color: #03A804;
+}
+.cardWrap .cardInnerOutlet .cardFlex p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #818181;
+}
+.cardWrap .cardInnerOutlet:hover {
+  background-color: #03A804 !important;
+}
+.cardWrap .cardInnerOutlet:hover h4 {
+  color: #000 !important;
+}
+.cardWrap .cardInnerOutlet:hover h4 span {
+  color: #000;
+}
+.cardWrap .cardInnerOutlet:hover p {
+  color: #000000 !important;
+}
+.cardWrap .active {
+  background-color: #03A804 !important;
+  width: 100%;
+  height: 100%;
+  border: none !important;
+}
+.cardWrap .active h4 {
+  color: #000 !important;
+}
+.cardWrap .active p {
+  color: #000000 !important;
+}
+
+footer {
+  background: url("../images/footerwave.png") no-repeat bottom center;
+  width: 100%;
+  min-height: 100px;
+  background-size: cover;
+  margin-top: 200px;
+  font-family: "Poppins", sans-serif;
+}
+footer h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #D9D9D9;
+  margin-bottom: 40px;
+}
+footer p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #D9D9D9;
+}
+footer .footerBlock {
+  min-height: 350px;
+}
+footer .footerBlock > ul {
+  list-style: none;
+  display: flex;
+}
+footer .footerBlock > ul > li {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  position: relative;
+  margin-left: 20px;
+}
+footer .footerBlock > ul > li > a {
+  text-decoration: none;
+  color: #D9D9D9;
+}
+
+.socialMedia ul {
+  list-style: none;
+  display: flex;
+}
+.socialMedia ul li {
+  width: 69px;
+  height: 69px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  margin: 10px 7px;
+}
+
+.filterMainGrid {
+  font-family: "Poppins", sans-serif;
+  margin-top: 200px;
+}
+.filterMainGrid .contentIndex, .filterMainGrid .contentText {
+  padding: 0.5rem;
+}
+.filterMainGrid .contentIndex h4 {
+  color: #fff;
+  margin-bottom: 40px;
+}
+.filterMainGrid .contentIndex > ul {
+  display: grid;
+  list-style: none;
+  padding-left: 0;
+  grid-template-columns: auto;
+  grid-row-gap: 1rem;
+}
+.filterMainGrid .contentIndex > ul > li {
+  padding: 0.5rem 1rem;
+  font-size: 24px;
+  color: #818181;
+  cursor: pointer;
+  width: fit-content;
+}
+.filterMainGrid .contentIndex > ul > li.active {
+  background: #03A804;
+  border-radius: 42.647px;
+  color: #000;
+}
+.filterMainGrid .contentIndex > ul > li:hover {
+  background: #03A804;
+  border-radius: 42.647px;
+  color: #000;
+}
+.filterMainGrid .contenttext ul {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 1rem;
+  font-size: 22px;
+}
+.filterMainGrid .contenttext ul li {
+  background: rgba(3, 168, 4, 0.41);
+  box-shadow: 0px 4px 4px rgba(49, 24, 24, 0.25);
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.5rem 1rem;
+  align-items: center;
+}
+.filterMainGrid .contenttext ul li p {
+  font-size: 22px;
+}
+
+/*# sourceMappingURL=style.css.map */

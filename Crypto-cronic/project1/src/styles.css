@@ -1,26 +1,59 @@
-@import url("https://fonts.cdnfonts.com/css/clash-display");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+@font-face {
+  font-family: lightFont;
+  src: url(assets/fonts/ClashDisplay-Light.otf);
+}
+@font-face {
+  font-family: regularFont;
+  src: url(assets/fonts/ClashDisplay-Regular.otf);
+}
+@font-face {
+  font-family: mediumFont;
+  src: url(assets/fonts/ClashDisplay-Medium.otf);
+}
 body {
   border: none;
   background: #000;
-  font-family: "Clash Display", sans-serif;
+  font-family: mediumFont;
+  letter-spacing: 1px;
 }
 
 *::first-letter {
   text-transform: uppercase;
 }
 
+h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 79px;
+  color: #D9D9D9;
+  margin-bottom: 20px;
+}
+h2 span {
+  color: #03A804;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  color: #D9D9D9;
+  margin: 20px 0;
+}
+
 .HomeWrap {
   position: absolute;
-  top: 0;
+  top: 170px;
   left: 0;
   width: 100%;
-  height: 100%;
   z-index: 99;
   overflow: hidden;
-  overflow-y: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-flow: column;
 }
 
 .signatureImg {
@@ -44,9 +77,8 @@ body {
   font-weight: 600;
   font-size: 87.6992px;
   line-height: 108px;
-  fill: none;
-  -webkit-text-stroke: 1px #fff;
-  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 0 #fff, 0px 0px 0 #fff, 0px -1px 0 #fff, 0px 0px 0 #fff, 0px 0px 0 #fff;
+  color: #000;
 }
 .signatureText h2 {
   font-style: normal;
@@ -81,6 +113,7 @@ body {
   display: flex;
   width: fit-content;
   border-radius: 60px;
+  font-family: "Poppins", sans-serif;
 }
 .buttonWrap a {
   padding: 12px 52px;
@@ -131,6 +164,194 @@ body {
   left: 0;
   z-index: 999;
   opacity: 0;
+}
+
+#menuPosition {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #000;
+}
+
+.menuNav {
+  position: relative;
+  z-index: 1000;
+  margin-top: 100px;
+}
+.menuNav img {
+  transition: all linear 0.5s;
+}
+.menuNav #iconBar {
+  transition: all linear 0.5s;
+}
+.menuNav #iconBar > li {
+  position: relative;
+}
+.menuNav #iconBar > li .menuItems {
+  background: #000 url("assets/images/menuBg.png") no-repeat top;
+  background-size: 435px 680px;
+  background-position: 440px -36px;
+  display: none;
+  padding: 20px 0;
+}
+.menuNav #iconBar > li .menuItems .itemLinks {
+  position: relative;
+  text-transform: uppercase;
+}
+.menuNav #iconBar > li .menuItems .itemLinks a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 80px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #03A804;
+  text-decoration: none;
+  transition: all linear 0.7s;
+}
+.menuNav #iconBar > li .menuItems .itemLinks:hover a {
+  -webkit-text-fill-color: #03A804;
+  -webkit-text-stroke: 0px;
+}
+.menuNav #iconBar > li .menuItems .itemLinks.active {
+  -webkit-text-fill-color: #03A804 !important;
+  -webkit-text-stroke: 0px !important;
+}
+.menuNav #iconBar > li:hover img {
+  transform: rotate(-45deg);
+}
+.menuNav #iconBar > li:hover .menuItems {
+  display: block;
+}
+
+.iconRotate {
+  transform: rotate(-45deg);
+}
+
+.heading_text {
+  width: 70%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.heading_img {
+  margin: 100px 0;
+}
+.heading_img img {
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+}
+
+.cardWrap {
+  position: relative;
+  margin: 50px 0;
+  font-family: "Poppins", sans-serif;
+}
+.cardWrap > .row [class*=col-] {
+  display: flex;
+}
+.cardWrap .cardInnerOutlet {
+  box-sizing: border-box;
+  width: 100%;
+  border: 0.746629px solid #FFFFFF;
+  border-radius: 20.9056px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.cardWrap .cardInnerOutlet .cardFlex {
+  display: flex;
+  align-items: center;
+  padding: 65px;
+  flex-flow: column;
+}
+.cardWrap .cardInnerOutlet .cardFlex h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  color: #D9D9D9;
+  width: 100%;
+}
+.cardWrap .cardInnerOutlet .cardFlex h4 span {
+  color: #03A804;
+}
+.cardWrap .cardInnerOutlet .cardFlex p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #818181;
+}
+.cardWrap .active {
+  background-color: #03A804 !important;
+  width: 100%;
+  height: 100%;
+  border: none !important;
+}
+.cardWrap .active h4 {
+  color: #000 !important;
+}
+.cardWrap .active p {
+  color: #000000 !important;
+}
+
+footer {
+  background: url("assets/images/footerwave.png") no-repeat bottom center;
+  width: 100%;
+  min-height: 100px;
+  background-size: cover;
+  margin-top: 200px;
+  font-family: "Poppins", sans-serif;
+}
+footer h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #D9D9D9;
+  margin-bottom: 40px;
+}
+footer p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #D9D9D9;
+}
+footer .footerBlock {
+  min-height: 350px;
+}
+footer .footerBlock > ul {
+  list-style: none;
+  display: flex;
+}
+footer .footerBlock > ul > li {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  position: relative;
+  margin-left: 20px;
+}
+footer .footerBlock > ul > li > a {
+  text-decoration: none;
+  color: #D9D9D9;
+}
+
+.socialMedia ul {
+  list-style: none;
+  display: flex;
+}
+.socialMedia ul li {
+  width: 69px;
+  height: 69px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  margin: 10px 7px;
 }
 
 /*# sourceMappingURL=styles.css.map */
