@@ -87,5 +87,22 @@
         
         <?php require("assets/footer-content.php"); ?>
         <?php require("assets/footer.php"); ?>
+        <div class="animateText">
+            <?php
+                $getPageAnimate = $fun_obj->commonSelect_table("cms_pages", "page_ID^page_name^filename", "WHERE flag=$page_ID ORDER BY page_order ASC");
+                while($fetchPageAnimate =  mysqli_fetch_array($getPageAnimate)){
+                    $pageIDAnimate = $fetchPageAnimate['page_ID'];
+
+                    $animate_h2 = $fun_obj->TextArray($pageIDAnimate, "h2");
+
+                    $span = @$animate_span[0] != '' ? "<span>".$animate_span[0]."</span>" : "";
+                    echo"<div class='our-future mt-5 mb-5 pt-5 pb-5 animateHeading cssClass'>";
+                        if($animate_h2[0] != '' ) echo "<h2>".$animate_h2[0].$span."</h2>";
+                       
+                    echo"</div>";
+                }
+                    
+            ?>
+        </div>
     </body>
 </html>

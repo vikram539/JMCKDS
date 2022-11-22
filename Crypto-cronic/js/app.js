@@ -24,15 +24,22 @@ $(function(){
 	//   $(".menuItems").fadeToggle();
 	})
 	
-	// $(document).on("mouseenter", "#iconBar", function(e){
-	//   e.preventDefault();
-	//   $("#iconBar>img").addClass("iconRotate");
-	//   $(".menuItems").fadeIn();
-	// })
-	
-	// $(document).on("mouseleave", "#iconBar", function(e){
-	//   e.preventDefault();
-	//   $("#iconBar>img").removeClass("iconRotate");
-	//   $(".menuItems").fadeOut();
-	// })
+	$(".animateText>.animateHeading:first-child").addClass("active");	
+
+	function changeClass() {
+		if ($(".animateText>.animateHeading.active").next(".cssClass").length > 0) {
+			$(".animateText>.animateHeading.active").removeClass("active").next(".cssClass").addClass("active");
+		}
+		else {
+			$(".animateText").fadeOut();
+		// 	$(".animateText>.animateHeading.active").removeClass("active");
+		// 	$(".cssClass").first().addClass("active");
+		}
+
+		setTimeout(changeClass, 1500); // 2000ms = 1sec
+	}
+	setTimeout( () =>{
+
+		changeClass();
+	}, 2000)
   })
