@@ -42,4 +42,27 @@ $(function(){
 
 		changeClass();
 	}, 2000)
+
+
+	
+	$(document).on("click", ".grid_token", function(){
+		$(".tokenPup_up").fadeIn();
+
+		let _curentId = $(this).attr("data-id");
+		$.ajax({
+			url: "assets/ajax/tokenData.php",
+			type: "GET",
+			data: {pageId: _curentId},
+			success: function(result){
+			$(".tokentContent").html(result);
+
+				console.log(result);
+			}
+		})
+	});
+
+	// close grid
+	$(document).on("click", ".tokenPup_up .close", function(){
+		$(".tokenPup_up").fadeOut();
+	})
   })

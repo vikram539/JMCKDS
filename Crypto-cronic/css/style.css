@@ -65,6 +65,9 @@ p {
 .menuNav #iconBar > li {
   position: relative;
   padding-bottom: 20px;
+  width: fit-content;
+  margin: 0 0 0 auto;
+  min-width: 100px;
 }
 .menuNav #iconBar > li .menuItems {
   background: #000 url("../images/menuBg.png") no-repeat top;
@@ -72,9 +75,10 @@ p {
   background-position: 590px -36px;
   display: none;
   padding: 20px 0;
-  position: absolute;
-  top: 40px;
-  left: 0;
+  position: fixed;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
 }
 .menuNav #iconBar > li .menuItems .itemLinks {
@@ -290,6 +294,15 @@ p {
   line-height: 36px;
   color: #818181;
 }
+.cardWrap .cardInnerOutlet .grid_token {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: end;
+  justify-items: center;
+  text-align: center;
+  cursor: pointer;
+}
 .cardWrap .cardInnerOutlet:hover {
   background-color: #03A804 !important;
 }
@@ -302,6 +315,9 @@ p {
 .cardWrap .cardInnerOutlet:hover p {
   color: #000000 !important;
 }
+.cardWrap .cardInnerOutlet:hover img {
+  filter: brightness(0);
+}
 .cardWrap .active {
   background-color: #03A804 !important;
   width: 100%;
@@ -313,6 +329,93 @@ p {
 }
 .cardWrap .active p {
   color: #000000 !important;
+}
+
+.tokenPup_up {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 99;
+  background-color: #000;
+  font-family: "Poppins", sans-serif;
+}
+.tokenPup_up .close {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  max-width: 25px;
+  cursor: pointer;
+}
+.tokenPup_up .token_data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  background-color: #03A804;
+  padding: 40px 40px;
+}
+.tokenPup_up .token_data img {
+  filter: brightness(0) invert(1);
+}
+.tokenPup_up .token_data .cardFlex {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.tokenPup_up .token_data .cardFlex h4 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #D9D9D9;
+  margin: 20px 0;
+}
+.tokenPup_up .token_data .cardFlex p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 48px;
+  text-align: center;
+  color: #000;
+}
+
+.contact_form {
+  margin: 180px 0;
+}
+.contact_form form input, .contact_form form textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #03A804;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: capitalize;
+  color: #D9D9D9;
+  border-radius: 0px;
+}
+.contact_form form input:focus, .contact_form form textarea:focus {
+  background-color: transparent;
+  box-shadow: none;
+}
+.contact_form form .submit_btn {
+  background: #818181;
+  border-radius: 42.647px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 10px 58px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-top: 50px;
 }
 
 footer {

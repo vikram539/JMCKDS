@@ -19,16 +19,21 @@
         >li{
             position: relative;
             padding-bottom: 20px;
+            width: fit-content;
+            margin: 0 0 0 auto;
+            min-width: 100px;
             .menuItems{    
                 background: $colorBlack url('../images/menuBg.png') no-repeat top;
                 background-size: 435px 680px;
                 background-position: 590px -36px;
                 display: none;
                 padding: 20px 0;
-                position: absolute;
-                top: 40px;
-                left: 0;
+                position: fixed;
+                top: 130px;
+                left: 50%;
+                transform: translateX(-50%);
                 width: 100%;
+
                 .itemLinks{
                     position: relative;
                     text-transform: uppercase;
