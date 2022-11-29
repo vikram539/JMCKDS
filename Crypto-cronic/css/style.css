@@ -53,7 +53,7 @@ p {
 
 .menuNav {
   position: relative;
-  z-index: 1000;
+  z-index: 10000;
   margin-top: 100px;
 }
 .menuNav img {
@@ -62,30 +62,35 @@ p {
 .menuNav #iconBar {
   transition: all linear 0.5s;
 }
-.menuNav #iconBar > li {
+.menuNav #iconBar > a {
   position: relative;
   padding-bottom: 20px;
   width: fit-content;
   margin: 0 0 0 auto;
   min-width: 100px;
 }
-.menuNav #iconBar > li .menuItems {
+
+.menuItems {
+  display: none;
   background: #000 url("../images/menuBg.png") no-repeat top;
   background-size: 435px 680px;
-  background-position: 590px -36px;
-  display: none;
+  background-position: 70% 50%;
   padding: 20px 0;
   position: fixed;
-  top: 130px;
+  top: 0;
+  padding-top: 130px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+  height: 100%;
+  z-index: 9999;
 }
-.menuNav #iconBar > li .menuItems .itemLinks {
+.menuItems .itemLinks {
   position: relative;
   text-transform: uppercase;
+  list-style: none;
 }
-.menuNav #iconBar > li .menuItems .itemLinks a {
+.menuItems .itemLinks a {
   font-style: normal;
   font-weight: 600;
   font-size: 70px;
@@ -94,26 +99,38 @@ p {
   text-decoration: none;
   transition: all linear 0.7s;
   color: #000;
+  position: relative;
 }
-.menuNav #iconBar > li .menuItems .itemLinks:hover a {
+.menuItems .itemLinks a::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
   color: #03A804;
+  width: 0%;
+  transition: all linear 0.2s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menuItems .itemLinks:hover a {
   text-shadow: none;
 }
-.menuNav #iconBar > li .menuItems .itemLinks.active a {
+.menuItems .itemLinks:hover a::before {
+  width: 100%;
+}
+.menuItems .itemLinks.active a {
   color: #03A804;
-}
-.menuNav #iconBar > li:hover img {
-  transform: rotate(-45deg);
-}
-.menuNav #iconBar > li:hover .menuItems {
-  display: block;
-}
-.menuNav #iconBar > li:hover .HomeWrap {
-  display: none;
 }
 
 .iconRotate {
   transform: rotate(-45deg);
+}
+
+#video_1, #video_2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
 }
 
 .HomeWrap {

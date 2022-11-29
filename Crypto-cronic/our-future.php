@@ -52,7 +52,7 @@
                         <div class="cardWrap">
                             <div class="row">
                                 <div class="col-12 col-lg-4 mb-4">
-                                    <div class="cardInnerOutlet active">
+                                    <div class="cardInnerOutlet">
                                         <div class="cardFlex">
                                             <h4>Germany: The HotBox, new dawn and horizon for the European Financial and Regulatory Landscape</h4>
                                             <p>European liberal values and economic principles are prominently on display in German commerce.</p>
@@ -94,10 +94,11 @@
                     $pageIDAnimate = $fetchPageAnimate['page_ID'];
 
                     $animate_h2 = $fun_obj->TextArray($pageIDAnimate, "h2");
+                    $animate_span = $fun_obj->TextArray($pageIDAnimate, "span");
 
-                    $span = @$animate_span[0] != '' ? "<span>".$animate_span[0]."</span>" : "";
+                    $span_ = @$animate_span[0] != '' ? "<span>".$animate_span[0]."</span>" : "";
                     echo"<div class='our-future mt-5 mb-5 pt-5 pb-5 animateHeading cssClass'>";
-                        if($animate_h2[0] != '' ) echo "<h2>".$animate_h2[0].$span."</h2>";
+                        if($animate_h2[0] != '' ) echo "<h2>".$animate_h2[0].$span_."</h2>";
                        
                     echo"</div>";
                 }

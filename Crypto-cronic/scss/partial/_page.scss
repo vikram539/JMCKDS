@@ -1,4 +1,16 @@
 // HomeWrap
+#video_1, #video_2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.position_main_div{
+    // position: fixed;
+    // bottom: 0;
+    // width: 100%;
+    // overflow-y: auto;
+}
 .HomeWrap{
     z-index: 99;
     display: flex;

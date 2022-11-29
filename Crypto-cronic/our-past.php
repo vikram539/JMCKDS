@@ -10,7 +10,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="heading_text">
-                            <h2>Founded in Switzerland. Funded <span>Globally.</span></h2>
+                            <h2>Founded in Switzerland. Perpetuating <span>Globally.</span></h2>
                             <p>With backgrounds in Finance, Investment strategies, Law and MedTech - the founding members of the DAO came together sharing a common vision.</p>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                         <div class="cardWrap">
                             <div class="row">
                                 <div class="col-12 col-lg-6 mb-4">
-                                    <div class="cardInnerOutlet active">
+                                    <div class="cardInnerOutlet">
                                         <div class="cardFlex">
                                             <h4>Germany: The HotBox, new dawn and horizon for the European Financial and Regulatory Landscape</h4>
                                             <p>European liberal values and economic principles are prominently on display in German commerce.</p>

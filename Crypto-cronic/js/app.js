@@ -1,6 +1,7 @@
 $(function(){
 	setTimeout(() =>{
-	  $("#homeBtn").fadeIn();
+	  $("#homeBtn, #video_1").fadeIn();
+	 
 	}, 1500);
 	
 	$(document).on("click", ".linkButton", function(e){
@@ -15,13 +16,14 @@ $(function(){
 	  });
 
 	  $(".row>.signatureBtnBlock").animate({bottom: 0, opacity: 1}, 1000);
+	  $("#video_2").fadeIn();
 	})
 
 	// Icon bar function
-	$(document).on("click", "#iconBar", function(){
-	 
-	//   $("#iconBar>img").toggleClass("iconRotate");
-	//   $(".menuItems").fadeToggle();
+	$(document).on("click", "#iconBar>a", function(e){
+		e.preventDefault();
+	  $("#iconBar>a>img").toggleClass("iconRotate");
+	  $(".menuItems").fadeToggle();
 	})
 	
 	$(".animateText>.animateHeading:first-child").addClass("active");	
