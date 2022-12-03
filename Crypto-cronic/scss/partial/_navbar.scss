@@ -4,7 +4,12 @@
     left: 0;
     width:100%;
     z-index: 1000;
-    background-color: $colorBlack;
+    // background-color: $colorBlack;
+    // top: 0;
+    // position: fixed;
+    // min-height: 150px;
+    // display: flex;
+    // align-items: center;
 }
 .menuNav{
     position: relative;
@@ -14,8 +19,14 @@
     img{
         transition: all linear 0.5s;
     }
+    .opacityClass{
+        opacity: 0;
+    }
     #iconBar{
-        transition: all linear 0.5s;
+        transition: all linear 0.5s; 
+        position: absolute;
+        top: 30px;
+        right: 0;
         >a{
             position: relative;
             padding-bottom: 20px;
@@ -40,8 +51,9 @@
     }
 }
 .menuItems{  
-    display: none;  
-    background: $colorBlack url('../images/menuBg.png') no-repeat top;
+    display: none;
+    background: $colorBlack;  
+    // background: $colorBlack url('../images/menuBg.png') no-repeat top;
     background-size: 435px 680px;
     background-position: 70% 50%;
     padding: 20px 0;
@@ -53,7 +65,10 @@
     width: 100%;
     height: 100%;
     z-index: 9999;
-
+    overflow-y: auto;
+    .row{
+        align-items: center;
+    }
     .itemLinks{
         position: relative;
         text-transform: uppercase;

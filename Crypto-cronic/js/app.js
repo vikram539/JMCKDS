@@ -1,7 +1,10 @@
 $(function(){
+	
+	// $(".heading_img>img").css({"top":0, "right": 0});
 	setTimeout(() =>{
-	  $("#homeBtn, #video_1").fadeIn();
-	 
+		$(".signatureImg img").animate({top: 0}, 700,  function(){
+			$("#homeBtn, #video_1").fadeIn();})
+	  	
 	}, 1500);
 	
 	$(document).on("click", ".linkButton", function(e){
@@ -10,6 +13,7 @@ $(function(){
 	  let signatureImg = $(".row>.signatureImg");
 	  let signatureText = $(".row>.signatureText");
 	  $(this).closest("#homeBtn").fadeOut();
+	  $("#iconBar").animate({opacity: 1}, 1000);
 	  $(".row>.signatureImg>img").animate({marginLeft: 640}, 1000);
 	  $(".row>.signatureText").animate({left: 0, zIndex: 999}, 1000, function(){
 		$(this).css({"opacity": 1, "transition":"all linear 0.5s"});
@@ -33,7 +37,8 @@ $(function(){
 			$(".animateText>.animateHeading.active").removeClass("active").next(".cssClass").addClass("active");
 		}
 		else {
-			$(".animateText").fadeOut();
+			$(".animateText, #ourFuture_video").fadeOut();
+			
 		// 	$(".animateText>.animateHeading.active").removeClass("active");
 		// 	$(".cssClass").first().addClass("active");
 		}

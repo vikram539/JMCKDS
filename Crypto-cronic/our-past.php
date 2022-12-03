@@ -5,6 +5,9 @@
 </head>
     <body>
         <?php require("assets/navbar.php"); ?>
+        <video autoplay muted loop id="ourPast_video" width='100%'>
+                <source src="<?=$imgPath?>video/CryptoCronic1.mp4" type="video/mp4">
+            </video>
         <section id="ourPastSection" class="HomeWrap">
             <div class="container">
                 <div class="row">
@@ -16,7 +19,7 @@
                     </div>
                     <div class="col-12">
                         <div class="heading_img">
-                            <img src="<?=$imgPath?>our-past.png" alt="our past" class="img-fluid" />
+                            <img src="<?=$imgPath?>our-past.png" alt="our past" class="img-fluid pastImgPos" />
                         </div>
                     </div>
 

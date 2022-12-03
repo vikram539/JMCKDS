@@ -87,9 +87,13 @@
         
         <?php require("assets/footer-content.php"); ?>
         <?php require("assets/footer.php"); ?>
-        <div class="animateText">
+                   
+            <video autoplay muted loop id="ourFuture_video" width='100%'>
+                <source src="<?=$imgPath?>video/CryptoCronic1.mp4" type="video/mp4">
+            </video>
+        <div class="animateText"> 
             <?php
-                $getPageAnimate = $fun_obj->commonSelect_table("cms_pages", "page_ID^page_name^filename", "WHERE flag=$page_ID ORDER BY page_order ASC");
+                $getPageAnimate = $fun_obj->commonSelect_table("cms_pages", "page_ID^page_name^filename", "WHERE flag=$page_ID ORDER BY page_order ASC limit 3");
                 while($fetchPageAnimate =  mysqli_fetch_array($getPageAnimate)){
                     $pageIDAnimate = $fetchPageAnimate['page_ID'];
 
