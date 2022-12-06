@@ -48,7 +48,7 @@ $(function(){
 	setTimeout( () =>{
 
 		changeClass();
-	}, 2000)
+	}, 3000)
 
 
 	

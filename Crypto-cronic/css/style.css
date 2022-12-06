@@ -18,10 +18,6 @@ body {
   letter-spacing: 1px;
 }
 
-*::first-letter {
-  text-transform: uppercase;
-}
-
 h2 {
   font-style: normal;
   font-weight: 600;
