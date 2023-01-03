@@ -15,12 +15,18 @@
     position: relative;
     z-index: 10000;
     margin-top: 100px;
+    @include min_max_width(0px, 767px){        
+        margin-top: 20px;
+    }
 
     img{
         transition: all linear 0.5s;
     }
     .opacityClass{
         opacity: 0;
+        @include min_max_width(0px, 767px){
+            opacity: 1;
+        }
     }
     #iconBar{
         transition: all linear 0.5s; 
@@ -73,6 +79,9 @@
         position: relative;
         text-transform: uppercase;
         list-style: none;
+        @include min_max_width(0px, 767px){ 
+            padding: 0.7rem 0;
+        }
         a{                    
             font-style: normal;
             font-weight: 600;
@@ -93,6 +102,10 @@
                 transition: all linear 0.2s;
                 overflow: hidden;
                 white-space: nowrap;
+            }
+            @include min_max_width(0px, 767px){        
+                font-size: 35px;
+                line-height: 42px;  
             }
         }
         &:hover{

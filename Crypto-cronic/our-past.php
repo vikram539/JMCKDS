@@ -1,6 +1,19 @@
 <?php
+    session_start();
+
     $page_ID = 2;
     require("assets/header.php");
+    if(!isset($_SESSION['passcode']))  {
+        header("Location:login.php");
+    }
+    else{
+        $now = time(); // Checking the time now when home page starts.
+
+        if ($now > $_SESSION['expire']) {
+            session_destroy();
+            header("Location:login.php");
+        }
+    }
 ?>
 </head>
     <body>
@@ -13,8 +26,8 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="heading_text">
-                            <h2>Founded in Switzerland. Perpetuating <span>Globally.</span></h2>
-                            <p>With backgrounds in Finance, Investment strategies, Law and MedTech - the founding members of the DAO came together sharing a common vision.</p>
+                            <?php if($h2[0] != '' ) echo "<h2>".$h2[0]."<span>&nbsp;".$span[0]."</span></h2>"; ?>                            
+                            <?php if($p[0] != '' ) echo "<p>".$p[0]."</p>"; ?>
                         </div>
                     </div>
                     <div class="col-12">
@@ -25,48 +38,41 @@
 
                     <div class="col-12">
                         <div class="heading_text w-100">
-                            <p>The global financial markets faced massive disruption from the cryptosphere. 
-                            A year down the line, it’s evident that there is more to crypto than just HODL.</p>
+                            <?php if($p[1] != '' ) echo "<p>".$p[1]."</p>"; ?>
 
-                            <p>Corporate Administration, in a traditional sense was a classical exercise in fiscal prudence. With the advent of the VC economy, an environment was created where neither investors nor the retail market can fully experience the power of crypto.</p>
+                            <?php if($p[2] != '' ) echo "<p>".$p[2]."</p>"; ?>
 
-                            <p>The High GOAT hypothesis proposes that price action is an extremely limited avenue for actual utilization of the cryptographic applications. </p>
+                            <?php if($p[3] != '' ) echo "<p>".$p[3]."</p>"; ?>
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="cardWrap">
                             <div class="row">
-                                <div class="col-12 col-lg-6 mb-4">
-                                    <div class="cardInnerOutlet">
-                                        <div class="cardFlex">
-                                            <h4>Germany: The HotBox, new dawn and horizon for the European Financial and Regulatory Landscape</h4>
-                                            <p>European liberal values and economic principles are prominently on display in German commerce.</p>
+                            <?php
+                                $getPage_ = $fun_obj->commonSelect_table("cms_pages", "page_ID^page_name^filename", "WHERE flag=$page_ID ORDER BY page_order ASC");
+                                while($fetchPage_ =  mysqli_fetch_array($getPage_)){
+                                    $pageID_ = $fetchPage_['page_ID'];
 
-                                            <p>One of the most pro-business jurisdictions in the world, Germany is a country that is looking to take the lead on the European market through effective and practical legislation.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-12 col-lg-6 mb-4">
-                                    <div class="cardInnerOutlet">
-                                        <div class="cardFlex">
-                                            <h4>Classical <span class="w-100 d-block">Management</span></h4>
-                                            <p>European liberal values and economic principles are prominently on display in German commerce.</p>
-                                            <p>One of the most pro-business jurisdictions in the world, Germany is a country that is looking to take the lead on the European market through effective and practical legislation.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-12 col-lg-6 mb-4">
-                                    <div class="cardInnerOutlet">
-                                        <div class="cardFlex">
-                                            <h4><span class="">Finance</span> & Real Estate</h4>
-                                            <p>European liberal values and economic principles are prominently on display in German commerce.</p>
-                                            <p>One of the most pro-business jurisdictions in the world, Germany is a country that is looking to take the lead on the European market through effective and practical legislation.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
+                                    $__h4 = $fun_obj->TextArray($pageID_, "h4");
+                                    $__p = $fun_obj->TextArray($pageID_, "p");
+                                    $__span = $fun_obj->TextArray($pageID_, "span");
+
+                                    $span_ = @$__span[0] != '' ? "<span>".$__span[0]."</span>" : "";
+                                    $div = '<div class="col-12 col-lg-6 mb-4">';
+                                    $div .= '<div class="cardInnerOutlet">';
+                                    $div .= '<div class="cardFlex">'; 
+                                    $div .= '<h4>'. $__h4[0].'<span class="w-100 d-block">'.$span_.'</span></h4>';
+                                    for($i = 0; $i < count($__p); $i++){
+                                        $div .= "<p>".$__p[$i]."</p>";
+                                    }
+                                    $div .= '</div>';
+                                    $div .= '</div>';
+                                    $div .= '</div> ';                                   
+                                    
+                                    echo $div;
+                                }
+                                    
+                            ?>                                
                             </div>
                         </div>
                     </div>

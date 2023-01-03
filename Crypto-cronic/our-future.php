@@ -51,32 +51,31 @@
                     <div class="col-12">
                         <div class="cardWrap">
                             <div class="row">
-                                <div class="col-12 col-lg-4 mb-4">
-                                    <div class="cardInnerOutlet">
-                                        <div class="cardFlex">
-                                            <h4>Germany: The HotBox, new dawn and horizon for the European Financial and Regulatory Landscape</h4>
-                                            <p>European liberal values and economic principles are prominently on display in German commerce.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-12 col-lg-4 mb-4">
-                                    <div class="cardInnerOutlet">
-                                        <div class="cardFlex">
-                                            <h4>Classical <span class="w-100 d-block">Management</span></h4>
-                                            <p>European liberal values and economic principles are prominently on display in German commerce.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-12 col-lg-4 mb-4">
-                                    <div class="cardInnerOutlet">
-                                        <div class="cardFlex">
-                                            <h4><span class="">Finance</span> & Real Estate</h4>
-                                            <p>European liberal values and economic principles are prominently on display in German commerce.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <?php
+                                $getPage_ = $fun_obj->commonSelect_table("cms_pages", "page_ID^page_name^filename", "WHERE flag=2 ORDER BY page_order ASC");
+                                while($fetchPage_ =  mysqli_fetch_array($getPage_)){
+                                    $pageID_ = $fetchPage_['page_ID'];
+
+                                    $__h4 = $fun_obj->TextArray($pageID_, "h4");
+                                    $__p = $fun_obj->TextArray($pageID_, "p");
+                                    $__span = $fun_obj->TextArray($pageID_, "span");
+
+                                    $span_ = @$__span[0] != '' ? "<span>".$__span[0]."</span>" : "";
+                                    $div = '<div class="col-12 col-lg-4 mb-4">';
+                                    $div .= '<div class="cardInnerOutlet">';
+                                    $div .= '<div class="cardFlex">'; 
+                                    $div .= '<h4>'. $__h4[0].'<span class="w-100 d-block">'.$span_.'</span></h4>';
+                                    for($i = 0; $i < count($__p); $i++){
+                                        $div .= "<p>".$__p[$i]."</p>";
+                                    }
+                                    $div .= '</div>';
+                                    $div .= '</div>';
+                                    $div .= '</div> ';                                   
+                                    
+                                    echo $div;
+                                }
+                                    
+                            ?>               
                                 
                             </div>
                         </div>

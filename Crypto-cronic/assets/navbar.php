@@ -15,7 +15,7 @@
     <div class="menuItems">
         <div class="container">
             <div class="row">
-                <div class="col-7">
+                <div class="col-12 col-lg-7">
                     <ul>
                         <?php
                             $navItems = $fun_obj->commonSelect_table("cms_pages", "page_ID^page_name^filename", "WHERE for_menu='active' ORDER BY page_order ASC");
@@ -35,7 +35,7 @@
                         ?>
                     </ul>
                 </div>
-                <div class="col-5">
+                <div class="col-lg-5 d-none d-lg-block">
                     <img src="<?=$imgPath?>menuBg.png" alt="Globe" class='img-fluid w-75'>
                 </div>
             </div>

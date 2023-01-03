@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@200;300&display=swap");
+header {
+  position: relative;
+}
+header .headerImg {
+  background: url(../images/signature.png) no-repeat top left;
+  min-height: 400px;
+  border: 0px solid;
+  max-width: 100%;
+  width: 100%;
+  background-size: auto 100%;
+}
+header .header-content-section {
+  border: 0px solid red;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  align-content: space-between;
+  grid-gap: 1rem;
+}
+header .header-content-section .logoSection {
+  width: 100%;
+  border: 0px solid green;
+  padding: 25px 0 100px;
+}
+header .header-content-section .contextSection {
+  width: 100%;
+  border: 0px solid blue;
+}
+header .header-content-section .contextSection h2 {
+  width: 625px;
+}
+header .header-content-section .contextSection .buttonWrap {
+  margin-top: 60px;
+}
+header .header-content-section .featuresSection {
+  width: 100%;
+  padding-top: 120px;
+}
+header .header-content-section .featuresSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
+}
+header .header-content-section .featuresSection ul li {
+  position: relative;
+}
+header .header-content-section .featuresSection ul li .featureBlock {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  flex-wrap: wrap;
+}
+header .header-content-section .featuresSection ul li .featureBlock .featureImg {
+  margin: 20px 0;
+  width: 100%;
+}
+header .header-content-section .featuresSection ul li .featureBlock .featureImg img {
+  max-width: 100%;
+  display: block;
+}
+header .header-content-section .featuresSection ul li .featureBlock .featureText h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #000000;
+}
+header .header-content-section .featuresSection ul li .featureBlock .featureText p {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #000000;
+  margin-top: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+*::first-letter {
+  text-transform: uppercase;
+}
+
+body {
+  font-size: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: #111940;
+}
+
+h2 {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 106.5%;
+  color: #111940;
+  font-family: "DM Serif Display", serif;
+  margin-bottom: 25px;
+}
+
+p {
+  font-weight: 200;
+  font-size: 24px;
+  color: #111940;
+}
+
+.buttonWrap {
+  position: relative;
+}
+.buttonWrap button, .buttonWrap a {
+  width: 234.99px;
+  height: 74.6px;
+  background: #111940;
+  border-radius: 11px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #D9D9D9;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -29,6 +29,12 @@ h2 {
 h2 span {
   color: #03A804;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  h2 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
 
 p {
   font-family: "Poppins", sans-serif;
@@ -38,6 +44,11 @@ p {
   line-height: 48px;
   color: #D9D9D9;
   margin: 20px 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  p {
+    font-size: 25px;
+  }
 }
 
 #menuPosition {
@@ -51,11 +62,21 @@ p {
   z-index: 10000;
   margin-top: 100px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .menuNav {
+    margin-top: 20px;
+  }
+}
 .menuNav img {
   transition: all linear 0.5s;
 }
 .menuNav .opacityClass {
   opacity: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .menuNav .opacityClass {
+    opacity: 1;
+  }
 }
 .menuNav #iconBar {
   transition: all linear 0.5s;
@@ -95,6 +116,11 @@ p {
   text-transform: uppercase;
   list-style: none;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .menuItems .itemLinks {
+    padding: 0.7rem 0;
+  }
+}
 .menuItems .itemLinks a {
   font-style: normal;
   font-weight: 600;
@@ -116,6 +142,12 @@ p {
   transition: all linear 0.2s;
   overflow: hidden;
   white-space: nowrap;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .menuItems .itemLinks a {
+    font-size: 35px;
+    line-height: 42px;
+  }
 }
 .menuItems .itemLinks:hover a {
   text-shadow: none;
@@ -144,6 +176,11 @@ p {
   left: 0;
   z-index: 9;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #ourFuture_video {
+    display: none;
+  }
+}
 
 #ourPast_video {
   position: fixed;
@@ -161,6 +198,11 @@ p {
   overflow: hidden;
   padding-bottom: 40px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .HomeWrap {
+    margin-top: 100px;
+  }
+}
 
 .signatureImg {
   z-index: 100;
@@ -169,6 +211,12 @@ p {
   max-width: 500px;
   position: relative;
   top: 60px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .signatureImg img {
+    max-width: 100%;
+    top: 0;
+  }
 }
 
 .signatureText {
@@ -180,6 +228,18 @@ p {
   opacity: 0;
   color: #fff;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .signatureText {
+    position: relative;
+    opacity: 1;
+    top: 0%;
+    left: 0%;
+    z-index: 99;
+    transform: translateY(0%);
+    margin-top: 85px;
+    order: 2;
+  }
+}
 .signatureText h1 {
   font-style: normal;
   font-weight: 600;
@@ -188,6 +248,11 @@ p {
   text-shadow: 1px 1px 0 #fff, 0px 0px 0 #fff, 0px -1px 0 #fff, 0px 0px 0 #fff, 0px 0px 0 #fff;
   color: #000;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .signatureText h1 {
+    font-size: 45px;
+  }
+}
 .signatureText h2 {
   font-style: normal;
   font-weight: 600;
@@ -195,11 +260,23 @@ p {
   line-height: 79px;
   color: #D9D9D9;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .signatureText h2 {
+    font-size: 40px;
+    line-height: 2rem;
+  }
+}
 .signatureText h3 {
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
   line-height: 49px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .signatureText h3 {
+    font-size: 30px;
+    line-height: 2rem;
+  }
 }
 
 .absolutePos {
@@ -212,6 +289,11 @@ p {
   transform: translateX(-50%);
   z-index: 999;
   display: none;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #homeBtn {
+    width: 100%;
+  }
 }
 #homeBtn a:last-child {
   margin-left: 0px;
@@ -240,6 +322,11 @@ p {
 }
 .buttonWrap a::first-letter {
   text-transform: uppercase;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .buttonWrap a {
+    padding: 7px 36px;
+  }
 }
 .buttonWrap a:last-child {
   margin-left: 20px;
@@ -273,6 +360,16 @@ p {
   z-index: 999;
   opacity: 0;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .signatureBtnBlock {
+    opacity: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+  }
+}
 
 .pastImgPos {
   position: absolute;
@@ -286,9 +383,19 @@ p {
   display: block;
   margin: 0 auto;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .heading_text {
+    width: 100%;
+  }
+}
 
 .heading_img {
   margin: 100px 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .heading_img {
+    display: none;
+  }
 }
 .heading_img img {
   max-width: 900px;
@@ -296,6 +403,11 @@ p {
   margin: 0 auto;
   position: relative;
   transition: all linear 0.5s;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .heading_img img {
+    max-width: 100%;
+  }
 }
 
 .cardWrap {
@@ -320,6 +432,11 @@ p {
   align-items: center;
   padding: 65px;
   flex-flow: column;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .cardWrap .cardInnerOutlet .cardFlex {
+    padding: 20px;
+  }
 }
 .cardWrap .cardInnerOutlet .cardFlex h4 {
   font-style: normal;
@@ -472,6 +589,11 @@ footer {
   margin-top: 200px;
   font-family: "Poppins", sans-serif;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  footer {
+    margin-top: 0;
+  }
+}
 footer h4 {
   font-style: normal;
   font-weight: 400;
@@ -574,6 +696,11 @@ footer .footerBlock > ul > li > a {
 .filterMainGrid .contenttext ul li p {
   font-size: 22px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .filterMainGrid .contenttext ul li {
+    grid-template-columns: 1fr;
+  }
+}
 
 .roadMapWrapper {
   width: 100%;
@@ -662,6 +789,11 @@ footer .footerBlock > ul > li > a {
   top: 0;
   left: 0;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .animateText {
+    display: none;
+  }
+}
 .animateText .animateHeading {
   position: absolute;
   opacity: 0;
@@ -677,6 +809,30 @@ footer .footerBlock > ul > li > a {
 }
 .animateText .animateHeading .active h2 {
   z-index: 999 !important;
+}
+
+.signUp {
+  display: none;
+  position: absolute;
+  bottom: -40px;
+  z-index: 1000;
+  width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.signUp .contact_form {
+  margin: 0;
+}
+.signUp .contact_form .submit_btn {
+  font-size: 18px;
+  line-height: inherit;
+  padding: 10px 53px;
+  margin: 0;
+  background-color: #03A804;
+}
+
+.boxShadow {
+  box-shadow: 2px 2px 5px #03A804, -2px -2px 5px #03A804;
 }
 
 /*# sourceMappingURL=style.css.map */
