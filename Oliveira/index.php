@@ -9,8 +9,8 @@ $page_ID = 1;
                 <!-- <img src="<?php //$website_domain?>images/signature.png" alt=""> -->
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-lg-4"></div>
-                        <div class="col-12 col-lg-8">
+                        <div class="col-12 col-lg-5"></div>
+                        <div class="col-12 col-lg-7">
                             <aside>
                                 <div class="header-content-section">
                                     <div class="logoSection">
@@ -67,6 +67,9 @@ $page_ID = 1;
                 </div>
             </div>
         </header>
+        <?php include("assets/where-it-grown.php"); ?>
+        <?php include("assets/about-us.php"); ?>
+        <?php include("assets/product-benefits.php"); ?>
     </main>    
 
     <?php include("assets/footer.php"); ?>
