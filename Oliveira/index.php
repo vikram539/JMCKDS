@@ -70,6 +70,8 @@ $page_ID = 1;
         <?php include("assets/where-it-grown.php"); ?>
         <?php include("assets/about-us.php"); ?>
         <?php include("assets/product-benefits.php"); ?>
+        <?php include("assets/gallery.php"); ?>
+        <?php include("assets/contact-us.php"); ?>
     </main>    
 
     <?php include("assets/footer.php"); ?>

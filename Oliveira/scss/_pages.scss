@@ -60,6 +60,111 @@
     .textBlock{
         h2, p{
             color: #fff;
+            text-align: center;
+        }
+    }
+    .benefitsBlock{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        
+        @include min_max(0px, 767px){
+            grid-template-columns: 1fr;
+        }
+        .benefitItems{
+            margin-top: 60px;
+            img{
+                display: block;
+                margin: 25px auto;
+            }
+            h4{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                text-align: center;
+                text-transform: capitalize;                
+                color: #FFFFFF;
+                margin-bottom: 20px;
+            }
+            p{
+                font-style: normal;
+                font-weight: 200;
+                font-size: 24px;                
+                text-align: center;
+                text-transform: capitalize;                
+                color: #FFFFFF;
+            }
         }
     }  
+}
+
+// Gallery
+.Gallery{
+    text-align: center;
+    .textBlock{
+        >p{
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+            @include min_max(0px, 767px){
+                width: 100%;
+            }
+        }
+    }
+    #galleryCarousel{
+        margin-top: 50px;
+    }
+}
+
+// contactUs
+.contactUs{
+    text-align: center;
+    .textBlock{
+        >p{
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+            @include min_max(0px, 767px){
+                width: 100%;
+            }
+        }
+    }
+    .formContact{
+        width: 50%;
+        display: block;
+        margin: 40px auto;
+        @include min_max(0px, 767px){
+            width: 100%;
+        }
+        input, textarea{
+            border: 1.46882px solid $primaryColor;
+            border-radius: 9px;
+            color: $primaryColor;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: capitalize;            
+            color: $primaryColor;
+        }
+        input{
+            height: 84.93px;
+        }
+        ::placeholder{
+            text-transform: uppercase;
+        }
+       button.btn-primary{
+            background-color: $primaryColor;    
+            border: none;
+            width: 234.99px;
+            height: 74.6px;            
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #D9D9D9;
+            margin-top: 40px;
+        }
+    }
 }

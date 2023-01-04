@@ -180,6 +180,112 @@ p {
 }
 .productBenefits .textBlock h2, .productBenefits .textBlock p {
   color: #fff;
+  text-align: center;
+}
+.productBenefits .benefitsBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .productBenefits .benefitsBlock {
+    grid-template-columns: 1fr;
+  }
+}
+.productBenefits .benefitsBlock .benefitItems {
+  margin-top: 60px;
+}
+.productBenefits .benefitsBlock .benefitItems img {
+  display: block;
+  margin: 25px auto;
+}
+.productBenefits .benefitsBlock .benefitItems h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.productBenefits .benefitsBlock .benefitItems p {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.Gallery {
+  text-align: center;
+}
+.Gallery .textBlock > p {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .Gallery .textBlock > p {
+    width: 100%;
+  }
+}
+.Gallery #galleryCarousel {
+  margin-top: 50px;
+}
+
+.contactUs {
+  text-align: center;
+}
+.contactUs .textBlock > p {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .contactUs .textBlock > p {
+    width: 100%;
+  }
+}
+.contactUs .formContact {
+  width: 50%;
+  display: block;
+  margin: 40px auto;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .contactUs .formContact {
+    width: 100%;
+  }
+}
+.contactUs .formContact input, .contactUs .formContact textarea {
+  border: 1.46882px solid #111940;
+  border-radius: 9px;
+  color: #111940;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #111940;
+}
+.contactUs .formContact input {
+  height: 84.93px;
+}
+.contactUs .formContact ::placeholder {
+  text-transform: uppercase;
+}
+.contactUs .formContact button.btn-primary {
+  background-color: #111940;
+  border: none;
+  width: 234.99px;
+  height: 74.6px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #D9D9D9;
+  margin-top: 40px;
 }
 
 .buttonWrap {
