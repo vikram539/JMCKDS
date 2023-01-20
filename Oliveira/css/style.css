@@ -10,6 +10,11 @@ header .headerImg {
   width: 100%;
   background-size: auto 100%;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  header .headerImg {
+    background: none;
+  }
+}
 header .header-content-section {
   border: 0px solid red;
   display: grid;
@@ -27,8 +32,18 @@ header .header-content-section .contextSection {
   width: 100%;
   border: 0px solid blue;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  header .header-content-section .contextSection {
+    text-align: center;
+  }
+}
 header .header-content-section .contextSection h2 {
   width: 625px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  header .header-content-section .contextSection h2 {
+    width: 100%;
+  }
 }
 header .header-content-section .contextSection .buttonWrap {
   margin-top: 60px;
@@ -46,8 +61,19 @@ header .header-content-section .featuresSection ul {
   grid-template-rows: 1fr;
   grid-gap: 1rem;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  header .header-content-section .featuresSection ul {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
 header .header-content-section .featuresSection ul li {
   position: relative;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  header .header-content-section .featuresSection ul li {
+    text-align: center;
+  }
 }
 header .header-content-section .featuresSection ul li .featureBlock {
   display: flex;
@@ -62,6 +88,11 @@ header .header-content-section .featuresSection ul li .featureBlock .featureImg 
 header .header-content-section .featuresSection ul li .featureBlock .featureImg img {
   max-width: 100%;
   display: block;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  header .header-content-section .featuresSection ul li .featureBlock .featureImg img {
+    margin: 0 auto;
+  }
 }
 header .header-content-section .featuresSection ul li .featureBlock .featureText h4 {
   font-style: normal;
@@ -109,11 +140,21 @@ h2 {
   font-family: "DM Serif Display", serif;
   margin-bottom: 25px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  h2 {
+    font-size: 40px;
+  }
+}
 
 p {
   font-weight: 200;
   font-size: 24px;
   color: #111940;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  p {
+    font-size: 20px;
+  }
 }
 
 .textBlock {
@@ -142,6 +183,12 @@ p {
   left: 0;
   z-index: 100;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .whereItGrown::after {
+    background: transparent;
+    display: none;
+  }
+}
 .whereItGrown .contextText {
   position: absolute;
   padding: 1rem;
@@ -152,8 +199,24 @@ p {
   width: 100%;
   color: #fff;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .whereItGrown .contextText {
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    color: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}
 .whereItGrown .textBlock h2, .whereItGrown .textBlock p {
   color: #fff;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .whereItGrown .textBlock h2, .whereItGrown .textBlock p {
+    color: inherit;
+  }
 }
 
 .AboutUs {
@@ -178,9 +241,25 @@ p {
   width: 100%;
   color: #fff;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .productBenefits .contextText {
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    color: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}
 .productBenefits .textBlock h2, .productBenefits .textBlock p {
   color: #fff;
   text-align: center;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .productBenefits .textBlock h2, .productBenefits .textBlock p {
+    color: inherit;
+  }
 }
 .productBenefits .benefitsBlock {
   display: grid;
@@ -195,9 +274,19 @@ p {
 .productBenefits .benefitsBlock .benefitItems {
   margin-top: 60px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .productBenefits .benefitsBlock .benefitItems {
+    margin-top: 0;
+  }
+}
 .productBenefits .benefitsBlock .benefitItems img {
   display: block;
   margin: 25px auto;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .productBenefits .benefitsBlock .benefitItems img {
+    filter: invert(1);
+  }
 }
 .productBenefits .benefitsBlock .benefitItems h4 {
   font-style: normal;
@@ -208,6 +297,11 @@ p {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .productBenefits .benefitsBlock .benefitItems h4 {
+    color: inherit;
+  }
+}
 .productBenefits .benefitsBlock .benefitItems p {
   font-style: normal;
   font-weight: 200;
@@ -215,6 +309,12 @@ p {
   text-align: center;
   text-transform: capitalize;
   color: #FFFFFF;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .productBenefits .benefitsBlock .benefitItems p {
+    color: inherit;
+    font-size: 20px;
+  }
 }
 
 .Gallery {

@@ -14,7 +14,11 @@
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 100;
+        z-index: 100; 
+        @include min_max(0px, 767px){ 
+            background: transparent;
+            display: none;
+        }                  
     }
     .contextText{
         position: absolute;
@@ -24,11 +28,23 @@
         transform: translateY(-50%);
         z-index: 101;
         width: 100%;
-        color: #fff;    
+        color: #fff;  
+        @include min_max(0px, 767px){ 
+            position: relative;
+            top: 0;
+            transform: translateY(0);
+            color: inherit;
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+        }                     
     }
     .textBlock{
         h2, p{
-            color: #fff;
+            color: #fff; 
+            @include min_max(0px, 767px){ 
+                color: inherit;
+            }                  
         }
     }
 }
@@ -55,12 +71,24 @@
         transform: translateY(-50%);
         z-index: 101;
         width: 100%;
-        color: #fff;    
+        color: #fff;  
+        @include min_max(0px, 767px){ 
+            position: relative;
+            top: 0;
+            transform: translateY(0);
+            color: inherit;
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+        }                     
     }
     .textBlock{
         h2, p{
             color: #fff;
-            text-align: center;
+            text-align: center; 
+            @include min_max(0px, 767px){ 
+                color: inherit;
+            }
         }
     }
     .benefitsBlock{
@@ -73,9 +101,15 @@
         }
         .benefitItems{
             margin-top: 60px;
+            @include min_max(0px, 767px){ 
+                margin-top: 0;
+            }
             img{
                 display: block;
                 margin: 25px auto;
+                @include min_max(0px, 767px){ 
+                    filter: invert(1);
+                }
             }
             h4{
                 font-style: normal;
@@ -85,6 +119,9 @@
                 text-transform: capitalize;                
                 color: #FFFFFF;
                 margin-bottom: 20px;
+                @include min_max(0px, 767px){ 
+                    color: inherit;
+                }
             }
             p{
                 font-style: normal;
@@ -93,6 +130,10 @@
                 text-align: center;
                 text-transform: capitalize;                
                 color: #FFFFFF;
+                @include min_max(0px, 767px){ 
+                    color: inherit;
+                    font-size: 20px;
+                }
             }
         }
     }  

@@ -28,7 +28,7 @@
                 .planeMove{                    
                     @include imgPosition(50%, 50%);
                     transition: all ease-out 1.5s;
-                    transform: translate(80%, -100%) rotate(0deg);
+                    transform: translate(-50%, -100%) rotate(0deg);
                     @include min_max_width(0px, 767px){
                         // left: 50%; 
                     }
@@ -41,9 +41,9 @@
                 height: 100%;
                 img{
                     position: absolute;
-                    right: 27%;
+                    left: 50%;
                     top: 50%;
-                    transform: translateY(30%);
+                    transform: translate(-50%, 30%);
                     @include min_max_width(0px, 767px){                            
                         // top: 50%;
                         // right: -50%;
@@ -52,8 +52,8 @@
                     }
                     &:last-child{
                         top: 0%;
-                        right: 27%;
-                        transform: rotate(45deg);
+                        left: 50%;
+                        transform: rotate(45deg) translate(-50%, 0);
                         transition: all linear 0.5s;
                         opacity: 0;
                         @include min_max_width(0px, 767px){                             
@@ -66,7 +66,7 @@
                 }
                 
                 .locationIcon_opacity{                        
-                    transform: translate(30%, 45%) rotate(0deg) !important;
+                    transform: translate(-50%, 45%) rotate(0deg) !important;
                     opacity: 1 !important;
                 }
             }

@@ -1,5 +1,15 @@
 header{
     position: relative;
+    @include min_max(0px, 767px){    
+        &::after{
+            // content: '';
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            // width: 100%;
+            // height: 100%;
+        }
+    }
     .headerImg{
         background: url(../images/signature.png) no-repeat top left;
         min-height: 400px;
@@ -7,6 +17,9 @@ header{
         max-width: 100%;
         width: 100%;
         background-size: auto 100%;
+        @include min_max(0px, 767px){ 
+            background: none;
+        }
     }
     .header-content-section{
         border: 0px solid red;
@@ -24,8 +37,14 @@ header{
         .contextSection{
             width: 100%;
             border: 0px solid blue;
+            @include min_max(0px, 767px){ 
+                text-align: center;
+            }
             h2{
-                width: 625px;
+                width: 625px; 
+                @include min_max(0px, 767px){ 
+                    width: 100%;
+                }
             }
             .buttonWrap{
                 margin-top: 60px;
@@ -42,8 +61,15 @@ header{
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: 1fr;
                 grid-gap: 1rem;
+                @include min_max(0px, 767px){ 
+                    grid-template-columns: 1fr;
+                    justify-content: center;
+                }
                 li{
-                    position: relative;                    
+                    position: relative; 
+                    @include min_max(0px, 767px){ 
+                        text-align: center;
+                    }                   
                     .featureBlock{
                         display: flex;
                         align-items: center;
@@ -54,7 +80,10 @@ header{
                             width: 100%;
                             img{
                                 max-width: 100%;
-                                display: block;
+                                display: block; 
+                                @include min_max(0px, 767px){ 
+                                   margin: 0 auto;
+                                }                  
                             }
                         }
                         .featureText{

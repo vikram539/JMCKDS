@@ -66,7 +66,7 @@
                 setTimeout(function(){
                     // $(".planeMove").fadeOut();
                     $(".fixedPathImg img:last-child").addClass("locationIcon_opacity");                    
-                    $(".planeMove").css({"opacity": "0", "transform": "translate(80%, -90%) rotate(-90deg)"});
+                    $(".planeMove").css({"opacity": "0", "transform": "translate(-50%, -90%) rotate(-90deg)"});
                     
                 }, 2000);
             }
