@@ -46,5 +46,12 @@
 <!--                </span>&nbsp;Settings-->
 <!--            </a>-->
 <!--        </li>-->
+        <li>
+            <a href="session_logout.php">
+                <span>
+                    <object data="images/icons/user.svg" width="25" height="25"> </object>
+                </span>&nbsp;Logout
+            </a>
+        </li>
     </ul>
 </div>  
