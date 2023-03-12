@@ -1,0 +1,29 @@
+.navigationBarWrap{
+    position: relative;
+    padding: 50px 0;
+    .navigationBar{
+        ul{
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+            display: flex;
+            align-items: center;
+            li{
+                width: calc(100% / 4);
+                position: relative;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+                a{
+                    text-decoration: none;
+                    color: $colorBlack;
+                }
+                .linkActive{
+                    color: #000;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

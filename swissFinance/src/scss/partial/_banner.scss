@@ -1,0 +1,24 @@
+.bannerWrap{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #545454;
+    .container{
+        position: relative;  
+        .bannerItems{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        } 
+        .active{
+            position: relative;
+            display: block;
+        }     
+        .row{
+            align-items: center;
+        }
+    }
+    margin-bottom: 40px;
+}

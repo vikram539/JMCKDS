@@ -1,4 +1,6 @@
-<?php include("includes/header.php") ?>
+<?php 
+    session_start();
+include("includes/header.php") ?>
 <div class="loginPage">
     <div class="row">
         <div class="col-5">
@@ -45,4 +47,6 @@
     </div>
     <div class="p-tb"></div>
 </div>
-<?php include('includes/footer.php') ?>
+<?php include('includes/footer.php') 
+   
+?>

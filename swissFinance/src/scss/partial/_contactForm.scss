@@ -1,0 +1,30 @@
+.contactForm{
+    width: 100%;
+    display: block;
+    margin: 50px 0;
+    form{
+        input, textarea{
+            display: block;
+            border: 1px solid #000000;
+            border-radius: 12px;
+            outline: none;
+            padding: 30px 30px;
+            width: 100%;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            color: #545454;
+            margin: 40px 0;
+            background: transparent;
+        }
+        button{
+            background: #000000;
+            border-radius: 12px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;            
+            color: #EAE0D6;
+            padding: 10px 60px;
+        }
+    }
+}

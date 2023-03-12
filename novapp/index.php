@@ -1,4 +1,9 @@
-<?php include("includes/header.php") ?>
+<?php 
+session_start();
+if(!isset($_SESSION['email']) && ($_SESSION['email'] == '')){
+    header("Location:login.php");
+}
+include("includes/header.php") ?>
 <body>
 <div class="content">
     <div class="dashboard_wrapper">

@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=PT+Serif:wght@400;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: #000000;
+  background: #EAE0D6;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+h1 {
+  font-family: "PT Serif", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+h1 span {
+  display: block;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #545454;
+  margin-bottom: 40px;
+  line-height: 139.52%;
+}
+h3 span {
+  display: block;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+  margin-bottom: 65px;
+}
+p span {
+  display: block;
+}
+
+.bodyTextBlock {
+  margin-top: 50px;
+  padding-top: 50px;
+}
+.leftBlock p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.navigationBarWrap {
+  position: relative;
+  padding: 50px 0;
+}
+.navigationBarWrap .navigationBar ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+}
+.navigationBarWrap .navigationBar ul li {
+  width: 25%;
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+.navigationBarWrap .navigationBar ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+.navigationBarWrap .navigationBar ul li .linkActive {
+  color: #000;
+  font-weight: 500;
+}
+
+.bannerWrap {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  color: #545454;
+  margin-bottom: 40px;
+}
+.bannerWrap .container {
+  position: relative;
+}
+.bannerWrap .container .bannerItems {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.bannerWrap .container .active {
+  position: relative;
+  display: block;
+}
+.bannerWrap .container .row {
+  align-items: center;
+}
+
+.aboutUs p {
+  font-size: 60px;
+  line-height: 77px;
+}
+
+.whatWeDoText p {
+  margin-bottom: 0;
+}
+.whatWeDoText p:nth-of-type(1) {
+  margin-bottom: 30px;
+}
+
+.subscribe {
+  margin: 50px 0;
+  padding: 50px 0;
+}
+.subscribe .subscribeForm {
+  display: block;
+}
+.subscribe .subscribeForm ul {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  padding: 22px 30px;
+}
+.subscribe .subscribeForm ul li input {
+  border: none;
+  background: transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+}
+.subscribe .subscribeForm ul li input:focus, .subscribe .subscribeForm ul li input:focus-visible {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+.subscribe .subscribeForm ul li input ::placeholder {
+  color: #000000;
+}
+.subscribe .subscribeForm ul li button {
+  width: 217px;
+  height: 79px;
+  background: #000000;
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #EAE0D6;
+  border: none;
+  box-shadow: none;
+}
+.subscribe .subscribeForm ul:last-child {
+  text-align: right;
+}
+
+.contactForm {
+  width: 100%;
+  display: block;
+  margin: 50px 0;
+}
+.contactForm form input, .contactForm form textarea {
+  display: block;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  outline: none;
+  padding: 30px 30px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #545454;
+  margin: 40px 0;
+  background: transparent;
+}
+.contactForm form button {
+  background: #000000;
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #EAE0D6;
+  padding: 10px 60px;
+}
+
+footer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+footer p {
+  font-size: 20px;
+}
+footer .footerRight {
+  text-align: right;
+}
+
+/*# sourceMappingURL=styles.css.map */

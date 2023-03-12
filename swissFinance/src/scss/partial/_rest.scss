@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=PT+Serif:wght@400;700&display=swap');
+
+// font-family: 'Inter', sans-serif;
+// font-family: 'PT Serif', serif;
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: $colorBlack;
+    background: #EAE0D6;
+    // position: fixed;
+    // width: 100%;
+    // height: 100%;
+    // top: 0;
+    // left: 0;
+    // border: 1px solid #ff0000;
+    // overflow: hidden;
+    // overflow-y: auto;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    // grid-template-rows: 1fr 1fr 1fr;
+    // height: 100%;
+}
+h1{
+    font-family: 'PT Serif', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    // line-height: 127px;    
+    color: #000000;
+    margin-bottom: 40px;
+    span{
+        display: block;
+    }
+}
+h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    // line-height: 44px;    
+    color: #545454;
+    margin-bottom: 40px;
+    line-height: 139.52%;
+    span{
+        display: block;
+    }
+}
+p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 65px;
+    span{
+        display: block;
+    }
+}
+.bodyTextBlock{
+    margin-top: 50px;
+    padding-top: 50px;
+    h1{
+        
+    }
+    h3{
+        
+    }
+}
+.leftBlock{
+    p{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+    }
+}
+.rightBlock{
+    
+}
+.textContent{
+
+}
