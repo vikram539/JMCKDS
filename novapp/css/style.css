@@ -58,6 +58,32 @@ form#sign-in p.from_p, form#sign-up p.from_p {
   z-index: 999;
   color: #FFBB31;
   display: none;
+  width: 30%;
+  line-height: 32px;
+  border: 1px solid;
+  padding: 0.2rem 1rem;
+}
+.response_msg .messageAlert {
+  position: relative;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.response_msg .messageAlert .messageClose {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding-left: 20px;
+}
+.response_msg .messageAlert .messageClose::after {
+  content: "X";
+  color: #fff;
+}
+
+.seePass {
+  cursor: pointer;
 }
 
 .dashboard_wrapper {
@@ -136,7 +162,6 @@ form#sign-in p.from_p, form#sign-up p.from_p {
 .dashboard_wrapper .dashboard_content_section header .realTime_ {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   background: #252423;
   border-radius: 20px;
   order: 0;
@@ -144,13 +169,12 @@ form#sign-in p.from_p, form#sign-up p.from_p {
   padding: 20px 12px;
 }
 .dashboard_wrapper .dashboard_content_section header .realTime_ .icon_block {
-  width: 56px;
-  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   z-index: 99;
+  padding: 0.5rem;
 }
 .dashboard_wrapper .dashboard_content_section header .realTime_ .icon_block::after {
   content: "";
@@ -179,7 +203,7 @@ form#sign-in p.from_p, form#sign-up p.from_p {
 .dashboard_wrapper .dashboard_content_section header .realTime_ .values_block p {
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: -0.02em;
   color: #ffffff;
   margin-bottom: 0;
@@ -226,6 +250,18 @@ body {
   border: none;
   margin: 0;
   padding: 0;
+}
+
+.AlertMess {
+  color: lightcoral;
+}
+
+.ErrorMess {
+  color: rgb(245, 0, 0);
+}
+
+.SuccessMess {
+  color: greenyellow;
 }
 
 .loginPage {

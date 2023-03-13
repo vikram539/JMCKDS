@@ -2,10 +2,22 @@
     <div class="card-header">
         <p>Current Market Trends</p>
     </div>
-    <canvas id="myChart"></canvas>
-    <div  class="'bg-white'">
-        <canvas id="polarChart" aria-label="Chart"></canvas>
+    <div>
+        <canvas id="bitcoin"></canvas>
     </div>
+
+    <div>
+        <canvas id="ethereum"></canvas>
+    </div>
+    
+    <div>
+        <canvas id="Paxgold"></canvas>
+    </div>
+    
+    <div>
+        <canvas id="TetherGold"></canvas>
+    </div>
+    
 </div>
 <script>
 </script>
