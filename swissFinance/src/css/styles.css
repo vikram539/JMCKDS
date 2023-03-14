@@ -94,6 +94,7 @@ p span {
   font-size: 36px;
   line-height: 44px;
   color: #545454;
+  min-height: 546px;
   margin-bottom: 40px;
 }
 .bannerWrap .container {
@@ -104,6 +105,9 @@ p span {
   top: 0;
   left: 0;
   display: none;
+}
+.bannerWrap .container .bannerItems:nth-of-type(1) {
+  display: block;
 }
 .bannerWrap .container .active {
   position: relative;

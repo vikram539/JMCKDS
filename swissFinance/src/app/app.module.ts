@@ -25,7 +25,7 @@ import { SubscribeComponent } from './includes/subscribe/subscribe.component';
     SubscribeComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [],

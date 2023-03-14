@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/swiss-finance",
+            "outputPath": "dist/swissFinance/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -25,11 +25,13 @@
               "src/assets"
             ],
             "styles": [
+              
               "node_modules/bootstrap/scss/bootstrap.scss",
               "node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "src/css/styles.css"
             ],
             "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           },
@@ -95,6 +97,59 @@
             ],
             "scripts": []
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/swissFinance/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media"
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "swissFinance:build:development",
+              "serverTarget": "swissFinance:server:development"
+            },
+            "production": {
+              "browserTarget": "swissFinance:build:production",
+              "serverTarget": "swissFinance:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "swissFinance:build:production",
+              "serverTarget": "swissFinance:server:production"
+            },
+            "development": {
+              "browserTarget": "swissFinance:build:development",
+              "serverTarget": "swissFinance:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
