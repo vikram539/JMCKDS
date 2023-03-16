@@ -1,5 +1,5 @@
 {
-  "name": "private-trust",
+  "name": "private-trust-ag",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,10 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run privateTrust:serve-ssr",
-    "serve:ssr": "node dist/privateTrust/server/main.js",
-    "build:ssr": "ng build && ng run privateTrust:server",
-    "prerender": "ng run privateTrust:prerender"
+    "dev:ssr": "ng run privateTrustAG:serve-ssr",
+    "serve:ssr": "node dist/privateTrustAG/server/main.js",
+    "build:ssr": "ng build && ng run privateTrustAG:server",
+    "prerender": "ng run privateTrustAG:prerender"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +24,7 @@
     "@angular/platform-server": "^15.2.0",
     "@angular/router": "^15.2.0",
     "@nguniversal/express-engine": "^15.2.0",
+    "boostrap": "^2.0.0",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.3",
     "express": "^4.15.2",

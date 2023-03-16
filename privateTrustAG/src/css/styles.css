@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Gilda+Display&family=Inter:wght@300;400;500;600&display=swap");
+.bannerWrap {
+  position: relative;
+  overflow: hidden;
+}
+.bannerWrap .row {
+  align-items: center;
+}
+.bannerWrap .row .contentBlock {
+  padding-left: 60px;
+}
+.bannerWrap .row .contentBlock p {
+  width: 60%;
+  margin: 35px 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-size: 100%;
+  color: #000;
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Gilda Display", serif;
+}
+h1 span, h2 span, h3 span, h4 span {
+  display: block;
+}
+
+h1 {
+  color: #AF7C28;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+}
+
+h2 {
+  color: #AF7C28;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 106.5%;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 25px;
+}
+
+h4 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: #4E4B4B;
+  margin-bottom: 25px;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #7C7A7A;
+  line-height: 169%;
+}
+
+.contentBlock {
+  width: 100%;
+}
+
+.swissTrust {
+  display: block;
+  margin: 200px 0 80px;
+}
+.swissTrust h2, .swissTrust p {
+  text-align: center;
+}
+
+.corporateVehicle {
+  width: 100%;
+}
+.corporateVehicle p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 169%;
+}
+.corporateVehicle .row {
+  align-items: center;
+}
+
+.trustsAnglo {
+  width: 100%;
+  margin: 150px 0;
+}
+.trustsAnglo .contentBlock p {
+  width: 60%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .trustsAnglo .contentBlock p {
+    width: 100%;
+  }
+}
+.trustsAnglo .contentimgBlock p {
+  text-align: center;
+}
+.trustsAnglo .buttons {
+  margin: 100px auto;
+  box-shadow: 0px 36px 100px rgba(175, 124, 40, 0.37);
+}
+.trustsAnglo .buttons a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  padding: 30px 70px;
+}
+
+.contactFormWrap {
+  width: 100%;
+}
+.contactFormWrap .row {
+  align-items: center;
+}
+.contactFormWrap .buttons {
+  margin: 40px 0;
+}
+
+.contactForm form {
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+}
+.contactForm form input, .contactForm form textarea {
+  background: #EFEFEF;
+  border-radius: 5px;
+  margin: 25px 0;
+  display: block;
+  width: 100%;
+  padding: 25px 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+.contactForm form input:focus-visible, .contactForm form textarea:focus-visible {
+  outline: none;
+}
+
+.buttons {
+  width: fit-content;
+  font-family: "DM Sans", sans-serif;
+  background: #AF7C28;
+  transition: all linear 0.5s;
+  border-radius: 12px;
+}
+.buttons a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  color: #fff;
+  padding: 17px 40px;
+  display: block;
+}
+.buttons:hover {
+  background: #c98a25;
+}
+
+/*# sourceMappingURL=styles.css.map */

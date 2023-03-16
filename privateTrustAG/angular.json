@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "privateTrust": {
+    "privateTrustAG": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/privateTrust/browser",
+            "outputPath": "dist/privateTrustAG/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -24,13 +24,12 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [              
+            "styles": [
               "node_modules/bootstrap/scss/bootstrap.scss",
               "node_modules/bootstrap-icons/font/bootstrap-icons.css",
-              "src/styles.css"
+              "src/css/styles.css"
             ],
             "scripts": [
-              "./node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           },
@@ -65,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "privateTrust:build:production"
+              "browserTarget": "privateTrustAG:build:production"
             },
             "development": {
-              "browserTarget": "privateTrust:build:development"
+              "browserTarget": "privateTrustAG:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "privateTrust:build"
+            "browserTarget": "privateTrustAG:build"
           }
         },
         "test": {
@@ -100,7 +99,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/privateTrust/server",
+            "outputPath": "dist/privateTrustAG/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
@@ -121,12 +120,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "privateTrust:build:development",
-              "serverTarget": "privateTrust:server:development"
+              "browserTarget": "privateTrustAG:build:development",
+              "serverTarget": "privateTrustAG:server:development"
             },
             "production": {
-              "browserTarget": "privateTrust:build:production",
-              "serverTarget": "privateTrust:server:production"
+              "browserTarget": "privateTrustAG:build:production",
+              "serverTarget": "privateTrustAG:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -140,12 +139,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "privateTrust:build:production",
-              "serverTarget": "privateTrust:server:production"
+              "browserTarget": "privateTrustAG:build:production",
+              "serverTarget": "privateTrustAG:server:production"
             },
             "development": {
-              "browserTarget": "privateTrust:build:development",
-              "serverTarget": "privateTrust:server:development"
+              "browserTarget": "privateTrustAG:build:development",
+              "serverTarget": "privateTrustAG:server:development"
             }
           },
           "defaultConfiguration": "production"
@@ -154,6 +153,6 @@
     }
   },
   "cli": {
-    "analytics": "2cc33eb0-acc0-441e-9209-4c0bf9789ae1"
+    "analytics": false
   }
 }

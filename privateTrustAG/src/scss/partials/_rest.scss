@@ -1,0 +1,60 @@
+// font-family: 'DM Sans', sans-serif;
+// font-family: 'Gilda Display', serif;
+// font-family: 'Inter', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Gilda+Display&family=Inter:wght@300;400;500;600&display=swap');
+
+*{margin: 0; padding: 0; border: none;}
+body{
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-size: 100%;
+    color: $colorBlack;
+    font-family: $Inter;
+}
+h1, h2, h3, h4{
+    font-family: $Gilda;
+    span{
+        display: block;
+    }
+}
+h1{
+    color: $colorPrimary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+}
+h2{
+    color: $colorPrimary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 106.5%;
+    font-family: $Inter;
+    margin-bottom: 25px;
+}
+h4{
+    font-family: $Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;    
+    color: #4E4B4B;
+    margin-bottom: 25px;
+}
+p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #7C7A7A;
+    line-height: 169%;
+}
+.contentBlock{
+    width: 100%;    
+}

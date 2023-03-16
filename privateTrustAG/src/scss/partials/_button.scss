@@ -1,0 +1,20 @@
+.buttons{
+    width: fit-content;
+    font-family: $DMSans;
+    background: #AF7C28;
+    transition: all linear 0.5s;
+    border-radius: 12px;
+    a{
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 130%;
+        color: #fff;
+        padding: 17px 40px;
+        display: block;
+    }
+    &:hover{
+        background: #c98a25;
+    }
+}
