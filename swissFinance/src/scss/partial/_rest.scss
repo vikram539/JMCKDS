@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=PT+Serif:wght@400;700&display=swap');
 
-// font-family: 'Inter', sans-serif;
-// font-family: 'PT Serif', serif;
 body{
     font-family: 'Inter', sans-serif;
     font-weight: 300;
@@ -20,20 +17,35 @@ body{
     // overflow: hidden;
     // overflow-y: auto;
 }
+img{
+    padding: 1rem 0;
+}
 main{
     display: grid;
     grid-template-columns: 1fr;
     // grid-template-rows: 1fr 1fr 1fr;
     // height: 100%;
+    @include min-max(0px, 767px){
+        display: block;
+    }
 }
 h1{
-    font-family: 'PT Serif', serif;
+    font-family: $RobotoSlab;
     font-style: normal;
     font-weight: 400;
     font-size: 90px;
     // line-height: 127px;    
     color: #000000;
     margin-bottom: 40px;
+    @include min-max(0px, 767px){
+        font-size: 35px;
+        margin-bottom: 20px;
+        margin-top: 25px;
+        // span{
+        //     display: inline-block !important;
+        //     padding-left: 10px;
+        // }
+    }
     span{
         display: block;
     }
@@ -49,6 +61,15 @@ h3{
     span{
         display: block;
     }
+    
+    @include min-max(0px, 767px){
+        font-size: 18px;
+        margin-bottom: 10px;
+        span{
+            display: inline-block;
+        }
+        font-size: 20px;
+    }
 }
 p{
     font-style: normal;
@@ -56,6 +77,13 @@ p{
     font-size: 36px;
     color: #000000;
     margin-bottom: 65px;
+    @include min-max(0px, 767px){
+        font-size: 20px;
+        margin-bottom: 20px;
+        span{
+            display: inline-block;
+        }
+    }
     span{
         display: block;
     }
@@ -63,6 +91,10 @@ p{
 .bodyTextBlock{
     margin-top: 50px;
     padding-top: 50px;
+    @include min-max(0px, 767px){        
+        padding-top: 0px;
+        margin-top: 0px;
+    }
     h1{
         
     }
@@ -75,6 +107,13 @@ p{
         font-style: normal;
         font-weight: 400;
         font-size: 36px;
+        
+        @include min-max(0px, 767px){
+            font-size: 20px;
+            span{
+                display: inline-block;
+            }
+        }
     }
 }
 .rightBlock{

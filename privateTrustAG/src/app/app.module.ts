@@ -10,6 +10,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
 import { OurWorksPageComponent } from './pages/our-works-page/our-works-page.component';
 import { ContactUsPageComponent } from './pages/contact-us-page/contact-us-page.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactUsPageComponent } from './pages/contact-us-page/contact-us-page.
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    AppRoutingModule
+    AppRoutingModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,8 +2,12 @@
 .subscribe{
     margin: 50px 0;
     padding: 50px 0;
+    position: relative;
     .subscribeForm{
         display: block;
+        @include min-max(0px, 767px){
+          margin-bottom: 60px;
+        }
         ul{
             display: grid;
             grid-template-columns: auto 1fr;
@@ -14,6 +18,13 @@
             border: 1px solid #000000;
             border-radius: 12px;
             padding: 22px 30px;
+            
+            @include min-max(0px, 767px){
+               display: flex;
+               flex-flow: row wrap;
+               padding: 20px 20px;
+               text-align: left; 
+            }
             li{
                 input{
                     border: none;
@@ -21,15 +32,19 @@
                     font-style: normal;
                     font-weight: 400;
                     font-size: 32px;
-                    color: #000000;
+                    color: #000000; 
 
                     &:focus, &:focus-visible{
-                        box-shadow: none;
+                        box-shadow: none; 
                         border: none;
                         outline: none;
                     }
                     ::placeholder{                       
                         color: #000000; 
+                    }
+                                                 
+                    @include min-max(0px, 767px){                        
+                        font-size: 20px;
                     }
                 }
                 button{
@@ -43,10 +58,31 @@
                     color: #EAE0D6;
                     border: none;
                     box-shadow: none;
+                    @include min-max(0px, 767px){
+                        width: 100%;
+                    }
+                }                
+                @include min-max(0px, 767px){
+                    width: 100%;
+                }
+                &:nth-last-child(1){                              
+                    @include min-max(0px, 767px){
+                        position: absolute;
+                        top: 130px;
+                        left: 0;
+                        display: flex;
+                        justify-content: center;
+                        padding: 15px;
+                    }
+                }
+                                            
+                @include min-max(0px, 767px){
+                    text-align: left;
                 }
             }
             &:last-child{
                 text-align: right;
+                 
             }
         }
     }

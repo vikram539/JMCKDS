@@ -17,4 +17,7 @@
     &:hover{
         background: #c98a25;
     }
+    @include min_max(0px, 767px){ 
+        // margin: 0 0;
+    }
 }

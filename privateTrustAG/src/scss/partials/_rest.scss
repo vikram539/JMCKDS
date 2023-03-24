@@ -11,11 +11,17 @@ body{
     font-size: 100%;
     color: $colorBlack;
     font-family: $Inter;
+    scroll-behavior: smooth;
 }
 h1, h2, h3, h4{
     font-family: $Gilda;
     span{
         display: block;
+    }    
+    @include min_max(0px, 767px){  
+        span{
+            display: inline-block; 
+        }
     }
 }
 h1{
@@ -23,6 +29,9 @@ h1{
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
+    @include min_max(0px, 767px){   
+        font-size: 35px;
+    }
 }
 h2{
     color: $colorPrimary;
@@ -30,6 +39,10 @@ h2{
     font-weight: 400;
     font-size: 40px;
     margin-bottom: 25px;
+    @include min_max(0px, 767px){   
+        font-size: 32px;
+        // text-align: center;
+    }
 }
 h3{
     font-style: normal;
@@ -38,6 +51,9 @@ h3{
     line-height: 106.5%;
     font-family: $Inter;
     margin-bottom: 25px;
+    @include min_max(0px, 767px){   
+        // text-align: center;
+    }
 }
 h4{
     font-family: $Inter;
@@ -47,6 +63,9 @@ h4{
     line-height: 130%;    
     color: #4E4B4B;
     margin-bottom: 25px;
+    @include min_max(0px, 767px){   
+        // text-align: center;
+    }
 }
 p{
     font-style: normal;
@@ -54,6 +73,9 @@ p{
     font-size: 20px;
     color: #7C7A7A;
     line-height: 169%;
+    @include min_max(0px, 767px){  
+        margin-top: 20px;
+    }
 }
 .contentBlock{
     width: 100%;    

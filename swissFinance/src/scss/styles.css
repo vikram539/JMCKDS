@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Roboto+Slab:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=PT+Serif:wght@400;700&display=swap");
 body {
   font-family: "Inter", sans-serif;
   font-weight: 300;
@@ -25,7 +25,7 @@ main {
 }
 
 h1 {
-  font-family: "Roboto Slab", serif;
+  font-family: "PT Serif", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 90px;
@@ -35,8 +35,9 @@ h1 {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   h1 {
     font-size: 35px;
-    margin-bottom: 20px;
-    margin-top: 25px;
+  }
+  h1 span {
+    display: inline-block;
   }
 }
 h1 span {
@@ -46,7 +47,7 @@ h1 span {
 h3 {
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 20px;
   color: #545454;
   margin-bottom: 40px;
   line-height: 139.52%;
@@ -58,7 +59,6 @@ h3 span {
   h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    font-size: 20px;
   }
   h3 span {
     display: inline-block;
@@ -75,7 +75,6 @@ p {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   p {
     font-size: 20px;
-    margin-bottom: 20px;
   }
   p span {
     display: inline-block;
@@ -88,12 +87,6 @@ p span {
 .bodyTextBlock {
   margin-top: 50px;
   padding-top: 50px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .bodyTextBlock {
-    padding-top: 0px;
-    margin-top: 0px;
-  }
 }
 .leftBlock p {
   font-style: normal;
@@ -112,11 +105,6 @@ p span {
 .navigationBarWrap {
   position: relative;
   padding: 50px 0;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .navigationBarWrap {
-    padding: 30px 0 0;
-  }
 }
 .navigationBarWrap .navigationBar ul {
   list-style: none;
@@ -147,10 +135,9 @@ p span {
 }
 .mobileMenu .toggleIcon {
   position: relative;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 1rem;
-  display: block;
-  margin: 0 0 0 auto;
 }
 .mobileMenu .toggleIcon img {
   cursor: pointer;
@@ -161,14 +148,13 @@ p span {
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   position: fixed;
   left: -100%;
   top: 0;
   height: 100%;
   width: 100%;
   z-index: 99;
-  padding: 0;
 }
 .mobileMenuItems::after {
   background-color: #000;
@@ -186,7 +172,6 @@ p span {
   padding: 1rem;
   list-style: none;
   font-size: 35px;
-  text-align: center;
 }
 .mobileMenuItems li a {
   color: #fff;
@@ -194,12 +179,12 @@ p span {
 }
 .mobileMenuItems .closeMenu {
   position: absolute;
-  top: 25px;
+  top: 20px;
   right: 20px;
   z-index: 99;
   color: #fff;
-  font-size: 25px;
 }
+
 .bannerWrap {
   font-style: normal;
   font-weight: 400;
@@ -207,9 +192,6 @@ p span {
   line-height: 44px;
   color: #545454;
   min-height: 546px;
-  max-height: 750px;
-  position: relative;
-  overflow: hidden;
   margin-bottom: 40px;
 }
 .bannerWrap .container {
@@ -224,28 +206,12 @@ p span {
 .bannerWrap .container .bannerItems:nth-of-type(1) {
   display: block;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .bannerWrap .container .bannerItems {
-    position: relative;
-  }
-}
 .bannerWrap .container .active {
   position: relative;
   display: block;
 }
 .bannerWrap .container .row {
   align-items: center;
-}
-.bannerWrap .container .bannerTextBlock {
-  padding: 0 15px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .bannerWrap .container .bannerTextBlock {
-    padding: 0;
-  }
-}
-.bannerWrap .container .bannerImgBlock img {
-  max-width: 100%;
 }
 
 .aboutUs p {
@@ -254,8 +220,7 @@ p span {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .aboutUs p {
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 40px;
   }
 }
 
@@ -311,6 +276,9 @@ p span {
   border: none;
   outline: none;
 }
+.subscribe .subscribeForm ul li input ::-moz-placeholder {
+  color: #000000;
+}
 .subscribe .subscribeForm ul li input ::placeholder {
   color: #000000;
 }
@@ -344,16 +312,11 @@ p span {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .subscribe .subscribeForm ul li:nth-last-child(1) {
     position: absolute;
-    top: 130px;
+    top: 160px;
     left: 0;
     display: flex;
     justify-content: center;
     padding: 15px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .subscribe .subscribeForm ul li {
-    text-align: left;
   }
 }
 .subscribe .subscribeForm ul:last-child {
@@ -364,11 +327,6 @@ p span {
   width: 100%;
   display: block;
   margin: 50px 0;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .contactForm {
-    margin: 0 0 50px;
-  }
 }
 .contactForm form input, .contactForm form textarea {
   display: block;
@@ -383,12 +341,6 @@ p span {
   color: #545454;
   margin: 40px 0;
   background: transparent;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .contactForm form input, .contactForm form textarea {
-    padding: 20px 20px;
-    font-size: 20px;
-  }
 }
 .contactForm form button {
   background: #000000;
@@ -409,21 +361,6 @@ footer {
 footer p {
   font-size: 20px;
 }
-footer p span {
-  display: inline-block;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  footer p span {
-    display: block;
-  }
-}
 footer .footerRight {
   text-align: right;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  footer .footerRight {
-    text-align: left;
-  }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

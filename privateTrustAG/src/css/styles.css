@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Gilda+Display&family=Inter:wght@300;400;500;600&display=swap");
+nav {
+  padding: 50px 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  nav .navLeft a > img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 .bannerWrap {
   position: relative;
   overflow: hidden;
@@ -9,9 +19,37 @@
 .bannerWrap .row .contentBlock {
   padding-left: 60px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .bannerWrap .row .contentBlock {
+    padding: 15px;
+  }
+}
 .bannerWrap .row .contentBlock p {
   width: 60%;
   margin: 35px 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .bannerWrap .row .contentBlock p {
+    width: 100%;
+    margin: 20px 0 35px;
+  }
+}
+
+.slick-slider {
+  width: 88%;
+  margin: auto;
+}
+
+body .slick-prev,
+body .slick-next {
+  height: 45px;
+  width: 40px;
+  background: grey !important;
+  z-index: 100;
+}
+
+.slick-dots li button:before {
+  font-size: 20px !important;
 }
 
 * {
@@ -27,6 +65,7 @@ body {
   font-size: 100%;
   color: #000;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4 {
@@ -35,12 +74,22 @@ h1, h2, h3, h4 {
 h1 span, h2 span, h3 span, h4 span {
   display: block;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  h1 span, h2 span, h3 span, h4 span {
+    display: inline-block;
+  }
+}
 
 h1 {
   color: #AF7C28;
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  h1 {
+    font-size: 35px;
+  }
 }
 
 h2 {
@@ -49,6 +98,11 @@ h2 {
   font-weight: 400;
   font-size: 40px;
   margin-bottom: 25px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  h2 {
+    font-size: 32px;
+  }
 }
 
 h3 {
@@ -59,7 +113,6 @@ h3 {
   font-family: "Inter", sans-serif;
   margin-bottom: 25px;
 }
-
 h4 {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -69,13 +122,17 @@ h4 {
   color: #4E4B4B;
   margin-bottom: 25px;
 }
-
 p {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   color: #7C7A7A;
   line-height: 169%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  p {
+    margin-top: 20px;
+  }
 }
 
 .contentBlock {
@@ -86,8 +143,10 @@ p {
   display: block;
   margin: 200px 0 80px;
 }
-.swissTrust h2, .swissTrust p {
-  text-align: center;
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .swissTrust {
+    margin: 40px 0 20px;
+  }
 }
 
 .corporateVehicle {
@@ -96,16 +155,20 @@ p {
 .corporateVehicle p {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 169%;
 }
 .corporateVehicle .row {
   align-items: center;
 }
-
 .trustsAnglo {
   width: 100%;
   margin: 150px 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .trustsAnglo {
+    margin: 40px 0;
+  }
 }
 .trustsAnglo .contentBlock p {
   width: 60%;
@@ -115,12 +178,14 @@ p {
     width: 100%;
   }
 }
-.trustsAnglo .contentimgBlock p {
-  text-align: center;
-}
 .trustsAnglo .buttons {
   margin: 100px auto;
   box-shadow: 0px 36px 100px rgba(175, 124, 40, 0.37);
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .trustsAnglo .buttons {
+    margin: 40px 0;
+  }
 }
 .trustsAnglo .buttons a {
   font-style: normal;
@@ -128,6 +193,12 @@ p {
   font-size: 32px;
   line-height: 130%;
   padding: 30px 70px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .trustsAnglo .buttons a {
+    font-size: 18px;
+    padding: 22px 12px;
+  }
 }
 
 .contactFormWrap {
@@ -138,6 +209,11 @@ p {
 }
 .contactFormWrap .buttons {
   margin: 40px 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .contactFormWrap .buttons {
+    margin: 40px auto;
+  }
 }
 
 .contactForm form {
@@ -158,6 +234,33 @@ p {
 }
 .contactForm form input:focus-visible, .contactForm form textarea:focus-visible {
   outline: none;
+}
+.contactForm form button {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  color: #fff;
+  padding: 17px 40px;
+  display: block;
+}
+
+.swissTrust {
+  margin: 40px 0;
+}
+.swissTrust h4 {
+  margin: 60px 0;
+}
+
+.swissTrustContent {
+  margin: 40px 0;
+}
+.swissTrustContent h4 {
+  margin-bottom: 15px;
+}
+.swissTrustContent p {
+  margin-bottom: 35px;
 }
 
 .buttons {

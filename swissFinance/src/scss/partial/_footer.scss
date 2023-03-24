@@ -5,10 +5,20 @@ footer{
     line-height: 24px;    
     p{
         font-size: 20px;
+        span{
+            display: inline-block;
+            
+            @include min-max(0px, 767px){
+                display: block;
+            }
+        }
     }
     .footerLeft{
     }
     .footerRight{
-        text-align: right;   
+        text-align: right; 
+        @include min-max(0px, 767px){
+            text-align: left;
+        }  
     }
 }

@@ -11,7 +11,7 @@
                 <h1>En Fait, <span>En Suisse</span></h1>
                 <p>We believe in traditional financial values of prudence, discretion and ultimately performance.</p>
                 <div class="buttons">
-                    <a href="">Get Started</a>
+                    <a href="#getstart">Get Started</a>
                 </div>
             </div>
         </div>
@@ -32,20 +32,26 @@
 </section>
 
 <section class="corporateVehicle">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-8"> 
-                <div class="contentBlock">
-                    <h3>Corporate Vehicle</h3>
-                    <p>A Swiss Trust Company can conduct commercial activities, including engaging in financial business models; for their own....account or for those of others. In use for more than a century, a Swiss PTC has reemerged as a practical solution for the savvy investor or entrepreneur. Scroll down to read more about these unique vehicles function.</p>
+    <div class="container">        
+        <ngx-slick-carousel class="carousel" 
+            #slickModal="slick-carousel" 
+            [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <div class="row">
+                    <div class="col-12 col-lg-8"> 
+                        <div class="contentBlock">
+                            <h3>{{ slide.heading }}</h3>
+                            <p>{{ slide.para }}</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4"> 
+                        <div class="contentimgBlock">
+                            <img src="{{ slide.img }}" alt="Banner" class="img-fluid" />
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4"> 
-                <div class="contentimgBlock">
-                    <img src="assets/images/corporateVehicle.jpg" alt="Banner" class="img-fluid" />
-                </div>
-            </div>
-        </div>
+        </ngx-slick-carousel>
     </div>
 </section>
 
@@ -65,34 +71,11 @@
                     <p>Legal System: Anglo-Saxon trusts are based on common law, which is the legal system used in countries such as the United Kingdom, the United States, Canada, and Australia. In contrast, Swiss trusts are based on civil law, which is the legal system used in countries such as Switzerland, France, and Germany.</p>
                 </div>
                 <div class="buttons">
-                    <a href="">Difference between a PTC & Swiss Trust</a>
+                    <a routerLink="/swiss-trust">Difference between a PTC & Swiss Trust</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="contactFormWrap">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <div class="contentBlock">
-                    <h3>Drop us a line!</h3>
-                    <p>See How A Swiss Trust Can Protect your Assets & your Identity.</p>
-                    <div class="buttons">
-                        <a href="">Register</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">                
-                <div class="contactForm">
-                    <form action="">
-                        <input type="text" name="" id="" placeholder="Enter Name">
-                        <input type="email" name="" id="" placeholder="Email Address">
-                        <textarea name="" id="" rows="10" placeholder="Message"></textarea>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<app-contact-us-page></app-contact-us-page>

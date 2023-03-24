@@ -1,6 +1,10 @@
 .aboutUs{
     p{
         font-size: 60px;
-        line-height: 77px;
+        line-height: 77px; 
+        @include min-max(0px, 767px){
+            font-size: 20px;
+            line-height: 36px;
+        }
     }
 }

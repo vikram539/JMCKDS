@@ -11,10 +11,35 @@
         align-items: center;
         .contentBlock{
             padding-left: 60px;
+            
+            @include min_max(0px, 767px){   
+                padding: 15px;
+            }
             p{
                 width: 60%;
                 margin: 35px 0;
+                @include min_max(0px, 767px){ 
+                    width: 100%;
+                    margin: 20px 0 35px;
+                }
             }
         }
     }
+}
+
+.slick-slider {
+    width: 88%;
+    margin: auto;
+    // background: rgb(14, 13, 13);
+  }
+  
+body .slick-prev, 
+body .slick-next {
+    height: 45px;
+    width: 40px;
+    background: grey !important;
+    z-index: 100;
+}
+.slick-dots li button:before{
+    font-size: 20px !important;
 }

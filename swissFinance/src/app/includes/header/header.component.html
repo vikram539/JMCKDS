@@ -3,15 +3,28 @@
         <div class="row">
             <div class="col-12">
                 <div class="navigationBar">
-                    <ul>
+                    <ul  class="d-none d-md-flex">
                         <li><a routerLink="/" routerLinkActive="linkActive" [routerLinkActiveOptions]="{exact: true}">home</a></li>
                         <li><a routerLink="/about-us" routerLinkActive="linkActive">about us</a></li>
                         <li><a routerLink="/what-we-do" routerLinkActive="linkActive">what we do</a></li>
                         <li><a routerLink="/get-in-touch" routerLinkActive="linkActive">get in touch</a></li>
                     </ul>
+                    <div class="mobileMenu d-md-none d-xs-block">
+                        <div class="toggleIcon">
+                            <img src="assets/images/dots.png" alt="Toggle Icon" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </nav>
+<ul class="mobileMenuItems">
+    <span class="closeMenu">X</span>
+    <li><a routerLink="/" routerLinkActive="linkActive" [routerLinkActiveOptions]="{exact: true}">home</a></li>
+    <li><a routerLink="/about-us" routerLinkActive="linkActive">about us</a></li>
+    <li><a routerLink="/what-we-do" routerLinkActive="linkActive">what we do</a></li>
+    <li><a routerLink="/get-in-touch" routerLinkActive="linkActive">get in touch</a></li>
+
+</ul>   
 <router-outlet></router-outlet>
