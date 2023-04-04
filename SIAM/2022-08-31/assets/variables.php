@@ -10,6 +10,6 @@
     {
         $root="http";
     }
-    $root.="://".$_SERVER['HTTP_HOST']."/";
+    $root.="://".$_SERVER['HTTP_HOST']."/JMCKDS/SIAM/2022-08-31/";
     $images = $root."images/"
 ?>

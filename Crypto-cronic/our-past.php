@@ -18,7 +18,7 @@
 </head>
     <body>
         <?php require("assets/navbar.php"); ?>
-        <video autoplay muted loop id="ourPast_video" width='100%'>
+            <video autoplay muted loop id="ourPast_video" width='100%'>
                 <source src="<?=$imgPath?>video/CryptoCronic1.mp4" type="video/mp4">
             </video>
         <section id="ourPastSection" class="HomeWrap">
@@ -58,7 +58,7 @@
                                     $__span = $fun_obj->TextArray($pageID_, "span");
 
                                     $span_ = @$__span[0] != '' ? "<span>".$__span[0]."</span>" : "";
-                                    $div = '<div class="col-12 col-lg-6 mb-4">';
+                                    $div = '<div class="col-12 col-lg-12 mb-4">';
                                     $div .= '<div class="cardInnerOutlet">';
                                     $div .= '<div class="cardFlex">'; 
                                     $div .= '<h4>'. $__h4[0].'<span class="w-100 d-block">'.$span_.'</span></h4>';

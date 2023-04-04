@@ -60,7 +60,7 @@ $(function(){
 
 
 	
-	$(document).on("click", ".grid_token", function(){
+	$(document).on("click", ".cardInnerOutlet >.grid_token", function(){
 		$(".tokenPup_up").fadeIn();
 
 		let _curentId = $(this).attr("data-id");
@@ -77,7 +77,7 @@ $(function(){
 	});
 
 	// close grid
-	$(document).on("click", ".tokenPup_up .close", function(){
+	$(document).on("click", ".token_data>img.close", function(){
 		$(".tokenPup_up").fadeOut();
 	})
 
@@ -149,5 +149,63 @@ $(function(){
 			})
         }
         e.preventDefault();
-    })  
-  })
+    }) 
+	let ParentUl = $(document).find(".roadMileStone>ul").children("li");
+	let menuNav = $(document).find(".menuNav");
+	let roadOveflow = $(document).find(".road");
+
+	for(let i = 0; i < ParentUl.length; i++){
+		$(ParentUl[i]).on("click", ".imgBlock", function(){
+			let messageBoxLenght = $(this).next(".messageBox");
+			if(messageBoxLenght.length > 0 ){
+				$(ParentUl[i]).addClass("active").siblings().removeClass("active");
+				$(menuNav).css({"z-index": 99});
+				$(roadOveflow).css({"overflow-y": "hidden"});
+			}
+			
+			$(this).parents("ul").children("li").each(function(index, value){
+				let getImgBlock = $(value).find(".imgBlock");
+				if($(value).is(".active")){
+					OnMouseOver(getImgBlock);
+				}
+				else{
+					OnMouseLeave(getImgBlock);
+				}
+			})
+		})
+		
+		
+		$(document).on("click", ".closeBox", function(){
+			$(ParentUl[i]).removeClass("active");
+			$(menuNav).css({"z-index": 10000});
+			$(roadOveflow).css({"overflow-y": "scroll"});
+
+			OnMouseLeave(".imgBlock");
+		})
+	}
+	
+	function OnMouseOver(elmnt){
+		$(elmnt).css({"background": "url('images/mapmarkGreen.png') no-repeat top center", "width": "80px", "width": "80px", "background-size": "contain"})
+	}
+	function OnMouseLeave(elmnt){
+		$(elmnt).css({"background": "url('images/mapmark.png') no-repeat top center"})
+	}
+
+
+	// Road Map icon on Scroll
+	let onScrollMapElm = $(document).find(".roadMileStone>ul").children("li");
+	
+
+	$(".road").scroll(function(){
+		let scrollTop = $(".road").scrollTop();
+		// console.warn("scrollTop", scrollTop);
+
+		for(let i = 0; i < onScrollMapElm.length; i++){
+			let offsetElem =  $(onScrollMapElm[i]).offset().top;
+			let outerHeightElm =  $(onScrollMapElm[i]).outerHeight();
+
+			// console.warn(i,"onScrollMapElm", offsetElem);
+			// console.warn(i,"outerHeightElm", outerHeightElm + offsetElem);
+		}
+	})
+})

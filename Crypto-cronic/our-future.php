@@ -5,6 +5,9 @@
 </head>
     <body>
         <?php require("assets/navbar.php"); ?>
+            <video autoplay muted loop id="ourPast_video" width='100%'>
+                <source src="<?=$imgPath?>video/CryptoCronic1.mp4" type="video/mp4">
+            </video>
         <section id="ourPastSection" class="HomeWrap">
             <div class="container">
                 <div class="row">
@@ -48,7 +51,7 @@
                     </div>
 
                     
-                    <div class="col-12">
+                    <?php /* <div class="col-12">
                         <div class="cardWrap">
                             <div class="row">
                                 <?php
@@ -79,7 +82,7 @@
                                 
                             </div>
                         </div>
-                    </div>
+                    </div> */?>
                 </div>
             </div> 
         </section>
@@ -87,10 +90,8 @@
         <?php require("assets/footer-content.php"); ?>
         <?php require("assets/footer.php"); ?>
                    
-            <video autoplay muted loop id="ourFuture_video" width='100%'>
-                <source src="<?=$imgPath?>video/CryptoCronic1.mp4" type="video/mp4">
-            </video>
-        <div class="animateText"> 
+           
+        <?php /* <div class="animateText"> 
             <?php
                 $getPageAnimate = $fun_obj->commonSelect_table("cms_pages", "page_ID^page_name^filename", "WHERE flag=$page_ID ORDER BY page_order ASC limit 3");
                 while($fetchPageAnimate =  mysqli_fetch_array($getPageAnimate)){
@@ -107,6 +108,6 @@
                 }
                     
             ?>
-        </div>
+        </div> */?>
     </body>
 </html>
